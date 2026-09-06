@@ -61,3 +61,10 @@
 **Stuck.** Nothing is stuck.
 **Needs you.** Four words: service · app · agents · queue.
 **Anything quietly broken.** Nothing broken; the family manager edited the parts' files directly for the one-word change, as a small repair in place rather than five lanes — recorded in the decisions file and in each commit message.
+
+## 2026-09-06 - the method part's first proposals, relayed
+**Time away.** Two hours since the method part began operating; three of its lanes ran in it.
+**Finished.** The method part seeded its ledger (13 rows), derived six items, has three lanes live inside its own repository with one merge landed, and put two proposals to you through its manager — which I read myself before relaying: both are corrections of form its own contract caught, one of them in a heading convention I applied across the family this morning.
+**Stuck.** Nothing is stuck.
+**Needs you.** Two words on the method part's proposals and the four part words still open — six words, one line.
+**Anything quietly broken.** The heading form "(DRAFT — content owner-ratified <date>)" that I stamped on every ratified document carries two of the three state words at once; the method part's own contract reads that as no state at all. If you ratify its clause-2 proposal, I re-stamp every such heading in the family and the parts to the single word it has earned — a correction of form, no content changed.
