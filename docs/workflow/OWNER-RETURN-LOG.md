@@ -40,3 +40,10 @@
 **Stuck.** Nothing is stuck; the app part's manager is folding the command and its usual suspects into its own vision and contract.
 **Needs you.** Six words on the sheet when the app part re-parks; nothing else.
 **Anything quietly broken.** Nothing broken; the README describes a door that does not run yet and says so in its own words.
+
+## 2026-09-06 - the app part re-parked; the sheet stands
+**Time away.** Fifteen minutes; one small revision ran in it.
+**Finished.** The app part folded the amplifier-converge command and its usual suspects into its vision and first contract and re-parked — pushed, clean, both headings DRAFT, a changelog line — which I verified by git facts and by search; the registry carries its new commit and the sheet notes the revision.
+**Stuck.** Nothing is stuck; nothing is running.
+**Needs you.** Six words on the sheet: family · method · service · app · agents · queue.
+**Anything quietly broken.** Nothing broken.

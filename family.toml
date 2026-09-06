@@ -39,7 +39,7 @@ seams = ["family.v1", "service.v1"]
 status = "seeded"
 what = "the experience: two places and a picker, create · attach · onboard from the screen, the four calls, plain words"
 first_contract = "contracts/experience.v1.md"
-seeded_at = "eb92af3"
+seeded_at = "b21e9a5"
 
 [[part]]
 id = "agents"
