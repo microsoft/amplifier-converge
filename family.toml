@@ -7,6 +7,6 @@
 id = "amplifier-converge"
 url = "https://github.com/bkrabach/amplifier-converge"
 branch = "main"
-seams = ["family.v1", "service.v1"]
+seams = ["family.v1", "service.v1", "agent-types.v1", "queue.v1"]
 status = "seeded"
 what = "the family: vision, seams, this registry, the ledger that reads the seams"

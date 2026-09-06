@@ -12,6 +12,8 @@ seams. It holds no part's internals.
 - `docs/VISION.md` — where this is going (DRAFT)
 - `contracts/family.v1.md` — how the parts compose (DRAFT)
 - `contracts/service.v1.md` — one API is the truth (DRAFT)
+- `contracts/agent-types.v1.md` — what a type owes the family, and attach-and-survive (DRAFT)
+- `contracts/queue.v1.md` — items, claim, one custody owner, plain words (DRAFT)
 - `family.toml` — the parts and their status (`seeded` · `body` · `retired`)
 - `docs/PLAN-vNext-2026-09-06.md` — the plan under discussion
 - `docs/workflow/` — the manager session's records for this project
