@@ -1,4 +1,4 @@
-# Amplifier Converge — Vision (DRAFT — content owner-ratified 2026-09-06)
+# Amplifier Converge — Vision (RATIFIED 2026-09-06)
 
 *Drafted 2026-09-06 from the steward's sentences. A proposal until the steward
 answers.*
@@ -130,12 +130,14 @@ moving.
 - A steward creates a project, attaches a repository that has never seen Converge,
   and reaches a ratified vision and a seeded ledger in **under an hour without
   opening a terminal**.
-- The app's project picker lists the top-level project, every registered part and
-  the steward's own projects; each opens to its own direction, operation and runs.
+- A steward opening the picker sees the top-level project, every registered part
+  (six today) and their own projects, and reaches any one's direction, operation and
+  runs in **one click**.
 - Five manager sessions run five parts at once with **zero** shared files, queue
   items or calls between them — read by the family's own kit, not asserted.
-- A run's three endings are the only endings observed across a wave, and **zero**
-  runs are marked merged without the manager's check on record; the service refuses.
+- A steward reading a wave finds a run's three endings are the only endings observed,
+  and **zero** runs marked merged without the manager's check on record; the service
+  refuses.
 - A stalled lane is visible to the steward within **fifteen minutes** because an
   observation was written and shown, not inferred.
 - A person installs on a machine that has nothing else on it and reaches a running
@@ -157,3 +159,4 @@ moving.
   screen.
 - **2026-09-06 — content owner-ratified.** The steward's word: "ok, look good to me at the amplifier-converge level, consider those all ratified." Ratified, not locked.
 - **2026-09-06 — wording.** Every form of "peel" became a form of "split out", on the steward's word ("Let's use the term \"split out\" or similar, instead of \"pealed\" throughout"); no meaning changed.
+- **2026-09-06 — form.** Headings carry one state word (the method part's documents contract, clause 2, as ratified); two signs now name a person; the vision's length bar (120 lines before the changelog) is filed as the family's item F6.

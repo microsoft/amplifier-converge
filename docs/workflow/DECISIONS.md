@@ -38,3 +38,9 @@ Ratified as written: `docs/VISION.md`, `contracts/family.v1.md`, `contracts/serv
 
 - Every form of *split out* becomes a form of *split out* across the family and every part — a wording change with no change of meaning, applied by the family manager in one pass as the steward's global word (clause 8: a small repair in place, not five lanes for one word).
 - The `method` part's documents are **ratified** as written once the wording is applied; heading and changelog carry the word.
+
+## 2026-09-06 — two method proposals and the service part
+> "do it, ratified for those two .v2 docs. Service is ratifed. I'll go read another."
+
+- `method/contracts/documents.v2-candidate.md` and `method/docs/VISION.v2-candidate.md` — **ratified**; applied exactly, candidates archived. Consequence of documents clause 2: every heading in the family and its parts carries ONE state word — `(DRAFT)` · `(RATIFIED <date>)` · `(LOCKED <date>)` — re-stamped as a correction of form, no content changed.
+- The `service` part's vision and `contracts/control-plane.v1.md` — **ratified**.

@@ -68,3 +68,5 @@
 **Stuck.** Nothing is stuck.
 **Needs you.** Two words on the method part's proposals and the four part words still open — six words, one line.
 **Anything quietly broken.** The heading form "(DRAFT — content owner-ratified <date>)" that I stamped on every ratified document carries two of the three state words at once; the method part's own contract reads that as no state at all. If you ratify its clause-2 proposal, I re-stamp every such heading in the family and the parts to the single word it has earned — a correction of form, no content changed.
+
+## 2026-09-06 23:33 - they ratified the method part's two proposals and the service part

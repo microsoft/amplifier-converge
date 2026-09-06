@@ -1,4 +1,4 @@
-# Agent Types Contract — v1 (DRAFT — content owner-ratified 2026-09-06)
+# Agent Types Contract — v1 (RATIFIED 2026-09-06)
 
 **Who builds against this:** the agents part (it implements every type); the
 service (it launches runs through a type and records what the type reports); the

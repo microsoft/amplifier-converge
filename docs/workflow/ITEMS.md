@@ -13,3 +13,4 @@ until a part it depends on has its own word.
 | F5 | family.v1 Core 6 | six `.converge/` directories under one operator's workspace, made by hand | the instance owns every project's state by project id | app, service |
 
 Each part derives its own items the day its documents are ratified.
+| F6 | method documents.v1 clause 3 (ratified 2026-09-06) | the family vision is 148 lines before its changelog against a bar of 120 | trimmed to 120 or fewer with no principle lost, one changelog line | nothing — the family manager's own next wave |

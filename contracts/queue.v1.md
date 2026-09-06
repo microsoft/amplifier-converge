@@ -1,4 +1,4 @@
-# Queue Contract — v1 (DRAFT — content owner-ratified 2026-09-06)
+# Queue Contract — v1 (RATIFIED 2026-09-06)
 
 **Who builds against this:** the service (it fronts the queue and records what the
 queue says); every manager session (it derives, files and claims items); every

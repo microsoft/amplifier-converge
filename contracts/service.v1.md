@@ -1,4 +1,4 @@
-# Service Contract — v1 (DRAFT — content owner-ratified 2026-09-06)
+# Service Contract — v1 (RATIFIED 2026-09-06)
 
 **Who builds against this:** the app (every screen reads and writes through it); the
 `amplifier-converge` command and the skill handed to agents; every manager and worker session,
