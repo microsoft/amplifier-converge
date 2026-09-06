@@ -56,3 +56,8 @@
 **Anything quietly broken.** Nothing broken; the family's queue is a file until the queue part is a body, and the ledger is read by hand until the method part's kit exists — both said so in the files themselves.
 
 ## 2026-09-06 22:55 - they asked for "split out" instead of "split out" everywhere, and ratified the method part pending that
+**Time away.** Minutes; one wording pass across six repositories and one launch.
+**Finished.** Every form of "peel" is now a form of "split out" in every document of the family and all five parts — zero left by search, every contract still inside its hundred lines, a changelog line on every vision, pushed in six repositories; the method part's vision and documents contract carry your word, and its manager is running: seeding its ledger, deriving its work, and beginning its first lanes inside its own repository.
+**Stuck.** Nothing is stuck.
+**Needs you.** Four words: service · app · agents · queue.
+**Anything quietly broken.** Nothing broken; the family manager edited the parts' files directly for the one-word change, as a small repair in place rather than five lanes — recorded in the decisions file and in each commit message.

@@ -19,7 +19,7 @@ seams = ["family.v1", "service.v1"]
 status = "seeded"
 what = "the law: how documents work, how a manager operates, the ledger words, kits, templates, the mode and wake skill"
 first_contract = "contracts/documents.v1.md"
-seeded_at = "ecb489f"
+seeded_at = "aff1e84"
 
 [[part]]
 id = "service"
