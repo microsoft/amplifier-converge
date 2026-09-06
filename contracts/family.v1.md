@@ -2,7 +2,7 @@
 
 **Who builds against this:** the intent steward choosing which project a manager
 runs; every part's manager session, which must know what the top level promises and
-what it does not; the app's project picker; the `converge` skill and CLI, which
+what it does not; the app's project picker; the `amplifier-converge` skill and CLI, which
 resolve "which project" before anything else; anyone standing up a new part or
 replacing the body behind an existing one.
 
@@ -17,8 +17,10 @@ no two managers work the same day without colliding.
 ## Core (the teeth)
 
 1. **The top-level project holds seams, never internals.** `amplifier-converge`
-   carries the family vision, the contracts between parts, the registry of parts and
-   the ledger that reads those seams. No source code a part could own lives here.
+   carries the family vision, the contracts between parts, the registry of parts, the
+   ledger that reads those seams, and **the one installable** — a package that
+   composes the parts and adds no code of its own, so `uv tool install` of this
+   repository installs the whole. No source code a part could own lives here.
 
 2. **A part is a Converge project in full.** Each part has its own repository,
    `docs/VISION.md`, `contracts/`, ledger, work queue and manager session, and follows
@@ -96,5 +98,3 @@ no two managers work the same day without colliding.
 
 - How a part's manager learns the family exists — a line in its wake prompt, or a
   file the method part ships.
-- Whether `seeded` should expire — a part with direction and no body after a
-  named interval reads as a defect, or as patience.

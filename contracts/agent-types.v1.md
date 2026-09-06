@@ -24,7 +24,7 @@ the person disconnecting.
 
 2. **The wake is the whole context.** A run receives its identity in the
    environment — run id, project, role (`manager` | `worker`), API URL, a scoped
-   token — plus one rendered prompt and the `converge` skill. A type adds nothing
+   token — plus one rendered prompt and the `amplifier-converge` skill. A type adds nothing
    the service did not hand it, and a run learns nothing from the disk it was not
    pointed at.
 

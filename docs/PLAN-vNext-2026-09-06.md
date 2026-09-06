@@ -96,7 +96,7 @@ process is the agent type's business.
    from evidence after the first run).
 3. **`agent-types.v1`** — the adapter contract (`type · execute(ctx) → onLog/onEvent/
    onEnd · testEnvironment()`), the wake contract (identity in env — run id, project,
-   role, API URL, scoped token; one rendered prompt; the `converge` skill), liveness
+   role, API URL, scoped token; one rendered prompt; the `amplifier-converge` skill), liveness
    as an observation the type makes, and the rule that a type never writes a record
    the service did not ask for. **To draft in Phase 0.**
 4. **`queue.v1`** — the seam the service fronts: items, claim, custody, resolve,
@@ -109,10 +109,14 @@ operation) live in the part's repository; the family names only that they exist.
 
 ## 4. The experience this must have
 
-- **Install and first run.** One command or one installer on a machine with nothing
-  else on it; the instance starts, the browser opens, the person is asked only what
-  the instance cannot know (where to keep its data; which agent types to configure
-  now, if any).
+- **Install and first run.** On a machine with `uv` and `git` (the README says how
+  to get `uv`): `uv tool install git+https://github.com/bkrabach/amplifier-converge`,
+  then `amplifier-converge` — the instance starts, the browser opens, the person is
+  asked only what the instance cannot know (where to keep its data, default
+  `~/.amplifier-converge/`; which agent types to configure now, if any). The command
+  carries the usual suspects for setup and check-in — `doctor`, `setup`,
+  `start`/`stop`/`restart`/`status`, `logs`, `open`, `update`, `uninstall`,
+  `agents list|test` — and nothing that belongs on the screen.
 - **Create a project.** Name → the instance creates the workspace → vision drafted
   from the template on the screen → the manager's agent type chosen → go. The first
   wake's starting path, from the UI.
@@ -182,9 +186,9 @@ repositories moved to their public home.
   refuses; the ledger counts).
 - A stalled lane is visible to the steward within **fifteen minutes** — an
   observation row written and shown, not inferred.
-- A person installs on a machine with nothing else on it and reaches a running
-  instance with the browser open in **under five minutes**, one command or one
-  installer, no other product required.
+- A person with `uv` installs and reaches a running instance with the browser open
+  in **under five minutes**, one command, no other product required; `amplifier-converge
+  doctor` reads green on the same machine.
 
 ---
 
@@ -200,3 +204,6 @@ repositories moved to their public home.
 4. **Sessions live in the instance**, attachable from the app and from a terminal,
    surviving the instance's restart; the agents part names the mechanism and the
    instance installs it. *Answered 2026-09-06 in discussion.*
+5. **Install and names** — `uv` assumed; `uv tool install git+https://…/amplifier-converge`;
+   command, service and data directory all `amplifier-converge`; distribution shape and
+   a fresh machine's baseline answered by the same words. *Answered 2026-09-06.*

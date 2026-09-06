@@ -1,7 +1,7 @@
 # Service Contract — v1 (DRAFT)
 
 **Who builds against this:** the app (every screen reads and writes through it); the
-`converge` CLI and the skill handed to agents; every manager and worker session,
+`amplifier-converge` command and the skill handed to agents; every manager and worker session,
 whatever agent type runs them; the agents part (it launches the runs the service
 records); the queue part (the service fronts it); the method part's kits, which
 judge the service by what it records.

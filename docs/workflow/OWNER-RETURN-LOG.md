@@ -33,3 +33,5 @@
 **Stuck.** Nothing is stuck; nothing is running.
 **Needs you.** Six words on the re-issued sheet, and any of the four small answers (data directory, distribution shape, what a fresh machine has, the short name on disk) — the rest default as the message says.
 **Anything quietly broken.** Nothing broken.
+
+## 2026-09-06 18:35 - they answered two of the four: uv is assumed (README says how to get it); install is uv tool install git+https; the tool carries doctor and the usual suspects; the short name keeps the brand, amplifier-converge

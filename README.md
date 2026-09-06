@@ -8,6 +8,32 @@ manager sessions, and puts every call a person must make on one screen. One
 experience made of several small Converge projects, held together by contracts at
 their seams; bring your own agent.
 
+## Install
+
+Amplifier Converge needs `uv` and `git` on the machine, and nothing else.
+
+```sh
+# uv — one line, from https://docs.astral.sh/uv/getting-started/installation/
+curl -LsSf https://astral.sh/uv/install.sh | sh          # macOS, Linux
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex" # Windows
+
+# Amplifier Converge
+uv tool install git+https://github.com/bkrabach/amplifier-converge
+amplifier-converge            # starts the instance and opens the browser
+amplifier-converge doctor     # says, in plain words, what is ready and what is not
+```
+
+The command carries the usual suspects for setup and check-in — `doctor`, `setup`,
+`start` / `stop` / `restart` / `status`, `logs`, `open`, `update`, `uninstall`,
+`agents list` / `agents test <type>`. Creating projects, attaching repositories and
+onboarding them happen on the screen, never here. The instance keeps everything
+under `~/.amplifier-converge/`.
+
+*(None of this runs yet — the family is at its first word. The section is here so the
+door is described before it is built.)*
+
+## What is here
+
 This repository is the top level. It holds the family's vision, the seam contracts,
 the registry of parts (`family.toml`) and, once seeded, the ledger that reads the
 seams. It holds no part's internals.

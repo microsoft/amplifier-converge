@@ -19,3 +19,11 @@ Recorded as vision principle 9 and family.v1 Core 9 (the peel-out rule), both DR
 Two corrections, applied across the family's documents and sent to every part's manager:
 1. **No dependency on any other product.** Amplifier Converge installs on its own. Amplifier is one agent type, shipped ready to configure; a person may never configure it.
 2. **One running instance per machine.** Amplifier Converge runs as one local instance with a browser UI; it owns its data directory, creates workspaces, clones repositories, launches and supervises manager sessions. A person never needs a terminal.
+
+## 2026-09-06 — install and naming
+> "Also assume uv installed (include how to install in readme) and that we will use `uv tool install git+https...` to install, and then the tool itself should have all of usual suspects, doctor, etc., for all the things we need to get it set up and running and check in on it, etc. For the short name, keep the branding please, amplifier-converge."
+
+- A fresh machine is assumed to have `uv` (and `git`); the README says how to get `uv`.
+- Install is `uv tool install git+https://github.com/bkrabach/amplifier-converge` — the family's front door is the installable, a package that composes the parts.
+- The command is `amplifier-converge`; the data directory `~/.amplifier-converge/`; the service name `amplifier-converge`. No shorter alias.
+- The command carries the usual suspects for setup and check-in — `doctor`, `setup`, `start`/`stop`/`restart`/`status`, `logs`, `open`, `update`, `uninstall`, `agents list|test` — and nothing that belongs on the screen (creating projects, attaching repositories, onboarding stay in the app).
