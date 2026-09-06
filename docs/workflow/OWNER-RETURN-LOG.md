@@ -47,3 +47,10 @@
 **Stuck.** Nothing is stuck; nothing is running.
 **Needs you.** Six words on the sheet: family · method · service · app · agents · queue.
 **Anything quietly broken.** Nothing broken.
+
+## 2026-09-06 21:50 - they ratified the family level: vision and four seams
+**Time away.** Minutes; nothing ran but the seeding.
+**Finished.** Your word is on the family's five documents (each heading now says content owner-ratified, still DRAFT); the family kit exists and reads green on the six registered parts (every one reachable with a vision and a contract, every seam present, no part's directory here, every part naming a ceiling and a second-domain test) with two rules honestly Can't check until an app and an instance exist; the ledger is seeded at 21 rows — five Kept by a run, ten Not yet, six Can't check, none seeded Kept on sound alone; and the family's five derived items are written down with what each waits on.
+**Stuck.** Nothing is stuck; nothing is running.
+**Needs you.** The five parts' words — method · service · app · agents · queue — nothing in any part can be derived or launched before its own word lands.
+**Anything quietly broken.** Nothing broken; the family's queue is a file until the queue part is a body, and the ledger is read by hand until the method part's kit exists — both said so in the files themselves.

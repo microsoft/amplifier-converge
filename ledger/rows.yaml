@@ -1,0 +1,109 @@
+# The family ledger — reads the seams (contracts/family.v1.md Core 1). One row per
+# checkable clause; each row at the verdict the family earns today. Words: Kept ·
+# Not yet · Broken · Pinned open · Can't check. Seeded 2026-09-06 on the steward's word.
+# A row seeded Kept because a clause sounds true is the drift this ledger exists to catch.
+- id: FAM-001
+  contract: family.v1
+  clause: "Core 1 — the top level holds seams, never internals"
+  verdict: Kept
+  ran: "2026-09-06 conformance/family/run.py rule 1 → PASS: no part's directory lives at the top level"
+- id: FAM-003
+  contract: family.v1
+  clause: "Core 3 — a part is registered only when it exists"
+  verdict: Kept
+  ran: "2026-09-06 rules 3a/3b → PASS: 6 parts, every one reachable with docs/VISION.md and contracts/"
+- id: FAM-004
+  contract: family.v1
+  clause: "Core 4 — a part's contract is with the seam, not a neighbour's insides"
+  verdict: "Can't check"
+  why: "no part has a body yet; a reach-across can only be read in code"
+- id: FAM-005
+  contract: family.v1
+  clause: "Core 5 — replacing a body changes no seam"
+  verdict: "Can't check"
+  why: "no body has been replaced; first reading at the first swap"
+- id: FAM-006
+  contract: family.v1
+  clause: "Core 6 — two managers never share state"
+  verdict: "Can't check"
+  why: "no instance exists; today's part managers ran under one operator's directory by hand"
+- id: FAM-007
+  contract: family.v1
+  clause: "Core 7 — seam changes are proposals, batched"
+  verdict: Not yet
+  why: "no seam proposal has been made; the batching sheet exists (docs/workflow/SHEET-2026-09-06.md) but has carried no proposal"
+- id: FAM-008
+  contract: family.v1
+  clause: "Core 8 — a part is peeled before it becomes two"
+  verdict: Kept
+  ran: "2026-09-06 rule 8 → PASS: every part's first contract names a ceiling and a second-domain test"
+- id: FAM-009
+  contract: family.v1
+  clause: "Core 9 — the family is small and named (six parts)"
+  verdict: Kept
+  ran: "2026-09-06 family.toml carries exactly the six named parts"
+- id: FAM-PICKER
+  contract: family.v1
+  clause: "kit assert — the picker lists exactly the parts plus the steward's own projects"
+  verdict: "Can't check"
+  why: "no app body exists to read the picker from"
+- id: SVC-001
+  contract: service.v1
+  clause: "Core 1 — one API, spoken by all, from one instance"
+  verdict: Not yet
+  why: "no service exists; the first run record has not flowed"
+- id: SVC-003
+  contract: service.v1
+  clause: "Core 3 — two records frozen: run and check"
+  verdict: Not yet
+  why: "no store exists"
+- id: SVC-004
+  contract: service.v1
+  clause: "Core 4 — a run ends one of three ways and merge is a request the service may refuse"
+  verdict: Not yet
+  why: "no merge gate exists; the three break-tests (plan §5, Phase 1) are the first reading"
+- id: SVC-005
+  contract: service.v1
+  clause: "Core 5 — identity issued per run and scoped"
+  verdict: Not yet
+  why: "no token issuer exists"
+- id: SVC-006
+  contract: service.v1
+  clause: "Core 6 — liveness is an observation, not a state"
+  verdict: Not yet
+  why: "no observation has been recorded by a service"
+- id: SVC-STORE
+  contract: service.v1
+  clause: "kit assert — the store is one file in the instance's data directory, nothing in a working copy"
+  verdict: "Can't check"
+  why: "no instance, no store"
+- id: AGT-001
+  contract: agent-types.v1
+  clause: "Core 1 — a type is three functions"
+  verdict: Not yet
+  why: "no type has been implemented"
+- id: AGT-005
+  contract: agent-types.v1
+  clause: "Core 5 — a person can attach, and a session survives the instance's restart"
+  verdict: Not yet
+  why: "no instance to restart; the attach mechanism is named by the agents part's contract, not yet built"
+- id: AGT-006
+  contract: agent-types.v1
+  clause: "Core 6 — process and http always exist; every other type optional"
+  verdict: Not yet
+  why: "no type exists yet"
+- id: QUE-002
+  contract: queue.v1
+  clause: "Core 2 — a claim is atomic and exclusive"
+  verdict: Not yet
+  why: "no queue exists; the concurrent-claim measurement is its first reading"
+- id: QUE-003
+  contract: queue.v1
+  clause: "Core 3 — custody has one owner"
+  verdict: Not yet
+  why: "no queue exists"
+- id: QUE-008
+  contract: queue.v1
+  clause: "Core 8 — embedded in the instance, one store per project"
+  verdict: "Can't check"
+  why: "no instance, no store"

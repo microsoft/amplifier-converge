@@ -1,4 +1,4 @@
-# Family Contract — v1 (DRAFT)
+# Family Contract — v1 (DRAFT — content owner-ratified 2026-09-06)
 
 **Who builds against this:** the intent steward choosing which project a manager
 runs; every part's manager session, which must know what the top level promises and

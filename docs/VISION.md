@@ -1,4 +1,4 @@
-# Amplifier Converge — Vision (DRAFT)
+# Amplifier Converge — Vision (DRAFT — content owner-ratified 2026-09-06)
 
 *Drafted 2026-09-06 from the steward's sentences. A proposal until the steward
 answers.*
@@ -155,3 +155,4 @@ moving.
   own with no dependency on any other product; one running instance per machine
   that creates workspaces, clones repositories and launches managers from the
   screen.
+- **2026-09-06 — content owner-ratified.** The steward's word: "ok, look good to me at the amplifier-converge level, consider those all ratified." Ratified, not locked.

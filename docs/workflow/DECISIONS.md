@@ -27,3 +27,8 @@ Two corrections, applied across the family's documents and sent to every part's 
 - Install is `uv tool install git+https://github.com/bkrabach/amplifier-converge` — the family's front door is the installable, a package that composes the parts.
 - The command is `amplifier-converge`; the data directory `~/.amplifier-converge/`; the service name `amplifier-converge`. No shorter alias.
 - The command carries the usual suspects for setup and check-in — `doctor`, `setup`, `start`/`stop`/`restart`/`status`, `logs`, `open`, `update`, `uninstall`, `agents list|test` — and nothing that belongs on the screen (creating projects, attaching repositories, onboarding stay in the app).
+
+## 2026-09-06 — the family level ratified
+> "ok, look good to me at the amplifier-converge level, consider those all ratified."
+
+Ratified as written: `docs/VISION.md`, `contracts/family.v1.md`, `contracts/service.v1.md`, `contracts/agent-types.v1.md`, `contracts/queue.v1.md`. Ratified is not locked: each stays DRAFT with the word recorded in its heading; locking is a later word once the four conditions hold. The five parts' documents await their own words.
