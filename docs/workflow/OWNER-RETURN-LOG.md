@@ -35,3 +35,8 @@
 **Anything quietly broken.** Nothing broken.
 
 ## 2026-09-06 18:35 - they answered two of the four: uv is assumed (README says how to get it); install is uv tool install git+https; the tool carries doctor and the usual suspects; the short name keeps the brand, amplifier-converge
+**Time away.** Ten minutes since the re-issued sheet; one small correction pass.
+**Finished.** Your install and naming answers are in the family's documents and pushed: the README carries the door — how to get uv, then one uv tool install of this repository, then the command — and names the usual suspects for setup and check-in; the family contract says the top level holds the one installable as a package that composes the parts and adds no code; everything on disk and in the shell is amplifier-converge with no shorter alias; the plan's decisions section records all of it — re-checked by reading the files back and by a search for the old short name (none left).
+**Stuck.** Nothing is stuck; the app part's manager is folding the command and its usual suspects into its own vision and contract.
+**Needs you.** Six words on the sheet when the app part re-parks; nothing else.
+**Anything quietly broken.** Nothing broken; the README describes a door that does not run yet and says so in its own words.
