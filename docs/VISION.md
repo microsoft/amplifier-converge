@@ -90,6 +90,13 @@ moving.
    may call is generated from what the service actually serves, and a check fails
    the moment they drift.
 
+9. **A part that grows a second domain is peeled, not grown.** Every part carries a
+   size it may not exceed and a test for a second domain inside it — a sub-directory
+   with its own vocabulary, its own kit or its own steward questions. When either is
+   met the part's manager proposes the peel as a seam here, and the new part begins
+   as a Converge project of its own. Splitting is the normal shape of growth; a part
+   that keeps growing is the defect.
+
 ---
 
 ## What this is not
