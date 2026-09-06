@@ -19,7 +19,7 @@ seams = ["family.v1", "service.v1"]
 status = "seeded"
 what = "the law: how documents work, how a manager operates, the ledger words, kits, templates, the mode and wake skill"
 first_contract = "contracts/documents.v1.md"
-seeded_at = "aff1e84"
+seeded_at = "12b97c3"
 
 [[part]]
 id = "service"
@@ -29,7 +29,7 @@ seams = ["family.v1", "service.v1", "agent-types.v1", "queue.v1"]
 status = "seeded"
 what = "the control plane: run and check first, one door, one file, the merge gate that refuses, credentials per run"
 first_contract = "contracts/control-plane.v1.md"
-seeded_at = "cbf7088"
+seeded_at = "2c2cab4"
 
 [[part]]
 id = "app"
