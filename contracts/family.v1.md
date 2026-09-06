@@ -75,7 +75,6 @@ no two managers work the same day without colliding.
   promoted the first time "it worked yesterday" cannot be reproduced.
 - **Whether the top-level ledger reads a part's ledger** — promoted when a seam
   promise can only be judged by a part's row.
-- **A part's internal layout** — never frozen here; the part's contracts own it.
 
 ## Conformance kit asserts
 
