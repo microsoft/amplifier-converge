@@ -29,7 +29,7 @@ seams = ["family.v1", "service.v1", "agent-types.v1", "queue.v1"]
 status = "seeded"
 what = "the control plane: run and check first, one door, one file, the merge gate that refuses, credentials per run"
 first_contract = "contracts/control-plane.v1.md"
-seeded_at = "5bac19e"
+seeded_at = "cbf7088"
 
 [[part]]
 id = "app"
@@ -39,7 +39,7 @@ seams = ["family.v1", "service.v1"]
 status = "seeded"
 what = "the experience: two places and a picker, create · attach · onboard from the screen, the four calls, plain words"
 first_contract = "contracts/experience.v1.md"
-seeded_at = "e4b9238"
+seeded_at = "eb92af3"
 
 [[part]]
 id = "agents"
@@ -59,4 +59,4 @@ seams = ["family.v1", "service.v1", "queue.v1"]
 status = "seeded"
 what = "the work queue with custody: items name their clause, looking and taking are one call, one custody clock, embedded"
 first_contract = "contracts/items-and-custody.v1.md"
-seeded_at = "8bc1269"
+seeded_at = "49c51b7"

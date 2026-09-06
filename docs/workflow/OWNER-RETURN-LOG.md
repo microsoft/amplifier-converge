@@ -26,3 +26,10 @@
 **Stuck.** Nothing is stuck; three part managers (service, app, queue) are revising their drafts against the corrections, each in its own repository, and two (method, agents) carried no affected sentence.
 **Needs you.** Four small answers I cannot make for you, listed in the message: the instance's data directory, how it is distributed, what a fresh machine may be assumed to have, and the product's short name on disk — then the re-issued sheet.
 **Anything quietly broken.** Nothing broken; my earlier "no daemon, onto the Amplifier a person already has" wording was mine, not yours, and it reached three parts' drafts before you read it — the cost is this revision wave.
+
+## 2026-09-06 - the revision wave landed; the sheet is re-issued
+**Time away.** Twenty minutes since the corrections were applied; one revision wave ran in it.
+**Finished.** Service, app and queue revised their visions and first contracts against your two corrections and re-parked — each pushed to its main, tree clean, both headings DRAFT, a changelog line naming the revision — which I verified by git facts and by searching every part for the old assumptions (none remain outside deliberate negations) and for any forbidden name (none); the registry carries the new commits and the sheet is re-issued.
+**Stuck.** Nothing is stuck; nothing is running.
+**Needs you.** Six words on the re-issued sheet, and any of the four small answers (data directory, distribution shape, what a fresh machine has, the short name on disk) — the rest default as the message says.
+**Anything quietly broken.** Nothing broken.
