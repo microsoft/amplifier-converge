@@ -97,10 +97,10 @@ moving.
    may call is generated from what the service actually serves, and a check fails
    the moment they drift.
 
-9. **A part that grows a second domain is peeled, not grown.** Every part carries a
+9. **A part that grows a second domain is split out, not grown.** Every part carries a
    size it may not exceed and a test for a second domain inside it — a sub-directory
    with its own vocabulary, its own kit or its own steward questions. When either is
-   met the part's manager proposes the peel as a seam here, and the new part begins
+   met the part's manager proposes the split-out as a seam here, and the new part begins
    as a Converge project of its own. Splitting is the normal shape of growth; a part
    that keeps growing is the defect.
 
@@ -156,3 +156,4 @@ moving.
   that creates workspaces, clones repositories and launches managers from the
   screen.
 - **2026-09-06 — content owner-ratified.** The steward's word: "ok, look good to me at the amplifier-converge level, consider those all ratified." Ratified, not locked.
+- **2026-09-06 — wording.** Every form of "peel" became a form of "split out", on the steward's word ("Let's use the term \"split out\" or similar, instead of \"pealed\" throughout"); no meaning changed.

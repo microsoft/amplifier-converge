@@ -9,9 +9,9 @@
 4. The terminal-multiplexer constraint — **open**; the steward's requirement is attachability and survival across disconnects and service restarts, which a multiplexer provides when wired properly.
 
 ## 2026-09-06 — a design-safety rule
-> "Let's build in some design safety such that any part of this system that grows to a certain point of complexity or potential for splitting on some sub-domain should be peeled out into it's own sub-project/repo/etc - I could see some of these going way."
+> "Let's build in some design safety such that any part of this system that grows to a certain point of complexity or potential for splitting on some sub-domain should be split out out into it's own sub-project/repo/etc - I could see some of these going way."
 
-Recorded as vision principle 9 and family.v1 Core 9 (the peel-out rule), both DRAFT.
+Recorded as vision principle 9 and family.v1 Core 9 (the split-out rule), both DRAFT.
 
 ## 2026-09-06 — on reading the vision
 > "In the vision it says one command to install onto the Amplifier a personal already has - this should NOT require or be dependent upon any Amplifier installation already existing, etc. We just package support for Amplifier as an agent and one of the defaults ready to configure, but that is just for the agent part and they could choose to never use/configure the Amplifier agent option. When you say running in every project's own workspace and no daemon, I'm not sure we're on the same page... we DO want to have one instance of Amplifier Converge running on the user's machine and then it'll be controlling many manager sessions, which are created from that UX - so it'll be up to the Converge app to create the workspace, pull down repos, etc. as we ideally don't want users to have to go to the terminal to do any of this... we manage it all for them."
@@ -32,3 +32,9 @@ Two corrections, applied across the family's documents and sent to every part's 
 > "ok, look good to me at the amplifier-converge level, consider those all ratified."
 
 Ratified as written: `docs/VISION.md`, `contracts/family.v1.md`, `contracts/service.v1.md`, `contracts/agent-types.v1.md`, `contracts/queue.v1.md`. Ratified is not locked: each stays DRAFT with the word recorded in its heading; locking is a later word once the four conditions hold. The five parts' documents await their own words.
+
+## 2026-09-06 — vocabulary, and the method part
+> "Let's use the term "split out" or similar, instead of "pealed" throughout? The method is ratified pending that global update."
+
+- Every form of *split out* becomes a form of *split out* across the family and every part — a wording change with no change of meaning, applied by the family manager in one pass as the steward's global word (clause 8: a small repair in place, not five lanes for one word).
+- The `method` part's documents are **ratified** as written once the wording is applied; heading and changelog carry the word.

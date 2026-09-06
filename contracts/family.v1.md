@@ -55,19 +55,19 @@ no two managers work the same day without colliding.
    gathers open proposals into one sheet so the steward answers once, not per part.
    A part's own contracts change by its own process.
 
-8. **A part is peeled before it becomes two.** Each part's own contracts name a
+8. **A part is split out before it becomes two.** Each part's own contracts name a
    ceiling — a line count of its law, a file count of its body, or a number of kit
    rules — and a test for a second domain inside it (its own vocabulary, its own kit,
    its own steward questions). Crossing either obliges the part's manager to propose
-   a peel here within one wave: the new part is seeded as a Converge project of its
+   a split out here within one wave: the new part is seeded as a Converge project of its
    own and registered, and the seam between them is a contract at this level. A part
-   over its ceiling with no peel proposed reads *Broken* in the family ledger.
+   over its ceiling with no split-out proposed reads *Broken* in the family ledger.
 
 9. **The family is small and named.** v1 names six parts: `method` (the law —
    documents, operation, the ledger format, kits, templates, the manager mode),
    `service` (the control plane and its API), `app` (the experience), `agents`
    (agent types and session management), `queue` (the work queue with custody), and
-   this top level. A seventh arrives by a peel or a proposal here, never by a directory.
+   this top level. A seventh arrives by a split out or a proposal here, never by a directory.
 
 ## What v1 deliberately does NOT freeze
 
@@ -81,7 +81,7 @@ no two managers work the same day without colliding.
 ## Conformance kit asserts
 
 - Every part's contracts name a ceiling and a second-domain test (Core 8); a part
-  over its ceiling has a peel proposal open here, or its row reads Broken.
+  over its ceiling has a split out proposal open here, or its row reads Broken.
 - `family.toml` parses; every part has id, url, branch, seams and a status from the
   three words; every url answers and carries `docs/VISION.md` and `contracts/` at
   its branch.
