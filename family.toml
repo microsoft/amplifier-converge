@@ -1,43 +1,12 @@
-# The family registry — contracts/family.v1.md Core 3. A part not listed here is
-# not in the family; the app's project picker shows exactly this file.
-# status: wrapper | body | retired
+# The family registry — contracts/family.v1.md Core 3. A part is registered only when
+# its repository exists and carries docs/VISION.md and contracts/. The app's project
+# picker shows exactly these parts beside the steward's own projects.
+# status: seeded | body | retired
 
 [[part]]
-id = "converge-method"
-url = "https://github.com/microsoft/amplifier-bundle-converge"
-branch = "main"
-seams = ["family.v1"]
-status = "body"
-what = "the method as it ships: contracts, ledger, kits, the manager mode, the adopter and turnkey harnesses"
-
-[[part]]
-id = "converge-service"
-url = "https://github.com/microsoft/amplifier-converge-service"
+id = "amplifier-converge"
+url = "https://github.com/bkrabach/amplifier-converge"
 branch = "main"
 seams = ["family.v1", "service.v1"]
-status = "wrapper"
-what = "the control plane: six records behind one API; begins by fronting the tracker and today's lane launcher"
-
-[[part]]
-id = "converge-app"
-url = "https://github.com/microsoft/amplifier-converge-app"
-branch = "main"
-seams = ["family.v1", "service.v1"]
-status = "wrapper"
-what = "the experience: today's app/ moved out of the method repository, reading the service"
-
-[[part]]
-id = "converge-agent-types"
-url = "https://github.com/microsoft/amplifier-converge-agent-types"
-branch = "main"
-seams = ["family.v1", "service.v1"]
-status = "wrapper"
-what = "adapters: amplifier built in (today's launch_lane.sh formalised), process and http always, the usual suspects as thin CLI adapters"
-
-[[part]]
-id = "converge-queue"
-url = "https://github.com/microsoft/amplifier-work-tracker"
-branch = "main"
-seams = ["family.v1", "service.v1"]
-status = "wrapper"
-what = "the shared work queue with custody, fronted by the service"
+status = "seeded"
+what = "the family: vision, seams, this registry, the ledger that reads the seams"

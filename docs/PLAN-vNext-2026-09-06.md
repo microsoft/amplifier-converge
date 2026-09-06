@@ -1,222 +1,189 @@
-# Amplifier Converge vNext — the plan (DRAFT, for discussion)
+# Amplifier Converge — the plan (DRAFT, for discussion)
 
-*Written 2026-09-06 after: the Paperclip reading (`ai_working/paperclip-study/`), the
-council review (`docs/workflow/COUNCIL-2026-09-06.md`), and the eleven-day session
-chronicle of v1 (`ai_working/paperclip-study/SESSION-CHRONICLE.md`). This is a plan
-for talking, not a contract. Nothing here is law until it is in a ratified document.*
+*Written 2026-09-06 from the steward's sentences, a reading of Paperclip
+(`ai_working/paperclip-study/`, outside this repo), and a six-lens council review of
+the first drafts (`ai_working/council-converge-family/`, outside this repo). A plan
+for talking. Nothing here is law until it is in a ratified document.*
 
 ---
 
 ## 0. Stance
 
-**v1 stays.** `amplifier-bundle-converge` is a product people can install and use
-today: the method (contracts, ledger, kits, the manager mode), an app, an adopter
-harness that is green on both first-wake paths. It is kept as it is. Its frozen
-vision — *"Converge is the method, not the project"* — remains true of v1 and is not
-amended by anything here.
+Amplifier Converge is a new product, built for exactly one job: getting work done the
+Converge way, with a person's attention spent only where a person is irreplaceable.
+It is bespoke and trim on purpose. Every part serves this experience and owes nothing
+to another product's users — so a queue is a queue with custody, a service is a few
+records and one API, an adapter is three functions, and a session manager knows one
+kind of session.
 
-**vNext is a new product with a different architecture,** built for exactly one job:
-getting work done the Converge way, with a person's attention spent only where a
-person is irreplaceable. It is bespoke and trim on purpose. It does not inherit the
-obligations of the components v1 borrowed (the Amplifier CLI's highway skill, tmux,
-the general-purpose work-tracker, a FastAPI app grown inside the method repository).
-Where v1 wrapped, vNext owns — a harness, an app, a service, a queue, session
-management — each small, because each serves this one thing.
+Two rules follow from the practice that preceded this and from the council:
 
-**What carries over unchanged:** the method as the law (vNext's documents are written
-under v1's `documents.v1`; the manager's obligations are v1's `operation.v1`), and
-the lessons — seventeen incidents, fourteen hand-rolled mechanics, thirty-eight
-direction-setting words — catalogued in the chronicle. The recurring shape of every
-incident was the same: *the verification layer certified the wrong thing* (a deleted
-worktree, a moving count, a stale export, build detritus). vNext's first design rule
-follows from it: **a fact the system judges by is a record the system wrote, or an
-observation it timestamped — never a thing it inferred from the disk.**
+- **A fact the system judges by is a record it wrote, or an observation it
+  timestamped — never something inferred from the disk.** Every prior incident had
+  the shape "the verification layer certified the wrong thing".
+- **Nothing exists on paper before it exists in a repository, and nothing is
+  frozen before it has flowed once.** A part is registered when its repository
+  carries a vision and a first contract; `service.v1` is rewritten from the first
+  run that flows.
+
+Day-one installability decides the architecture: one command onto the Amplifier a
+person already has, no daemon, no database server, no terminal multiplexer, nothing
+else to bring. That is why the queue is ours, not borrowed.
 
 ---
 
-## 1. The council's advice, taken and not taken
+## 1. The council's advice — taken, except one
 
-Taken (all of it except one item):
+Taken:
 
-- **Nothing empty.** No registry row for a repository that does not exist. A part
-  earns its row by existing *as a Converge project* — a repository with a vision and a
-  first contract, even before it has a body. New status word: `seeded` (direction
-  exists, no body yet) · `wrapper` · `body` · `retired`. A row's status is read by the
-  family kit, so the word is a control, not a comment.
-- **`service.v1` is rewritten from the first run that flows**, at six teeth or fewer,
-  under a hundred lines: freeze `run` and `check`; the other records wait for the first
-  one to flow. No pushed-stream clause (the app polls, deliberately, with a measurement
-  on record). No service tick that *maintains* a liveness state — liveness is an
-  **observation with a timestamp**, made by the agent type.
-- **The merged-gate names what it does not prove.** Run ↔ manager is an edge; a
-  manager token tier exists; `merged` is a *request*, not a report; "could not check"
-  is a third answer that never collapses to false; scalars, never a free-text blob.
-- **The steward's five writes have homes before any path is called a defect.**
-- **One owner of custody.** Whatever is behind the queue seam owns custody; the
-  service records it read-only.
-- **The steward is not the bottleneck on seams.** Seam changes are proposals, but the
-  family manager batches them into one sheet; "at most five things ask for your word
-  at once" is per family, not per part.
-- **A success bullet has a person and a number in it.**
+- **Nothing empty.** A part earns its registry row by existing as a Converge project
+  (vision + first contract). Status `seeded` names direction-without-body honestly;
+  the family kit reads it, so it is a control, not a comment.
+- **`service.v1` at six teeth, under a hundred lines, freezing `run` and `check`
+  only**, rewritten from evidence after the first run. No pushed-stream clause; no
+  service-maintained liveness — liveness is an observation with a time, made by the
+  agent type.
+- **The merged-gate names what it does not prove.** Run ↔ manager is an edge, a
+  manager token tier exists, `merged` is a request the service may refuse, scalars
+  only, and "could not check" is an open question the first run must answer.
+- **The steward's writes have homes before any path is called a defect.**
+- **One owner of custody** — the queue part. The service records what the queue
+  says.
+- **The steward is not the bottleneck on seams** — proposals batched into one sheet.
+- **Success bullets carry a person and a number.**
 
-Not taken: **the repository split.** The steward's call, and the reason is not
-disputed by the council's own arithmetic — collapsing repos removed two of twenty
-breaks. We want the split because we will build fast and in parallel, and because
-*nested Converge projects* is itself the pattern to validate: several manager
-sessions, each knuckled down on one part, learning and iterating on the method as we
-go. The cost the council priced (five visions, five contract sets, five ratification
-queues) is met by the family manager drafting the seeds in one sitting and putting
-**one sheet** to the steward.
-
-Two collisions the split dissolves rather than creates: the picker is not "a third
-place" against v1's `experience.v1`, because vNext's app has its own experience
-contract; and v1's frozen vision needs no candidate, because vNext is a different
-product, not an amendment of v1.
+Not taken: **the repository split.** The steward's call. We build fast and in
+parallel, and *nested Converge projects* — several managers each knuckled down on one
+part — is itself the pattern to validate. The council's own arithmetic does not
+contest it (collapsing repos removed two of twenty breaks). The cost the council
+priced — several visions, contract sets and ratification queues — is met by the
+family manager launching each part's first wake and putting **one sheet** to the
+steward.
 
 ---
 
-## 2. The family
+## 2. The family — six repositories
 
-Each is a repository, a Converge project in full (vision, contracts, ledger, queue,
-its own manager session), registered in `family.toml`, bound to its neighbours only
-by the seam contracts held here.
+Each is a Converge project in full, registered in `family.toml` once it carries a
+vision and a first contract, bound to its neighbours only by the seam contracts held
+here. Private under `bkrabach/` today; moved together once proven.
 
-| Part | Repository | Owns | Starts as |
-|---|---|---|---|
-| **amplifier-converge** (this) | `microsoft/amplifier-converge` | family vision, seam contracts, registry, the ledger that reads the seams, the family's manager | body |
-| **service** | `microsoft/amplifier-converge-service` | the control plane: records (`run`, `check` first; then `project`, `session`, `claim`, `call`), one HTTP API, an event log, a single SQLite file under `<workspace>/.converge/<project>/service/`, endpoint docs **generated from the router**, refusals | seeded → body |
-| **app** | `microsoft/amplifier-converge-app` | the experience: create a project · attach repositories · onboard them (the first wake, driven from the screen) · Home · Direction · Operation · Review · the four calls · the steward's writes · the family picker · BYO agent choice. Reads only the service | seeded → body |
-| **agents** | `microsoft/amplifier-converge-agents` | agent types and **session management**: the adapter contract, the wake contract, the `amplifier` type built in (launch, resume, observe an Amplifier session without tmux), `process` and `http` always, then Claude Code · Codex · Cursor · Gemini as thin adapters | seeded → body |
-| **queue** | `microsoft/amplifier-converge-queue` | the work queue with custody, trim and bespoke; one owner of custody | wrapper over `amplifier-work-tracker` → body |
-| **method** | `microsoft/amplifier-bundle-converge` (v1) | the law: `documents.v1`, `operation.v1`, the ledger format, the kits, the manager mode, the templates | body (v1, unchanged) |
+| Part | Repository | Owns |
+|---|---|---|
+| **top level** | `amplifier-converge` | family vision, seams, registry, the ledger that reads the seams, the family manager |
+| **method** | `amplifier-converge-method` | the law, trim: how documents work (draft → ratified → locked; proposals beside locked files), how a manager operates (derived work, lanes, verification, the four calls, the first wake), the ledger format and the verdict words, the kits, the templates, the manager mode and the wake skill |
+| **service** | `amplifier-converge-service` | the control plane: `run` and `check` first; one HTTP API; one SQLite file under `<workspace>/.converge/<part-id>/service/`; endpoint docs generated from the router; refusals |
+| **app** | `amplifier-converge-app` | the experience: create a project · attach repositories · onboard them from the screen · the picker · direction · operation · runs live · the four calls · the steward's writes · BYO agent choice · "test this environment". Reads only the service |
+| **agents** | `amplifier-converge-agents` | agent types and session management: the adapter contract, the wake contract, `amplifier` built in (launch, resume, observe — no terminal multiplexer), `process` and `http` always, then Claude Code · Codex · GitHub Copilot as thin adapters; later Pi, OpenCode, others |
+| **queue** | `amplifier-converge-queue` | the work queue with custody, bespoke: items naming a contract, atomic claim, one custody owner with renewal and reclaim, discovered-work links, plain-word states. Embedded (no server); learned from prior queue designs, owing them nothing |
 
-The council was right that **service and agents are one lifecycle**. Splitting them
-before it is written is a risk we take knowingly; the mitigation is a seam contract
-between them — `agent-types.v1`, drafted now, not later — and the rule that the
-run's lifecycle transitions are the service's records while the run's *process* is
-the agent type's business.
+The council was right that **service and agents are one lifecycle**. We split them
+knowingly; the mitigation is `agent-types.v1` drafted *now* as the seam between them,
+and the rule that a run's transitions are the service's records while a run's
+process is the agent type's business.
 
 ---
 
 ## 3. The seams (top-level contracts)
 
-1. **`family.v1`** — how parts compose (drafted; to be corrected: `seeded` status;
-   rows only for existing repositories; `<part-id>` everywhere; the method part named
-   as v1; the tracker removed as a "part" and re-entered as what stands behind the
-   queue seam).
-2. **`service.v1`** — one API is the truth (drafted at eleven teeth; **to be rewritten
-   at ≤6 after the first run record flows**, per the council).
+1. **`family.v1`** — how parts compose (drafted).
+2. **`service.v1`** — one API is the truth; two records frozen (drafted; rewritten
+   from evidence after the first run).
 3. **`agent-types.v1`** — the adapter contract (`type · execute(ctx) → onLog/onEvent/
-   onEnd · testEnvironment()`), the wake contract (identity in env: run id, project,
-   role, API URL, scoped token; one rendered prompt; the `converge` skill), liveness as
-   an observation the type makes, and the rule that a type never writes a record the
-   service did not ask for. **Not yet drafted — the seam the synthesis called for.**
-4. **`experience.v1` (vNext)** — the app's own contract, in the app repository, not
-   here; the family only names that it exists and what the picker must show.
+   onEnd · testEnvironment()`), the wake contract (identity in env — run id, project,
+   role, API URL, scoped token; one rendered prompt; the `converge` skill), liveness
+   as an observation the type makes, and the rule that a type never writes a record
+   the service did not ask for. **To draft in Phase 0.**
+4. **`queue.v1`** — the seam the service fronts: items, claim, custody, resolve,
+   file. **To draft in Phase 0.**
+
+Each part's own contracts (the app's experience, the method's documents and
+operation) live in the part's repository; the family names only that they exist.
 
 ---
 
-## 4. The experience vNext must have that v1 never did
+## 4. The experience this must have
 
-- **Create a project.** Name → workspace root (created) → vision drafted from the
-  template on the screen → choose the manager's agent type → go. The first wake's
-  *starting* path, from the UI.
+- **Create a project.** Name → workspace root created → vision drafted from the
+  template on the screen → the manager's agent type chosen → go. The first wake's
+  starting path, from the UI.
 - **Attach existing repositories.** Path or URL → the app reads them: already a
-  Converge project (has `docs/VISION.md` + `contracts/`) → registered; not yet →
-  **onboarding**.
-- **Onboard a repository** (the *adopting* path, from the UI): pause the work in
-  flight and say so; investigate — the four answers appear as sentences the steward
-  can hold against what they know; drafts appear as documents to react to; the word
-  is given in the app; the ledger is seeded and the alignment items filed; each step
-  visible, none skipped, none silent.
-- **The family, visible.** The picker lists the family's parts *and the steward's own
-  projects*; each opens to its own Direction and Operation; a manager on any part
-  appears within a minute of waking.
-- **Bring your own agent, from the screen.** Choose the manager's type and the default
-  worker type per project; "test this environment" before the first run.
-- **Runs, live.** Lanes as records with their three endings; a `kill -9` yields
-  "Silent — may have died" *and* an observation row with a time; merged only on a
+  Converge project → registered; not yet → **onboarding**.
+- **Onboard a repository** (the adopting path, from the UI): pause the work in flight
+  and say so; investigate — the four answers appear as sentences the steward can hold
+  against what they know; drafts appear as documents to react to; the word is given
+  in the app; the ledger is seeded and alignment items filed; each step visible,
+  none skipped, none silent.
+- **The family and your own projects, visible.** The picker lists both; each opens to
+  its own direction and operation; a manager on any part appears within a minute of
+  waking.
+- **Bring your own agent, from the screen.** Choose the manager's type and the
+  default worker type per project; "test this environment" before the first run.
+- **Runs, live.** Lanes as records with their three endings; a killed lane yields
+  *Silent — may have died* and an observation row with a time; merged only on a
   check the manager made.
-
-Everything v1's experience taught — two places, plain words, the four calls, the
-return brief, presence, offline read, restore — is carried into vNext's experience
-contract by the app's own manager, not re-derived here.
 
 ---
 
 ## 5. Phases (each a wave; each with a measured bar)
 
-**Phase 0 — seed the family (this week).**
-Correct `family.v1` and `family.toml` to the council's lift conditions (no row without
-a repository; `seeded`; one id form). Draft `agent-types.v1`. Create the four
-repositories and seed each with its first wake: `docs/VISION.md` (DRAFT) · one first
-contract (DRAFT) · the participant kit from v1's templates · `AGENTS.md` naming the
-family and the seam it builds against. Register each in `family.toml`. Write the
-family kit (the first reader of `family.toml`). **One sheet to the steward:** the
-family vision, three seams, four part-visions, four first contracts. **Bar:** the
-family kit green on five real rows; v1's documents kit green on every seeded repo.
+**Phase 0 — seed the family (days).** Draft `agent-types.v1` and `queue.v1` here.
+Create the five part repositories (private). The family manager launches **five part
+manager sessions**, each performing its own first wake on a blank repository — the
+nested pattern, exercised on day one — and each parking on the steward's word with a
+DRAFT vision and one first contract. Register each in `family.toml` as `seeded`.
+Write the family kit (the first reader of `family.toml`). **One sheet to the
+steward.** *Bar:* the family kit green on six real rows; every part's documents pass
+the method's kit.
 
-**Phase 1 — one run record flows (the pipe).**
-Service: `run` + `check` records, SQLite, the API for them, the merged-gate refusal.
-Agents: the `amplifier` type launches one Amplifier session as a lane, reports start,
-liveness observations and its ending. App: Home shows that run live. **Bar — the
-council's three break-tests, pasted:** `POST /runs` without a liveness handle is
-refused (400); `kill -9` yields *Silent — may have died* plus an observation row; an
-empty branch + `command:"true"` + `merged` is **refused with the reason**. Then
-`service.v1` is rewritten from what this taught, ≤6 teeth, kit green.
+**Phase 1 — one run record flows.** Service: `run` + `check`, SQLite, the API, the
+merged-gate refusal. Agents: the `amplifier` type launches one session as a lane,
+reports start, liveness observations and its ending. App: the run shows live.
+*Bar — the council's three break-tests, pasted:* `POST /runs` without a liveness
+handle refused; a killed lane yields *Silent — may have died* plus an observation
+row; an empty branch + `command:"true"` + `merged` **refused with the reason**. Then
+`service.v1` rewritten from what this taught.
 
-**Phase 2 — the manager through the service.**
-The family's own manager (Amplifier, converge-manager mode) launches its lanes through
-the service; the queue wrapper fronts the tracker with one custody owner; calls and
-the steward's writes become records; the plan record, the call stamp and the check
-record are records the app renders. **Bar:** this family's next wave runs with no
-shell script, no `manifest.tsv`, no marker file — every fact v1 hand-rolled is a row.
+**Phase 2 — the managers through the service.** The family's managers launch lanes
+through the service; the queue is the bespoke one; calls and the steward's writes
+become records; plan record, call stamp and check record are records the app
+renders. *Bar:* a full wave on this family with no shell script, no manifest, no
+marker file — every fact the practice hand-rolled is a row.
 
-**Phase 3 — the experience.**
-Create · attach · onboard from the screen; the picker; BYO manager from the screen;
-the usual-suspect adapters. **Bar:** v1's adopter harness, ported — a fresh container,
-an AI user who has read only the README, both first-wake paths green — plus a third
-scenario: *attach and onboard an existing repository from the app*.
+**Phase 3 — the experience.** Create · attach · onboard from the screen; the picker;
+BYO manager from the screen; Claude Code, Codex, GitHub Copilot adapters. *Bar:* an
+adopter harness — a fresh isolated host, an AI user who has read only the README —
+green on: new project, attach and onboard an existing repository, both from the app.
 
-**Phase 4 — bodies replace wrappers.**
-The bespoke queue replaces the tracker behind its seam; budgets arrive as a gate;
-v1's app is retired when vNext passes v1's adopter bar and v1's experience contracts
-read the same against vNext. **Bar:** every swap leaves every top-level ledger row
-reading the same before and after.
-
-Throughout: **v1 keeps running.** The steward opens v1's app on Monday; there is no
-transit window in which nothing works.
+**Phase 4 — day one for others.** One install command proven on a machine that has
+never seen this; budgets as a gate; repositories moved to their public home.
 
 ---
 
-## 6. How we know it is working (with a person and a number)
+## 6. How we know it is working (a person and a number)
 
 - A steward creates a project, attaches a repository that has never seen Converge,
-  and reaches a ratified vision and a seeded ledger **in under an hour without opening
-  a terminal**.
-- Five manager sessions run five parts at once; **zero** shared files, queue items or
-  calls between them (the family kit reads this).
-- A run's three endings are the only endings observed across a wave; **zero** runs
-  marked merged without a manager's check (the service refuses; the ledger counts).
-- The steward's hours-to-notice for a stalled lane, measured in v1's report card,
-  falls from *hours* to **under fifteen minutes**, because an observation row is
-  written and shown, not inferred.
-- One install command still composes the whole family onto the Amplifier a person
-  already has (v1's `composition.v1` Core 5, kept).
+  and reaches a ratified vision and a seeded ledger **in under an hour without
+  opening a terminal**.
+- Five manager sessions run five parts at once with **zero** shared files, queue
+  items or calls (the family kit reads this).
+- **Zero** runs marked merged without a manager's check across a wave (the service
+  refuses; the ledger counts).
+- A stalled lane is visible to the steward within **fifteen minutes** — an
+  observation row written and shown, not inferred.
+- One install command composes the whole experience onto a fresh machine in
+  **under five minutes**, nothing else to bring.
 
 ---
 
 ## 7. Decisions for the steward (this sheet)
 
-1. **Names.** vNext takes the product name *Amplifier Converge*; v1 is referred to as
-   *Converge v1 — the method bundle* in vNext's documents (v1's own files unchanged).
-   *Word: yes / other.*
-2. **The status word `seeded`** for a part with direction and no body (the council's
-   `planned` dispute, resolved by making the row real). *Word: yes / delete rows.*
-3. **Service and agents as two repositories**, with `agent-types.v1` as the seam
-   between them, taking the council's one-lifecycle risk knowingly. *Word: yes / one.*
-4. **Seed all four repositories this week and receive one ratification sheet**
-   (family vision + three seams + four part-visions + four first contracts).
-   *Word: go / fewer.*
-5. **First agent types after `amplifier`, `process`, `http`:** Claude Code, Codex,
-   Cursor, Gemini — in that order? *Word: order / other.*
+1. **Six parts including `method`** as its own repository (the law must have a home
+   of its own; it is what every manager runs on). *Word: yes / fold into top level.*
+2. **Service and agents as two repositories** with `agent-types.v1` between them —
+   the one-lifecycle risk, taken knowingly. *Word: yes / one.*
+3. **Phase 0 mechanism:** the family manager launches five part-manager sessions to
+   perform their own first wakes in parallel, and you receive one sheet. *Word: go /
+   fewer / I draft them myself.*
+4. **The `amplifier` agent type's session mechanism** — the agents part decides, but
+   the constraint is set here: no terminal multiplexer required. *Word: agreed.*

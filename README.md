@@ -1,17 +1,17 @@
 # Amplifier Converge
 
-The top-level project of the Converge family: the app a person opens to run
-vision-first, contract-driven work with a team of agents, and the harness that runs
-them — made of several small Converge projects held together by contracts at their
-seams. This repository holds the family's vision, the seam contracts, the registry
-of parts (`family.toml`) and the ledger that reads the seams. It holds no part's
-internals (contracts/family.v1.md Core 1).
+The app a person opens to get work done the Converge way — vision first, contracts as
+the law, work derived from the gap between the two — with a team of agents doing the
+work. One experience made of several small Converge projects, held together by
+contracts at their seams.
 
-- `docs/VISION.md` — where this is going (DRAFT — awaiting the steward's word)
+This repository is the top level. It holds the family's vision, the seam contracts,
+the registry of parts (`family.toml`) and, once seeded, the ledger that reads the
+seams. It holds no part's internals.
+
+- `docs/VISION.md` — where this is going (DRAFT)
 - `contracts/family.v1.md` — how the parts compose (DRAFT)
 - `contracts/service.v1.md` — one API is the truth (DRAFT)
-- `family.toml` — the five parts and their status (wrapper · body · retired)
+- `family.toml` — the parts and their status (`seeded` · `body` · `retired`)
+- `docs/PLAN-vNext-2026-09-06.md` — the plan under discussion
 - `docs/workflow/` — the manager session's records for this project
-
-The method these documents follow is published by the `converge-method` part:
-https://github.com/microsoft/amplifier-bundle-converge
