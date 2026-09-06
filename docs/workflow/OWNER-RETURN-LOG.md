@@ -12,3 +12,10 @@
 **Stuck.** Nothing is stuck; five sessions are working.
 **Needs you.** The terminal question is a discussion, not a call: the agents part's first contract will answer it as a promise — attach and survive — and I have put your words to that part's manager verbatim; the sheet with all five parts' drafts follows when the fifth parks.
 **Anything quietly broken.** Nothing broken; note that these part managers are launched by hand on a terminal socket the family manager named, which is exactly the kind of fact the service will own once it exists.
+
+## 2026-09-06 - all five parts parked; the sheet is ready
+**Time away.** Forty minutes since the terminal discussion; Phase 0's drafting wave ran in it.
+**Finished.** All five part-manager sessions performed their first wakes on blank repositories and parked with a DRAFT vision and one DRAFT first contract each, which I verified by git facts — pushed to origin/main, clean trees, both headings DRAFT, the call stamped in each first-wake record, a first brief in each return log, and a search for forbidden names empty in every repository — and the five parts are registered as seeded in the family registry.
+**Stuck.** Nothing is stuck; nothing is running.
+**Needs you.** Six words on the sheet — one for the family's documents together and one for each part's pair — after which the ratified parts seed their ledgers and derive their first work.
+**Anything quietly broken.** Nothing broken; one reading hazard noted on the sheet — the agents part's first contract shares a filename with the family's agent-types seam.
