@@ -2,8 +2,11 @@
 
 The app a person opens to get work done the Converge way — vision first, contracts as
 the law, work derived from the gap between the two — with a team of agents doing the
-work. One experience made of several small Converge projects, held together by
-contracts at their seams.
+work. One instance on a person's machine, installed on its own and depending on
+nothing else, that creates workspaces, clones repositories, launches and supervises
+manager sessions, and puts every call a person must make on one screen. One
+experience made of several small Converge projects, held together by contracts at
+their seams; bring your own agent.
 
 This repository is the top level. It holds the family's vision, the seam contracts,
 the registry of parts (`family.toml`) and, once seeded, the ledger that reads the

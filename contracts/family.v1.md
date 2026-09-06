@@ -42,10 +42,11 @@ no two managers work the same day without colliding.
    word from the steward; the swap is the part's own work, judged by the part's own
    contracts.
 
-6. **Two managers never share state.** Each part's operating state lives at
-   `<workspace>/.converge/<part-id>/`; queues, plan records, lanes and calls are per
-   part. A call about a seam goes to the top-level manager; a call about a part's
-   insides goes to that part's manager.
+6. **Two managers never share state.** The instance keeps every project's state
+   under its own data directory by project id — workspace, queue, plan record,
+   lanes, calls — and no two projects share a path; a repository's working copy
+   receives only the project's own documents. A call about a seam goes to the
+   top-level manager; a call about a part's insides goes to that part's manager.
 
 7. **Seam changes are proposals, batched.** A part proposes a seam change as
    `<contract>.vN-candidate.md` beside the seam contract here; the top-level manager
@@ -68,8 +69,8 @@ no two managers work the same day without colliding.
 
 ## What v1 deliberately does NOT freeze
 
-- **Where a part is hosted** — promoted when two parts disagree on how to reach a
-  third. (Today: private repositories under one account; moved together later.)
+- **Where a part is hosted** (today: private, one account) — promoted when two
+  parts disagree on how to reach a third.
 - **Whether the top level pins each part's commit** or reads its default branch —
   promoted the first time "it worked yesterday" cannot be reproduced.
 - **Whether the top-level ledger reads a part's ledger** — promoted when a seam
@@ -88,7 +89,9 @@ no two managers work the same day without colliding.
   claims.
 - The app's project picker, read live, lists exactly the parts in `family.toml`
   plus the steward's own projects — no more, no fewer.
-- No two parts' `.converge/<part-id>/` directories share a path.
+- No two projects' state directories under the instance's data directory share a
+  path, and no part writes anything into a repository's working copy but the
+  project's own documents.
 
 ## Reserved / open questions (NOT frozen)
 

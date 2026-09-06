@@ -19,3 +19,5 @@
 **Stuck.** Nothing is stuck; nothing is running.
 **Needs you.** Six words on the sheet — one for the family's documents together and one for each part's pair — after which the ratified parts seed their ledgers and derive their first work.
 **Anything quietly broken.** Nothing broken; one reading hazard noted on the sheet — the agents part's first contract shares a filename with the family's agent-types seam.
+
+## 2026-09-06 18:14 - they read the vision and corrected two things: no dependency on any installed Amplifier; one running instance that owns workspaces, repos and managers

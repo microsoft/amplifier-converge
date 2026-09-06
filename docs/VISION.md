@@ -38,9 +38,12 @@ Copilot following as thin adapters. A manager can be any agent type; so can any
 worker. The method does not depend on which agent runs it, because the method is in
 the contracts and the service enforces what a contract can enforce.
 
-The whole thing installs with one command onto the Amplifier a person already has,
-needs no daemon, no database server and no terminal multiplexer, and keeps every
-project's operating state under that project's own workspace.
+Amplifier Converge is **one instance on a person's machine**: installed by itself,
+depending on nothing else, running as one local service with a browser in front of
+it. That instance creates workspaces, clones repositories, launches and supervises
+manager sessions, and keeps every record in a data directory it owns. A person
+never opens a terminal for any of it — unless they want to attach to a live session,
+which the instance lets them do.
 
 The through-line: the vision and contracts of each project are the one text both
 people and machines obey, and the top-level project's contracts are the seams
@@ -82,9 +85,13 @@ moving.
    priority or stop. Everything else keeps moving, and what reaches them is written
    for a person who has never opened a code editor.
 
-7. **Nothing is installed twice and nothing lands outside the project.** One command;
-   no daemon a person must run; every project's operating state under that
-   project's own workspace; a control plane that sits lightly on the host.
+7. **One install, one instance, nothing else required.** Amplifier Converge installs
+   on its own and runs as one instance per machine; it depends on no other product,
+   and Amplifier is one agent type among several, shipped ready to configure and
+   never required. The instance owns one data directory and every project's state
+   under it by project id; a repository's working copy receives only the project's
+   own documents. A person does the whole of setup, onboarding and operation from
+   the screen.
 
 8. **Endpoints are read from the router, never from prose.** What an agent is told it
    may call is generated from what the service actually serves, and a check fails
@@ -108,8 +115,10 @@ moving.
   one.
 - **Not a scheduler that re-spawns agents on a tick** — the service observes runs;
   the agent type decides how a run lives.
-- **Not cloud-first** — a run happens on the host, or in an isolated twin of it,
-  before any remote sandbox is an agent type.
+- **Not cloud-first** — a run happens on the person's machine, or in an isolated
+  twin of it, before any remote sandbox is an agent type.
+- **Not an add-on to another tool** — nothing has to be installed first, and no
+  agent type is required; a person who never configures Amplifier loses nothing.
 - **Not a general tracker, terminal dashboard or memory store** — each part is
   bespoke to this experience and may borrow ideas from anything, but owes nothing to
   another product's users.
@@ -129,6 +138,9 @@ moving.
   runs are marked merged without the manager's check on record; the service refuses.
 - A stalled lane is visible to the steward within **fifteen minutes** because an
   observation was written and shown, not inferred.
+- A person installs on a machine that has nothing else on it and reaches a running
+  instance with the browser open in **under five minutes**, having typed one command
+  or run one installer.
 
 ---
 
@@ -139,4 +151,7 @@ moving.
   parallel; the top level holds vision and seams and is aware of the parts, visible
   in the app; bespoke and trim, installable on day one with nothing else to bring;
   bring your own agent with Amplifier built in, Claude Code, Codex and GitHub
-  Copilot next.
+  Copilot next. Corrected the same day on the steward's reading: installs on its
+  own with no dependency on any other product; one running instance per machine
+  that creates workspaces, clones repositories and launches managers from the
+  screen.

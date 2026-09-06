@@ -21,8 +21,9 @@ leaves the rest open on purpose; it is rewritten from evidence after the first r
 
 ## Core (the teeth)
 
-1. **One API, spoken by all.** The app, the CLI, the skill handed to agents and every
-   manager and worker session use the same HTTP API. A write that reaches a record
+1. **One API, spoken by all, from one instance.** The service runs as part of the one
+   Amplifier Converge instance on a machine; the app, the CLI, the skill handed to
+   agents and every manager and worker session use the same HTTP API. A write that reaches a record
    by any other path is a defect.
 
 2. **The record is the truth; output is telemetry.** What an agent prints or leaves
@@ -74,8 +75,9 @@ leaves the rest open on purpose; it is rewritten from evidence after the first r
 - A write with a configured or absent token is refused; a worker token writing
   `check` is refused.
 - A `POST` creating a run without a liveness handle is refused.
-- The store sits under `<workspace>/.converge/<part-id>/service/`; nothing of the
-  service is written under the home directory.
+- The store is one file in the instance's data directory holding every project,
+  scoped by project id; nothing of the service is written into a repository's
+  working copy.
 
 ## Reserved / open questions (NOT frozen)
 

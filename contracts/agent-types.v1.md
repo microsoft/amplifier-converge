@@ -38,15 +38,18 @@ the person disconnecting.
    died" means is derived by the reader from the age of the last observation.
 
 5. **A person can attach, and a session survives.** Every type that runs in a
-   terminal names the mechanism by which a person attaches to the live session and
-   by which the session outlives the service's restart and the person's disconnect;
-   `testEnvironment()` checks that mechanism and names what to install when it is
-   absent. A type that cannot promise both says so in its listing, in plain words,
+   terminal names the mechanism by which a person attaches to the live session —
+   from the app, and from a terminal if they choose — and by which the session
+   outlives the instance's restart and the person's disconnect; `testEnvironment()`
+   checks that mechanism and the instance installs what is missing when it can,
+   naming what it could not. A type that cannot promise both says so in its listing, in plain words,
    and is still a valid type.
 
-6. **`amplifier`, `process` and `http` always exist.** `amplifier` is the type this
-   family ships first and runs its own managers on; `process` runs any command;
-   `http` calls any endpoint. Claude Code, Codex and GitHub Copilot follow as thin
+6. **`process` and `http` always exist; every other type is optional.** `process`
+   runs any command and `http` calls any endpoint, and neither needs anything
+   installed. `amplifier` ships ready to configure and is the type this family's own
+   managers run on by choice, never by requirement: a person who configures no
+   agent type but Claude Code loses nothing. Claude Code, Codex and GitHub Copilot follow as thin
    types over their command lines; later types arrive by the agents part's own
    process, never by a change here.
 

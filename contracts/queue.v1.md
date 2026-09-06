@@ -42,9 +42,10 @@ app never reach past it into how it stores anything.
    Stuck · Done*, derived by the queue from custody and dependencies; a machine
    word never reaches a surface a person reads.
 
-8. **Embedded, one file per project.** The queue is a library with a store at
-   `<workspace>/.converge/<part-id>/queue/`; there is no server a person must run
-   and nothing under the home directory.
+8. **Embedded in the instance, one store per project.** The queue is a library the
+   instance runs, with each project's store under the instance's data directory by
+   project id; there is no second server and nothing written into a repository's
+   working copy.
 
 ## What v1 deliberately does NOT freeze
 
@@ -62,8 +63,8 @@ app never reach past it into how it stores anything.
 - A write after custody lapsed is refused; the lapse is visible on the item.
 - An item filed without a contract line is refused with the reason in plain words.
 - No surface the app renders carries a machine state word from the queue.
-- The queue's store sits under `<workspace>/.converge/<part-id>/queue/` and nothing
-  is written under the home directory.
+- Each project's queue store sits under the instance's data directory by project id
+  and nothing of the queue is written into a repository's working copy.
 
 ## Reserved / open questions (NOT frozen)
 

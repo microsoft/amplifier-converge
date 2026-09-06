@@ -26,9 +26,14 @@ Two rules follow from the practice that preceded this and from the council:
   carries a vision and a first contract; `service.v1` is rewritten from the first
   run that flows.
 
-Day-one installability decides the architecture: one command onto the Amplifier a
-person already has, no daemon, no database server, no terminal multiplexer, nothing
-else to bring. That is why the queue is ours, not borrowed.
+Day-one installability decides the architecture: **Amplifier Converge installs on
+its own and runs as one instance on a person's machine** — one local service with a
+browser in front of it — depending on no other product. It creates workspaces,
+clones repositories, launches and supervises manager sessions, and keeps every
+record in a data directory it owns; a person never opens a terminal for any of it.
+Amplifier is one agent type among several, shipped ready to configure and never
+required. That is why the queue is ours, not borrowed, and why the instance — not
+a person's shell — is where sessions live.
 
 ---
 
@@ -72,10 +77,10 @@ here. Private under `bkrabach/` today; moved together once proven.
 |---|---|---|
 | **top level** | `amplifier-converge` | family vision, seams, registry, the ledger that reads the seams, the family manager |
 | **method** | `amplifier-converge-method` | the law, trim: how documents work (draft → ratified → locked; proposals beside locked files), how a manager operates (derived work, lanes, verification, the four calls, the first wake), the ledger format and the verdict words, the kits, the templates, the manager mode and the wake skill |
-| **service** | `amplifier-converge-service` | the control plane: `run` and `check` first; one HTTP API; one SQLite file under `<workspace>/.converge/<part-id>/service/`; endpoint docs generated from the router; refusals |
+| **service** | `amplifier-converge-service` | the control plane inside the instance: `run` and `check` first; one HTTP API; one store in the instance's data directory scoped by project; endpoint docs generated from the router; refusals |
 | **app** | `amplifier-converge-app` | the experience: create a project · attach repositories · onboard them from the screen · the picker · direction · operation · runs live · the four calls · the steward's writes · BYO agent choice · "test this environment". Reads only the service |
-| **agents** | `amplifier-converge-agents` | agent types and session management: the adapter contract, the wake contract, `amplifier` built in (launch, resume, observe — no terminal multiplexer), `process` and `http` always, then Claude Code · Codex · GitHub Copilot as thin adapters; later Pi, OpenCode, others |
-| **queue** | `amplifier-converge-queue` | the work queue with custody, bespoke: items naming a contract, atomic claim, one custody owner with renewal and reclaim, discovered-work links, plain-word states. Embedded (no server); learned from prior queue designs, owing them nothing |
+| **agents** | `amplifier-converge-agents` | agent types and session management: the adapter contract, the wake contract, attach-and-survive (a person attaches from the app or a terminal; a session outlives the instance's restart), `process` and `http` always, `amplifier` ready to configure and never required, Claude Code · Codex · GitHub Copilot as thin adapters; later Pi, OpenCode, others |
+| **queue** | `amplifier-converge-queue` | the work queue with custody, bespoke: items naming a contract, atomic claim, one custody owner with renewal and reclaim, discovered-work links, plain-word states. Embedded in the instance, one store per project; learned from prior queue designs, owing them nothing |
 
 The council was right that **service and agents are one lifecycle**. We split them
 knowingly; the mitigation is `agent-types.v1` drafted *now* as the seam between them,
@@ -104,11 +109,15 @@ operation) live in the part's repository; the family names only that they exist.
 
 ## 4. The experience this must have
 
-- **Create a project.** Name → workspace root created → vision drafted from the
-  template on the screen → the manager's agent type chosen → go. The first wake's
-  starting path, from the UI.
-- **Attach existing repositories.** Path or URL → the app reads them: already a
-  Converge project → registered; not yet → **onboarding**.
+- **Install and first run.** One command or one installer on a machine with nothing
+  else on it; the instance starts, the browser opens, the person is asked only what
+  the instance cannot know (where to keep its data; which agent types to configure
+  now, if any).
+- **Create a project.** Name → the instance creates the workspace → vision drafted
+  from the template on the screen → the manager's agent type chosen → go. The first
+  wake's starting path, from the UI.
+- **Attach existing repositories.** A URL or a path → the instance clones or
+  registers it: already a Converge project → registered; not yet → **onboarding**.
 - **Onboard a repository** (the adopting path, from the UI): pause the work in flight
   and say so; investigate — the four answers appear as sentences the steward can hold
   against what they know; drafts appear as documents to react to; the word is given
@@ -155,8 +164,10 @@ BYO manager from the screen; Claude Code, Codex, GitHub Copilot adapters. *Bar:*
 adopter harness — a fresh isolated host, an AI user who has read only the README —
 green on: new project, attach and onboard an existing repository, both from the app.
 
-**Phase 4 — day one for others.** One install command proven on a machine that has
-never seen this; budgets as a gate; repositories moved to their public home.
+**Phase 4 — day one for others.** Install proven on a machine that has nothing else on
+it — no Amplifier, no other agent — through to a running instance with a project
+created and a repository onboarded from the browser; budgets as a gate;
+repositories moved to their public home.
 
 ---
 
@@ -171,8 +182,9 @@ never seen this; budgets as a gate; repositories moved to their public home.
   refuses; the ledger counts).
 - A stalled lane is visible to the steward within **fifteen minutes** — an
   observation row written and shown, not inferred.
-- One install command composes the whole experience onto a fresh machine in
-  **under five minutes**, nothing else to bring.
+- A person installs on a machine with nothing else on it and reaches a running
+  instance with the browser open in **under five minutes**, one command or one
+  installer, no other product required.
 
 ---
 
@@ -185,5 +197,6 @@ never seen this; budgets as a gate; repositories moved to their public home.
 3. **Phase 0 mechanism:** the family manager launches five part-manager sessions to
    perform their own first wakes in parallel, and you receive one sheet. *Word: go /
    fewer / I draft them myself.*
-4. **The `amplifier` agent type's session mechanism** — the agents part decides, but
-   the constraint is set here: no terminal multiplexer required. *Word: agreed.*
+4. **Sessions live in the instance**, attachable from the app and from a terminal,
+   surviving the instance's restart; the agents part names the mechanism and the
+   instance installs it. *Answered 2026-09-06 in discussion.*
