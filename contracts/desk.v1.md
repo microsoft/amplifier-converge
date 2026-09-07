@@ -1,82 +1,88 @@
 # Desk Contract — v1 (DRAFT)
 
-**Who builds against this:** the app (this is the seam its Direction and Operation are
-built on); the service (it serves every record named here); every manager session
-(its briefs, proposals and evidence are read through it); the method part (its
-documents are what is served, and its paragraph anchors are what questions pin to).
+What the service serves so a steward's desk can be built without the app reading a disk,
+a repository or an agent's output. Read by the app, the service, and every manager session.
 
-## Purpose
+## Who builds against this
 
-The browser is not where the AI does its work; it is where a person exercises intent.
-This seam names what the service serves so that a steward's desk can be built without
-the app reading a disk, a repository or an agent's output — documents as a living
-agreement, proposals as objects, evidence as content, feedback with no form to fill,
-and the four writes a person may make unprompted. It exists because `service.v1`
-freezes two records and the desk needs these to be records too.
+**The app** builds its Direction and Operation on it. **The service** serves every record
+named here. **Manager sessions** are read through it — briefs, proposals, evidence.
+**The method part's** documents are what is served.
 
-## Core (the teeth)
+## What it is
 
-1. **Documents are served, not read.** The service serves every document under a
-   project's `docs/` and `contracts/` — body, state word, history (each commit and
-   what it changed), and open proposals beside it — from the working copy it owns;
-   the app renders and never opens a file. A change on disk reaches the reader
-   without a refresh within ten seconds.
+The browser is where a person exercises intent, not where the AI works. These are the
+records that make that possible:
 
-2. **Every paragraph has a stable anchor.** A served document carries an anchor per
-   paragraph and clause that survives edits elsewhere in the file; a question, a
-   comment or a piece of evidence pins to an anchor, never to a line number.
+```
+document   path · body · state_word · history[] (commit, what changed) · proposals[]
+           paragraphs[] { anchor, text }             # anchor survives edits elsewhere
 
-3. **A proposal is an object with one shape.** *What changes → Why → Evidence → What
-   does not change → Questions → Decision* — served in that order whoever wrote it,
-   with the fenced before/after pairs rendered as a diff, and a decision answerable
-   in one word beside it.
+proposal   target · what_changes · why · evidence · what_does_not_change
+           questions[] · decision (ratified | ratified with edits | declined | later)
 
-4. **Exactly four writes, and the app asks which.** A steward may *answer* a call,
-   *prioritize* an item or a lane (earlier, later, stop), *feedback* on anything (a
-   sentence, a screenshot, a voice clip, pinned to an anchor or a run), or *steer*
-   (an objective, a budget, a lane count). Every write is one of the four and is
-   recorded as such; there is no fifth and no "create issue".
+write      kind: answer | prioritize | feedback | steer      # exactly four
+           target (call | item | run | anchor) · body · artifact_ids[]
 
-5. **Evidence is content.** A check's output, a screenshot, a diff, a log excerpt or a
-   recording is served as a first-class thing a person reads, stored as an artifact
-   in the instance's data directory by content hash and referenced from a record by
-   id — project truth, never an opaque attachment.
+artifact   id (content hash) · kind (screenshot | audio | log | diff | output) · bytes
+attention  [ up to 5 calls, each with recommendation + ≤2 trade-offs ], re-ranked per read
+cursor     person · project · last_read_at      → "since you last read": documents, proposals, runs, calls
+```
 
-6. **At most five things ask for a word, re-ranked on every read.** The service serves
-   the steward's attention as an ordered list of at most five calls, each arriving
-   worked out — a recommendation and at most two trade-offs — and re-ranks it every
-   time the desk is read; everything else keeps moving and is shown as such.
+## The promises
 
-7. **What changed since you last read.** The service keeps a read cursor per person
-   per project and serves the difference — documents, proposals, runs, calls — since
-   the last read, so a return never begins with a search.
+1. **Documents are served, not read.** Every file under `docs/` and `contracts/` — body,
+   state word, history, open proposals — from the working copy the instance owns. The app
+   opens no file. A change on disk reaches the reader within ten seconds.
 
-8. **Evidence over claims, details folded.** Every sentence on the desk that asserts
-   a fact carries the evidence behind it one fold away; a run's state shows what is
-   running against what was intended, and a claim with no evidence reads as a claim.
+2. **Every paragraph has a stable anchor.** Questions, comments and evidence pin to an
+   anchor, never a line number, and survive edits elsewhere in the file.
 
-## What v1 deliberately does NOT freeze
+3. **A proposal has one shape, whoever wrote it.** What changes → why → evidence → what
+   does not change → questions → decision, with before/after pairs rendered as a diff and
+   a one-word decision beside it.
 
-- **A conversation with a manager session from the desk** (the console) — promoted
-  when the agents seam names the write (`agent-types.v1` candidate open).
-- **A UI copilot that edits a document beside the reader** — deferred on the
-  steward's word (transcript, "an ephemeral UI copilot… later"); promoted when asked
-  for again.
-- **Phone and desktop as different layouts** — the app's own contract owns it.
-- **Human-to-human review through a hosted forge (pull requests, comments)** —
-  promoted when a second person joins a project.
+4. **Exactly four writes.** *Answer* a call; *prioritize* an item or lane (earlier, later,
+   stop); *feedback* on anything (a sentence, a screenshot, a voice clip, pinned to an
+   anchor or a run); *steer* (objective, budget, lane count). Every write is recorded as
+   one of the four. There is no fifth and no "create issue".
 
-## Conformance kit asserts
+5. **Evidence is content.** A check's output, a screenshot, a diff, a recording — stored
+   as an artifact by content hash in the data directory and referenced by id. Project
+   truth, never an opaque attachment.
 
-- A document edited on disk is re-served, with its new state word and history entry,
-  within ten seconds; the app made no file read (measured with the app's file access
-  denied).
-- A question pinned to a paragraph survives an edit above it and still resolves.
-- A fifth kind of write is refused with a sentence.
-- The attention list never exceeds five and its order changes when a new call lands.
-- An artifact is served by id and its content hash matches.
+6. **At most five things ask for a word.** Served as an ordered list, each arriving with a
+   recommendation and at most two trade-offs, re-ranked on every read. Everything else
+   keeps moving and is shown as such.
 
-## Reserved / open questions (NOT frozen)
+7. **What changed since you last read.** A read cursor per person per project; a return
+   never begins with a search.
 
-- Whether a ratification given on the desk is itself a record (the method part's
-  `documents.v1` leaves this open; the first word given on the desk promotes it).
+8. **Evidence over claims, details folded.** Every asserted fact carries its evidence one
+   fold away; a run shows what is running against what was intended.
+
+## Not in v1
+
+- **Conversing with a manager session from the desk** — when the agents seam names the write (candidate open).
+- **A UI copilot editing beside the reader** — deferred on the steward's word; when asked for again.
+- **Phone and desktop layouts** — the app's own contract.
+- **Review through a hosted forge** (pull requests, comments) — when a second person joins a project.
+
+## How the kit checks it
+
+- Edit a document on disk with the app's file access denied → re-served with new state word and history entry within ten seconds.
+- A question pinned to a paragraph survives an edit above it.
+- A fifth kind of write → refused with a sentence.
+- The attention list never exceeds five and re-orders when a call lands.
+- An artifact served by id matches its content hash.
+
+## Open questions
+
+- Whether a ratification given on the desk is itself a record (the method's `documents.v1` leaves this open).
+
+## Changelog
+
+| Date | Change | Evidence |
+|---|---|---|
+| 2026-09-07 | v1 drafted after the steward's UX transcript was read against the app (268 requirements, 14 covered). | `ai_working/app-gap-2026-09-07.md`. |
+| 2026-09-07 | Written in the family format on the steward's word ("port it"). | `docs/FORMAT.md`. |

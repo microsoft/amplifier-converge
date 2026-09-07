@@ -1,162 +1,102 @@
 # Amplifier Converge — Vision (RATIFIED 2026-09-06)
 
-*Drafted 2026-09-06 from the steward's sentences. A proposal until the steward
-answers.*
+The end state this family converges toward, written as though already true. This page
+is never edited to record what shipped; that lives in the ledger and the queue. It
+changes by amendment first — a dated line in the changelog with the evidence — and the
+work is derived from the gap afterwards, never the other way round.
 
----
+## What Amplifier Converge is
 
-## Where this is going
-
-Amplifier Converge is the app a person opens to get work done the Converge way —
-vision first, contracts as the law, work derived from the gap between the two — with
-a team of agents doing the work and the person's attention spent only where a person
-is irreplaceable. It is one experience made of several small projects, each a
-Converge project in its own right, held together by contracts at their seams rather
-than by one repository.
-
-A person — the **intent steward** — creates a project or attaches a repository they
-already have, picks what kind of agent will manage it, and presses go. A **manager
-session** wakes, reads the project's vision and contracts (or, on a repository that
-has none yet, investigates and drafts them for the steward's word), and derives the
-work. It launches **worker sessions** in **lanes**, each a bounded piece with its own
-working copy, and each lane is a **run**: a record the app shows live — queued,
-running, ended with proof or stuck with a cause or waiting on a word, merged. The
-steward reads plain sentences, answers the four calls only a person can answer, and
-is otherwise never the bottleneck.
-
-Every actor speaks one surface. The app, a command line, the manager session and
-every worker session — whatever agent runs them — talk to **the Converge service**
-through the same API, and what the service records is the truth: a claim on a work
-item, a run's state, a call put to the steward, a check the manager re-ran. What an
-agent prints is telemetry; what it tells the service is fact.
-
-Agents are brought, not built in. An **agent type** is a small adapter — start a run
-with this identity and this wake prompt, stream what it says, report how it ended —
-and Amplifier is the one that ships first, with a bare process and an HTTP endpoint
-always available so anything can be wired in, and Claude Code, Codex and GitHub
-Copilot following as thin adapters. A manager can be any agent type; so can any
-worker. The method does not depend on which agent runs it, because the method is in
-the contracts and the service enforces what a contract can enforce.
-
-Amplifier Converge is **one instance on a person's machine**: installed by itself,
-depending on nothing else, running as one local service with a browser in front of
-it. That instance creates workspaces, clones repositories, launches and supervises
-manager sessions, and keeps every record in a data directory it owns. A person
-never opens a terminal for any of it — unless they want to attach to a live session,
-which the instance lets them do.
-
-The through-line: the vision and contracts of each project are the one text both
-people and machines obey, and the top-level project's contracts are the seams
-between the parts — so a part can be small, be replaced behind its seam, and be
-worked on by its own manager session in parallel with the others, without the whole
-moving.
-
----
+The app a person opens to get work done the Converge way: vision first, contracts as the
+law, work derived from the gap between the two, a team of agents doing the work. It runs
+as one instance on that person's machine, installed by itself with nothing else required.
+The person — the **intent steward** — creates a project or attaches a repository, picks
+which kind of agent will manage it, and presses go. A **manager session** reads the
+project's direction (or drafts it, on a repository that has none), derives the work, and
+runs it in **lanes**. Every lane is a **run** the app shows live. The steward reads plain
+sentences and answers four kinds of question, and is otherwise never the bottleneck.
 
 ## Principles
 
-1. **One experience, many projects.** Amplifier Converge is the top-level project;
-   the method, the service, the app, the agent types and the queue are sub-projects,
-   each with its own vision, contracts, ledger, queue and manager session. The top
-   level holds the seams and names its parts; it holds no part's internals.
+### 1. One experience, many projects
+Amplifier Converge is a family of small Converge projects — method, service, app,
+agents, queue — each with its own repository, vision, contracts, ledger, queue and
+manager session, held together by contracts at their seams. The top level holds the
+seams and names the parts; it holds no part's internals.
 
-2. **The API is the truth.** Anything worth knowing about a run, a claim, a call or a
-   check is a record the service holds; a file, a terminal or a log is evidence of
-   it, never the source. If two disagree, the record wins and the disagreement is a
-   defect.
+### 2. The API is the truth
+Anything worth knowing about a run, a claim, a call or a check is a record the service
+holds. A file, a terminal or a log is evidence of it, never the source. When two
+disagree, the record wins and the disagreement is a defect.
 
-3. **Bring your own agent; the method stays the law.** Any agent type can run a
-   manager or a worker. What it must do — claim, resolve, file, call, heartbeat, and
-   for a manager re-run the check — is in the wake contract and the service's gates,
-   not in the agent.
+### 3. Bring your own agent; the method stays the law
+Any agent type can run a manager or a worker. What it must do — claim, resolve, file,
+call, report liveness, and for a manager re-run the check — is in the wake contract and
+the service's refusals, not in the agent. Amplifier is one type among several, ready to
+configure and never required.
 
-4. **A run is a record, not a process.** A run has a beginning, a state, an ending in
-   exactly one of three ways — done with proof, stuck with a cause, waiting on the
-   steward — and a merge. Where its process lives is the agent type's business; when
-   it was last seen alive is an observation with a time on it, never a state
-   somebody maintains.
+### 4. A run is a record, not a process
+A run begins, ends in exactly one of three ways — done with proof, stuck with a cause,
+waiting on the steward — and merges. Where its process lives is the agent type's
+business. When it was last seen alive is a timestamp, never a state somebody maintains.
 
-5. **Trim, for one job.** Each part does exactly what this experience needs and
-   nothing another product would want of it. A queue is a queue with custody; a
-   service is six records and one API; an adapter is three functions.
+### 5. Trim, for one job
+Each part does what this experience needs and nothing another product would want of it.
+A queue is a queue with custody; a service is a few records and one API; an agent type
+is three functions.
 
-6. **The steward answers four things and reads sentences.** Ratify a change of
-   direction, allow an irreversible act, perform a check only a person can, set a
-   priority or stop. Everything else keeps moving, and what reaches them is written
-   for a person who has never opened a code editor.
+### 6. The steward answers four things and reads sentences
+Ratify a change of direction; allow an irreversible act; perform a check only a person
+can; set a priority or stop. Everything else keeps moving, and what reaches them is
+written for a person who has never opened a code editor.
 
-7. **One install, one instance, nothing else required.** Amplifier Converge installs
-   on its own and runs as one instance per machine; it depends on no other product,
-   and Amplifier is one agent type among several, shipped ready to configure and
-   never required. The instance owns one data directory and every project's state
-   under it by project id; a repository's working copy receives only the project's
-   own documents. A person does the whole of setup, onboarding and operation from
-   the screen.
+### 7. One install, one instance, nothing else required
+`uv tool install` of this repository installs the whole. The instance owns one data
+directory and every project's state under it. It creates workspaces, clones
+repositories and launches managers from the screen; a person opens a terminal only to
+attach to a live session, by choice.
 
-8. **Endpoints are read from the router, never from prose.** What an agent is told it
-   may call is generated from what the service actually serves, and a check fails
-   the moment they drift.
+### 8. Endpoints come from the router, never from prose
+What an agent is told it may call is generated from what the service actually serves. A
+check fails the moment they drift.
 
-9. **A part that grows a second domain is split out, not grown.** Every part carries a
-   size it may not exceed and a test for a second domain inside it — a sub-directory
-   with its own vocabulary, its own kit or its own steward questions. When either is
-   met the part's manager proposes the split-out as a seam here, and the new part begins
-   as a Converge project of its own. Splitting is the normal shape of growth; a part
-   that keeps growing is the defect.
+### 9. A part that grows a second domain is split out, not grown
+Every part names a ceiling and a test for a second domain inside it. Crossing either
+means a split-out proposed at the family level within one wave. Splitting is the normal
+shape of growth; a part that keeps growing is the defect.
 
----
+## What this deliberately resists
 
-## What this is not
-
-- **Not a monorepo** — the parts are repositories with their own lives; the top
-  level references them, it does not contain them.
-- **Not an org chart, a company or a budget-first system** — one steward per
-  project; roles are modes, not hires; budgets arrive as a gate when a part earns
-  one.
-- **Not a scheduler that re-spawns agents on a tick** — the service observes runs;
-  the agent type decides how a run lives.
-- **Not cloud-first** — a run happens on the person's machine, or in an isolated
-  twin of it, before any remote sandbox is an agent type.
-- **Not an add-on to another tool** — nothing has to be installed first, and no
-  agent type is required; a person who never configures Amplifier loses nothing.
-- **Not a general tracker, terminal dashboard or memory store** — each part is
-  bespoke to this experience and may borrow ideas from anything, but owes nothing to
-  another product's users.
-
----
+- **A monorepo.** The parts are repositories with their own lives.
+- **An org chart, a company, budgets first.** One steward per project; roles are modes,
+  not hires; budgets arrive as a gate when a part earns one.
+- **A scheduler that re-spawns agents on a tick.** The service observes; the type decides
+  how a run lives.
+- **Cloud first.** A run happens on the person's machine, or an isolated twin of it.
+- **Being an add-on to another tool.** Nothing has to be installed first; no agent type
+  is required.
+- **A general tracker, terminal dashboard or memory store.** Each part is bespoke to this
+  experience and owes nothing to another product's users.
 
 ## How you can tell it is working
 
-- A steward creates a project, attaches a repository that has never seen Converge,
-  and reaches a ratified vision and a seeded ledger in **under an hour without
-  opening a terminal**.
-- A steward opening the picker sees the top-level project, every registered part
-  (six today) and their own projects, and reaches any one's direction, operation and
-  runs in **one click**.
-- Five manager sessions run five parts at once with **zero** shared files, queue
-  items or calls between them — read by the family's own kit, not asserted.
-- A steward reading a wave finds a run's three endings are the only endings observed,
-  and **zero** runs marked merged without the manager's check on record; the service
-  refuses.
-- A stalled lane is visible to the steward within **fifteen minutes** because an
+- A steward attaches a repository that has never seen Converge and reaches a ratified
+  vision and a seeded ledger in **under an hour without opening a terminal**.
+- A steward opening the picker sees every part (six today) and their own projects, and
+  reaches any one's direction and runs in **one click**.
+- Five manager sessions run five parts at once with **zero** shared files, queue items
+  or calls between them — read by the family kit, not asserted.
+- A steward reading a wave finds **zero** runs marked merged without the manager's check
+  on record; the service refused the rest.
+- A stalled lane is visible to the steward within **fifteen minutes**, because an
   observation was written and shown, not inferred.
-- A person installs on a machine that has nothing else on it and reaches a running
-  instance with the browser open in **under five minutes**, having typed one command
-  or run one installer.
-
----
+- A person with `uv` reaches a running instance with the browser open in **under five
+  minutes**, one command, no other product required.
 
 ## Changelog
 
-- **2026-09-06 — v1 (DRAFT).** From the steward's sentences: not a monorepo;
-  modular parts, each a Converge project with its own manager so several can run in
-  parallel; the top level holds vision and seams and is aware of the parts, visible
-  in the app; bespoke and trim, installable on day one with nothing else to bring;
-  bring your own agent with Amplifier built in, Claude Code, Codex and GitHub
-  Copilot next. Corrected the same day on the steward's reading: installs on its
-  own with no dependency on any other product; one running instance per machine
-  that creates workspaces, clones repositories and launches managers from the
-  screen.
-- **2026-09-06 — content owner-ratified.** The steward's word: "ok, look good to me at the amplifier-converge level, consider those all ratified." Ratified, not locked.
-- **2026-09-06 — wording.** Every form of "peel" became a form of "split out", on the steward's word ("Let's use the term \"split out\" or similar, instead of \"pealed\" throughout"); no meaning changed.
-- **2026-09-06 — form.** Headings carry one state word (the method part's documents contract, clause 2, as ratified); two signs now name a person; the vision's length bar (120 lines before the changelog) is filed as the family's item F6.
+| Date | Change | Evidence |
+|---|---|---|
+| 2026-09-06 | v1 drafted from the steward's sentences; corrected the same day (installs on its own; one instance owns state; Amplifier optional); ratified as content. | Steward's words, 2026-09-06. |
+| 2026-09-06 | Principle 9 (split out, not grown) added on the steward's design-safety rule; headings carry one state word. | Steward's words; method `documents.v1` clause 2. |
+| 2026-09-07 | Reshaped into the family format on the steward's word ("port it"): one-paragraph "what it is", principles as titled subsections, resists list, changelog table. No principle changed. | `docs/FORMAT.md`. |

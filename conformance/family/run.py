@@ -37,12 +37,12 @@ seams = {s for p in parts for s in p.get("seams", [])}
 absent = [s for s in seams if not (ROOT / "contracts" / f"{s}.md").exists()]
 r("seams", "FAIL" if absent else "PASS", f"seam contracts missing at the top level: {absent}" if absent else f"every named seam exists: {sorted(seams)}")
 
-# Core 1: no part directory here (a part's body must not live at the top level)
+# Promise 1: no part directory here (a part's body must not live at the top level)
 claimed = {"app", "service", "agents", "queue", "adapters", "src"}
 present = [d for d in claimed if (ROOT / d).is_dir()]
 r("1", "FAIL" if present else "PASS", f"part directories at the top level: {present}" if present else "no part's directory lives at the top level")
 
-# Core 8: every part's first contract names a ceiling and a second-domain test (read from the checkout beside this repo if present)
+# Promise 8: every part's first contract names a ceiling and a second-domain test (read from the checkout beside this repo if present)
 noceil = []
 for p in parts:
     if p["id"] == "amplifier-converge": continue

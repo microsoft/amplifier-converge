@@ -50,3 +50,8 @@ Ratified as written: `docs/VISION.md`, `contracts/family.v1.md`, `contracts/serv
 
 - `agents` (vision + `contracts/agent-types.v1.md`) — **ratified**. `queue` (vision + `contracts/items-and-custody.v1.md`) — **ratified**.
 - `app` — **not yet**: its vision and `experience.v1` are to be re-derived against the steward's UX transcript (`ai-context/ChatGPT-Analyze UX Vision Protocol Contracts-20260903-0546.md`, outside the repositories); whatever the app then needs of service, agents, queue and method is filed as seam notes or proposals against those parts.
+
+## 2026-09-07 — the document format
+> "port it, MUCH better!"
+
+The shape in `proposed-format/FORMAT.md` is the family's document format from today. The family manager ports the family's six documents in place (ratified, not locked: a changelog row each); every part's manager ports its own; the method part applies the documents contract change first so its kit reads the new section names. The open inconsistency (the documents contract at 101 lines against its own 80-line bar) is the method manager's to resolve — a short spec split by topic with one contract naming the promises, or a stated exception.

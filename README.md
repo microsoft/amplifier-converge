@@ -44,5 +44,6 @@ seams. It holds no part's internals.
 - `contracts/agent-types.v1.md` — what a type owes the family, and attach-and-survive (DRAFT)
 - `contracts/queue.v1.md` — items, claim, one custody owner, plain words (DRAFT)
 - `family.toml` — the parts and their status (`seeded` · `body` · `retired`)
+- `docs/FORMAT.md` — how our visions and contracts are shaped, and why
 - `docs/PLAN-vNext-2026-09-06.md` — the plan under discussion
 - `docs/workflow/` — the manager session's records for this project

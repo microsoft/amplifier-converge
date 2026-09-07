@@ -1,86 +1,81 @@
 # Service Contract — v1 (RATIFIED 2026-09-06)
 
-**Who builds against this:** the app (every screen reads and writes through it); the
-`amplifier-converge` command and the skill handed to agents; every manager and worker session,
-whatever agent type runs them; the agents part (it launches the runs the service
-records); the queue part (the service fronts it); the method part's kits, which
-judge the service by what it records.
+The one API every actor speaks, and the records behind it. Read by the app, the CLI,
+every manager and worker session, and the service part that builds it.
 
-## Purpose
+## Who builds against this
 
-One surface every actor speaks, whose records are the truth. Without it a lane is a
-terminal session, a working copy, a marker file and a line in a manifest; a call is
-a line in a plan record; a claim is a row only the manager's shell can reach — and
-every incident of the practice that preceded this had the same shape: a
-verification layer certifying the wrong thing. This contract names the first records
-and the promises around them, so the app, the CLI and any agent see one operation
-and the method's obligations are enforced by a machine where a machine can.
+**The service part** implements it. **Everyone else** speaks it: the app reads and
+writes through it, the `amplifier-converge` command and the skill handed to agents call
+it, and every manager or worker session — whatever agent runs it — claims, reports and
+checks through it.
 
-This is a first version, written before a run has flowed. It freezes two records and
-leaves the rest open on purpose; it is rewritten from evidence after the first run.
+## What it is
 
-## Core (the teeth)
+Amplifier Converge runs as one instance on a machine. Inside it, the service holds the
+records and serves one HTTP API. Two records are frozen in v1:
 
-1. **One API, spoken by all, from one instance.** The service runs as part of the one
-   Amplifier Converge instance on a machine; the app, the CLI, the skill handed to
-   agents and every manager and worker session use the same HTTP API. A write that reaches a record
-   by any other path is a defect.
+```
+run    id · project · role (manager | worker) · item · manager_run · branch
+       state (queued | running | done | stuck | waiting | merged | pruned)
+       cause (when stuck) · call (when waiting) · started_at · ended_at
 
-2. **The record is the truth; output is telemetry.** What an agent prints or leaves
-   on disk is evidence; what it tells the service is fact. Where the two disagree,
-   the record stands and the disagreement is filed.
+check  id · run · by (the manager run) · commit · command · exit_code · at
+```
 
-3. **Two records are frozen: `run` and `check`.** A *run* is a lane or a manager's
-   own wake: who launched it, for which project and item, its state, and its
-   manager. A *check* is a manager's re-run of a verification: the command, its exit
-   code, the commit it judged, and the run it names. Every field is a scalar or an
-   identifier; no free text is stored that no clause reads.
+A run is a lane, or a manager's own wake. A check is a manager's own re-run of a
+verification, pointing at the commit it judged.
 
-4. **A run ends in exactly one of three ways, and merge is a request.** `done`,
-   `stuck` with a cause, or `waiting` on a named call — then a *request* to mark it
-   `merged`, which the service **refuses** unless a `check` record exists whose
-   author is the run's manager and whose commit is on the run's branch. What this
-   gate does not prove: that the check was meaningful. That remains the manager's
-   obligation under the method; the service can only refuse a merge with no check.
+## The promises
 
-5. **Identity is issued per run and scoped.** A run receives its identity in the
-   environment — run id, project, role (`manager` | `worker`), API URL, a
-   short-lived token scoped to that project and role — and nothing else grants write
-   access. A token never comes from configuration. A manager's token may write
-   `check`; a worker's may not.
+1. **One API, spoken by all.** Every write to a record goes through this API. A record
+   changed any other way is a defect, and the disagreement is filed.
 
-6. **Liveness is an observation, not a state.** The agent type reports when it last
-   saw a run alive; the service stores each report with its time and never
-   maintains a "silent" flag. A reader derives *quiet* or *silent — may have died*
-   from the age of the last observation and says so in those words.
+2. **The record is the truth.** What an agent prints or leaves on disk is evidence. What
+   it tells the service is fact. When they disagree, the record stands.
 
-## What v1 deliberately does NOT freeze
+3. **Merge is a request the service may refuse.** A run ends `done`, `stuck` (with a
+   cause) or `waiting` (on a call). Asking to mark it `merged` succeeds only when a
+   `check` exists whose `by` is the run's manager and whose `commit` is on the run's
+   branch. Otherwise the answer is a refusal, in a sentence. What this does not prove:
+   that the check was meaningful — that stays the manager's obligation under the method.
 
-- **The other records** — *project*, *manager session*, *claim*, *call*, and the
-  steward's writes (decision, feedback, priority, ask, steer) — promoted one at a
-  time, each the first time it flows through a real run. Until then those facts
-  live where they live today, and no path to them is called a defect.
-- **The wire format** (REST vs RPC; poll vs push) — promoted when a client other
-  than the app or the CLI needs it stable. Until then the app polls.
-- **Budgets** — promoted the first time a steward asks for a cap; designed as a
-  gate when it comes, never as a report.
-- **Custody** — the queue part owns it; the service records what the queue says.
+4. **Identity arrives with the run.** A run gets its id, project, role, the API URL and a
+   short-lived token in its environment. Nothing else grants write access; a token never
+   comes from configuration. A worker token cannot write a `check`.
 
-## Conformance kit asserts
+5. **Liveness is an observation with a time.** Agent types report "seen alive at T". The
+   service stores those and never a "silent" flag. *Quiet* and *silent — may have died*
+   are derived from the age of the last observation, and said in those words.
 
-- The route table and the skill's endpoints section name the same paths; a path in
-  one and not the other fails.
-- A `merged` request for a run with no `check` by its manager on its branch is
-  refused, with the reason in plain words.
-- A write with a configured or absent token is refused; a worker token writing
-  `check` is refused.
-- A `POST` creating a run without a liveness handle is refused.
-- The store is one file in the instance's data directory holding every project,
-  scoped by project id; nothing of the service is written into a repository's
-  working copy.
+6. **The store is one file the instance owns.** In the instance's data directory,
+   scoped by project. Nothing of the service is written into a repository's working copy.
 
-## Reserved / open questions (NOT frozen)
+## Not in v1
 
-- Whether a manager's own wake is a *run* (v1 says yes) or a distinct record.
-- Whether a `check` may be *could not check* — a third answer that never collapses
-  to false — and how the gate treats it.
+- **The desk's records** — documents, proposals, artifacts, events, calls, the four writes,
+  the manager session — named in `desk.v1`; each frozen the wave it first flows.
+- **Wire details** (REST vs RPC, poll vs push) — until a third client needs them stable.
+  A change reaches a reader within ten seconds either way.
+- **Budgets** — the first time a steward asks for a cap; a gate when it comes, not a report.
+- **Custody** — the queue owns it (`queue.v1`); the service records what the queue says.
+
+## How the kit checks it
+
+- The route table and the skill's endpoint list name the same paths.
+- `merged` requested with no qualifying `check` → refused, with a sentence.
+- A write with an absent or configured token → refused. A worker token writing `check` → refused.
+- Creating a run with no liveness handle → refused.
+- The store is under the data directory; nothing service-owned appears in a working copy.
+
+## Open questions
+
+- Is a manager's own wake a `run` (v1 says yes) or its own record?
+- May a `check` say *could not check* — a third answer that never collapses to false?
+
+## Changelog
+
+| Date | Change | Evidence |
+|---|---|---|
+| 2026-09-06 | v1 drafted from the family vision and a study of a comparable harness; council review; ratified as content. | Steward's word, 2026-09-06. |
+| 2026-09-07 | Reshaped into the family format on the steward's word ("port it"); no promise changed. | `docs/FORMAT.md`. |

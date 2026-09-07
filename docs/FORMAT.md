@@ -1,8 +1,8 @@
 # A proposed format for our visions and contracts
 
-*What we read, what makes it readable, and the shape proposed here. Everything under
-`proposed-format/` is a draft for review beside the current documents; nothing in it is
-law until it is ported over.*
+*What we read, what makes it readable, and the shape we use. Adopted 2026-09-07 on the
+steward's word ("port it, MUCH better"). The law for the shape is the method part's
+`documents.v1`; this page is the reasoning behind it.*
 
 ## What we read
 
@@ -78,17 +78,15 @@ needs a dash to hold two ideas, it is two sentences.
 ## What porting costs
 
 - The method part's `documents.v1` fixes section names and sizes (its clauses 3 and 4);
-  the format change is a candidate against it — drafted here as
-  `method/contracts/documents.v1.md` so the law and the shape land together.
+  the format change is a candidate against it — applied by the
+  method part's manager as its v2.
 - Every kit that reads a heading (`## Core`, `## Conformance kit asserts`) reads the new
   names; the method's documents kit is the only one today.
 - Content does not change: every promise in a current contract appears in its proposed
   version, renamed and shortened, never dropped. The port is a rewrite of form under a
   changelog line, done by each part's own manager once the shape is agreed.
 
-## What is here
+## Where the shape lives
 
-- `family/VISION.md` and `family/contracts/*.md` — the family's six documents in the new shape.
-- `method/contracts/documents.v1.md` — the law about documents, amended to permit the shape.
-
-Read `family/contracts/service.v1.md` first: it is the shortest and shows the pattern.
+The method part's `contracts/documents.v1.md` carries the shape as law and its templates
+carry it as files; every part's manager ported its own documents under a changelog row.

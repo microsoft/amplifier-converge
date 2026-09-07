@@ -103,3 +103,5 @@
 **Stuck.** Nothing is stuck; the two part managers that were working (agents, queue) are unaffected and still running.
 **Needs you.** One word on the shape — after reading FORMAT.md and one contract — before any porting begins; the porting itself is each part's manager's work once agreed.
 **Anything quietly broken.** One honest inconsistency in the drafts themselves: the reshaped documents contract runs to 101 lines against the 80-line bar it proposes — the law about documents may need to be the one document that is a short spec split by topic rather than a single contract.
+
+## 2026-09-07 21:15 - they said port it, MUCH better
