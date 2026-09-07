@@ -1,7 +1,6 @@
 # Family Contract — v1 (RATIFIED 2026-09-06)
 
-How the parts of Amplifier Converge fit together and stay apart. Read by every part's
-manager session, the app's picker, and anyone adding or replacing a part.
+How the parts of Amplifier Converge fit together and stay apart.
 
 ## Who builds against this
 
@@ -26,39 +25,30 @@ what   = "the control plane: run and check first, one door, one file"
 `seeded` means the repository exists with a vision and a first contract and no body yet.
 
 ## The promises
-
 1. **The top level holds seams, never internals.** This repository carries the family
    vision, the seam contracts, `family.toml`, the seam ledger, and the one installable —
    a package that composes the parts and adds no code of its own.
-
 2. **A part is a full Converge project.** Its own repository, vision, contracts, ledger,
    queue and manager session. The top level files work into its own queue and names the
    seam; it never files into a part's.
-
 3. **Registered only when it exists.** A row whose repository is unreachable, or lacks
    `docs/VISION.md` and `contracts/`, fails the family kit. The picker shows exactly
    these rows beside the steward's own projects.
-
 4. **Contracts are with the seam.** A part depends only on what a neighbour's seam
    promises. Reaching for a neighbour's file, table or route is a defect in the part
    that reached.
-
 5. **Replacing a body changes no seam.** Swap what is behind a seam and no top-level
    contract, ledger row or steward word changes.
-
 6. **Two managers never share state.** The instance keeps each project's state under its
    data directory by project id. No two projects share a path; a working copy receives
    only the project's own documents.
-
 7. **Seam changes are proposals, batched.** A part writes `<contract>.vN-candidate.md`
    beside the seam here; the top-level manager puts every open proposal on one sheet so
    the steward answers once.
-
 8. **Split out before it becomes two.** Every part's contracts name a ceiling (a number)
    and a test for a second domain (own vocabulary, own kit, own steward questions).
    Crossing either means a split-out proposal here within one wave; over the ceiling with
    none open reads *Broken* in the ledger.
-
 9. **Six parts, named.** Method, service, app, agents, queue, and this top level. A seventh
    arrives by a split-out or a proposal, never by a directory.
 
@@ -85,5 +75,4 @@ what   = "the control plane: run and check first, one door, one file"
 
 | Date | Change | Evidence |
 |---|---|---|
-| 2026-09-06 | v1 drafted; corrected after the steward's reading (one instance, no dependency on any other product); ratified as content. | Steward's words, 2026-09-06. |
-| 2026-09-07 | Reshaped into the family format on the steward's word ("port it"); no promise changed. | `docs/FORMAT.md`. |
+| 2026-09-06 | v1 drafted; corrected after the steward's reading (one instance, no dependency on any other product); ratified. Reshaped 2026-09-07 into the family format ("port it"); no promise changed. | Steward's words; `docs/FORMAT.md`. |

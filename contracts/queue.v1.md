@@ -77,5 +77,4 @@ state    derived: Truly ready · Waiting on you · Working · Stuck · Done
 
 | Date | Change | Evidence |
 |---|---|---|
-| 2026-09-06 | v1 drafted (our own queue, so day one brings nothing else); ratified as content. | Steward's words, 2026-09-06. |
-| 2026-09-07 | Reshaped into the family format on the steward's word ("port it"); no promise changed. | `docs/FORMAT.md`. |
+| 2026-09-06 | v1 drafted (our own queue, so day one brings nothing else); ratified as content. Reshaped 2026-09-07 into the family format on the steward's word (\"port it\"); no promise changed. | Steward's words, 2026-09-06. `docs/FORMAT.md`. |

@@ -77,5 +77,4 @@ verification, pointing at the commit it judged.
 
 | Date | Change | Evidence |
 |---|---|---|
-| 2026-09-06 | v1 drafted from the family vision and a study of a comparable harness; council review; ratified as content. | Steward's word, 2026-09-06. |
-| 2026-09-07 | Reshaped into the family format on the steward's word ("port it"); no promise changed. | `docs/FORMAT.md`. |
+| 2026-09-06 | v1 drafted from the family vision and a study of a comparable harness; council review; ratified as content. Reshaped 2026-09-07 into the family format on the steward's word (\"port it\"); no promise changed. | Steward's word, 2026-09-06. `docs/FORMAT.md`. |

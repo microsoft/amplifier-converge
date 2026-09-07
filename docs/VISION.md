@@ -81,7 +81,7 @@ shape of growth; a part that keeps growing is the defect.
 ## How you can tell it is working
 
 - A steward attaches a repository that has never seen Converge and reaches a ratified
-  vision and a seeded ledger in **under an hour without opening a terminal**.
+  vision and a seeded ledger in **under 60 minutes without opening a terminal**.
 - A steward opening the picker sees every part (six today) and their own projects, and
   reaches any one's direction and runs in **one click**.
 - Five manager sessions run five parts at once with **zero** shared files, queue items
