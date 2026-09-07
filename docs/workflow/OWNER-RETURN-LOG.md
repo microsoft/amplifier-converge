@@ -105,3 +105,8 @@
 **Anything quietly broken.** One honest inconsistency in the drafts themselves: the reshaped documents contract runs to 101 lines against the 80-line bar it proposes — the law about documents may need to be the one document that is a short spec split by topic rather than a single contract.
 
 ## 2026-09-07 21:15 - they said port it, MUCH better
+**Time away.** Minutes; the port began on your word.
+**Finished.** The family's six documents are ported in place in the new shape — every promise kept, a changelog row on each, the ledger and kit saying Promise where they said Core, the family kit green — and the three open seam proposals are rebased onto the new text (the service one turned out to be absorbed by the reshape itself); FORMAT.md lives at docs/FORMAT.md as the reasoning behind the shape.
+**Stuck.** Nothing is stuck; all five part managers are porting their own documents, the method part first so its documents contract becomes the law for the shape and its kit reads the new section names.
+**Needs you.** Nothing on the format; the sheet's other words stand as they were.
+**Anything quietly broken.** Nothing broken; one thing to expect — until the method's kit lands, a part's own kit may read a renamed section as missing for a few minutes, which each part was told to expect.
