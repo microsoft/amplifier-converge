@@ -1,3 +1,5 @@
+> **RATIFIED 2026-09-07** — the steward's word: "consider ratified". Applied exactly the same day; the target carries the change.
+
 # Family Contract — v1 candidate (proposal)
 
 **Target.** `contracts/family.v1.md`, Promise 3 (the picker), Promise 6 (state per project), and the picker line under *How the kit checks it*. Rebased 2026-09-07 onto the reshaped text; the change is the same.

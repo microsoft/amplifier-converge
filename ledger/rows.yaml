@@ -107,3 +107,23 @@
   clause: "Promise 8 — embedded in the instance, one store per project"
   verdict: "Can't check"
   why: "no instance, no store"
+- id: DESK-001
+  contract: desk.v1
+  clause: "Promise 1 — documents are served, not read"
+  verdict: Not yet
+  why: "no service serves documents yet (the service part's Phase 2)"
+- id: DESK-004
+  contract: desk.v1
+  clause: "Promise 4 — exactly four writes"
+  verdict: Not yet
+  why: "no write has flowed; the app part derives it"
+- id: DESK-006
+  contract: desk.v1
+  clause: "Promise 6 — at most five things ask for a word"
+  verdict: Not yet
+  why: "no attention list is served yet"
+- id: FAM-003b
+  contract: family.v1
+  clause: "Promise 3 (as amended 2026-09-07) — the picker is anchored on manager sessions"
+  verdict: "Can't check"
+  why: "no app body exists to read the picker from"

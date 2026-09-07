@@ -40,11 +40,13 @@ env     = CONVERGE_RUN_ID · CONVERGE_PROJECT · CONVERGE_ROLE · CONVERGE_API_U
 4. **Liveness is a timestamp.** A type reports when it last saw the run alive, never a
    state word. *Quiet* and *silent* are the reader's derivation.
 
-5. **A person can attach, and the session survives.** A terminal type names how a person
-   attaches — from the app, or a terminal if they choose — and how the session outlives
-   the instance restarting and the person disconnecting. `testEnvironment()` checks that
-   mechanism; the instance installs what is missing when it can and says what it could
-   not. A type that cannot promise both says so in its listing and is still valid.
+5. **A person can attach, converse with a manager, and the session survives.** A terminal
+   type names how a person attaches (a read) and, for a manager run only, converses with
+   it from the desk's console (a write, recorded as a *steer*) — from the app, or a
+   terminal if they choose — and how the session outlives the instance restarting and the
+   person disconnecting. `testEnvironment()` checks that mechanism; the instance installs
+   what is missing when it can and says what it could not. A type that cannot promise all
+   three says so in its listing and is still valid.
 
 6. **`process` and `http` always exist; every other type is optional.** They need nothing
    installed. `amplifier` ships ready to configure and is what this family's own managers
@@ -73,3 +75,4 @@ env     = CONVERGE_RUN_ID · CONVERGE_PROJECT · CONVERGE_ROLE · CONVERGE_API_U
 |---|---|---|
 | 2026-09-06 | v1 drafted; attach-and-survive written as a promise on the steward's words; ratified as content. | Steward's words, 2026-09-06. |
 | 2026-09-07 | Reshaped into the family format on the steward's word ("port it"); no promise changed. | `docs/FORMAT.md`. |
+| 2026-09-07 | Promise 5 amended (a person may converse with a manager run from the desk's console — a write recorded as a steer) — proposal ratified. | `docs/workflow/agent-types.v1-candidate.ratified.md`; steward's word. |

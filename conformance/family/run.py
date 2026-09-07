@@ -4,7 +4,7 @@
 Usage: python3 conformance/family/run.py [repo-root]   -> JSON {verdict, results:[{rule,status,detail}]}
 PASS / FAIL / CANT_CHECK only. A rule that needs a body that does not exist yet says CANT_CHECK and why.
 """
-import json, pathlib, subprocess, sys, tomllib
+import json, re, pathlib, subprocess, sys, tomllib
 
 ROOT = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
 STATUSES = {"seeded", "body", "retired"}
@@ -46,10 +46,10 @@ r("1", "FAIL" if present else "PASS", f"part directories at the top level: {pres
 noceil = []
 for p in parts:
     if p["id"] == "amplifier-converge": continue
-    c = ROOT.parent / f"amplifier-converge-{p['id']}" / p.get("first_contract", "")
-    if not c.exists(): noceil.append(f"{p['id']}: no local checkout to read"); continue
-    t = c.read_text().lower()
-    if "ceiling" not in t or ("second domain" not in t and "second-domain" not in t): noceil.append(p["id"])
+    cdir = ROOT.parent / f"amplifier-converge-{p['id']}" / "contracts"
+    if not cdir.is_dir(): noceil.append(f"{p['id']}: no local checkout to read"); continue
+    t = " ".join(f.read_text().lower() for f in cdir.glob("*.v*.md") if "candidate" not in f.name)
+    if not re.search(r"ceiling|\blimits?\b", t) or ("second domain" not in t and "second-domain" not in t): noceil.append(p["id"])
 r("8", "FAIL" if [x for x in noceil if ":" not in x] else ("CANT_CHECK" if noceil else "PASS"), f"{noceil}" if noceil else "every part's first contract names a ceiling and a second-domain test")
 
 # the picker (needs the app) and the state directories (needs the instance)

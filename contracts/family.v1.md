@@ -1,12 +1,10 @@
 # Family Contract — v1 (RATIFIED 2026-09-06)
 
 How the parts of Amplifier Converge fit together and stay apart.
-
 ## Who builds against this
 
-**The top-level project** keeps the registry, the seams and the ledger that reads them.
-**Every part** — method, service, app, agents, queue — is a Converge project of its own
-that builds only against the seams named here.
+**The top-level project** keeps the registry, the seams and their ledger. **Every part** —
+method, service, app, agents, queue — is a Converge project that builds only against them.
 
 ## What it is
 
@@ -32,16 +30,19 @@ what   = "the control plane: run and check first, one door, one file"
    queue and manager session. The top level files work into its own queue and names the
    seam; it never files into a part's.
 3. **Registered only when it exists.** A row whose repository is unreachable, or lacks
-   `docs/VISION.md` and `contracts/`, fails the family kit. The picker shows exactly
-   these rows beside the steward's own projects.
+   `docs/VISION.md` and `contracts/`, fails the family kit. The picker shows every
+   manager session — running or resumable — with the repositories it steers; these rows
+   and the steward's own projects appear through the sessions that steer them, and a
+   project with no session shows as one to start.
 4. **Contracts are with the seam.** A part depends only on what a neighbour's seam
    promises. Reaching for a neighbour's file, table or route is a defect in the part
    that reached.
 5. **Replacing a body changes no seam.** Swap what is behind a seam and no top-level
    contract, ledger row or steward word changes.
-6. **Two managers never share state.** The instance keeps each project's state under its
-   data directory by project id. No two projects share a path; a working copy receives
-   only the project's own documents.
+6. **Two managers never share state.** The instance keeps each manager session's state
+   under its data directory by session id. No two sessions share a path; one session may
+   steer several repositories, each shown apart; a working copy receives only the
+   project's own documents.
 7. **Seam changes are proposals, batched.** A part writes `<contract>.vN-candidate.md`
    beside the seam here; the top-level manager puts every open proposal on one sheet so
    the steward answers once.
@@ -53,7 +54,6 @@ what   = "the control plane: run and check first, one door, one file"
    arrives by a split-out or a proposal, never by a directory.
 
 ## Not in v1
-
 - **Where parts are hosted** (today: private, one account) — until two parts disagree how to reach a third.
 - **Pinning each part's commit** vs reading its branch — the first time "it worked yesterday" cannot be reproduced.
 - **The top-level ledger reading a part's ledger** — when a seam promise can only be judged by a part's row.
@@ -65,7 +65,9 @@ what   = "the control plane: run and check first, one door, one file"
 - Every seam a row names exists as `contracts/<seam>.md` here.
 - No part's directory (`app/`, `service/`, `adapters/`, …) exists at the top level.
 - Every part's contracts name a ceiling and a second-domain test.
-- The picker, read live, lists exactly the rows plus the steward's own projects.
+- The picker, read live, lists every manager session the instance knows and, through them,
+  every row here and every project of the steward's; a part or project with no session
+  appears once, as one to start.
 
 ## Open questions
 
@@ -76,3 +78,4 @@ what   = "the control plane: run and check first, one door, one file"
 | Date | Change | Evidence |
 |---|---|---|
 | 2026-09-06 | v1 drafted; corrected after the steward's reading (one instance, no dependency on any other product); ratified. Reshaped 2026-09-07 into the family format ("port it"); no promise changed. | Steward's words; `docs/FORMAT.md`. |
+| 2026-09-07 | Promise 3 and 6 amended (the picker is anchored on manager sessions; state per session id; one session may steer several repositories) — proposal ratified. | `docs/workflow/family.v1-candidate.ratified.md`; steward's word. |

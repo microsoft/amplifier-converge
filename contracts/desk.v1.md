@@ -1,4 +1,4 @@
-# Desk Contract — v1 (DRAFT)
+# Desk Contract — v1 (RATIFIED 2026-09-07)
 
 What the service serves so a steward's desk needs no disk, repository or agent output read.
 
@@ -75,3 +75,4 @@ cursor     person · project · last_read_at      → "since you last read": doc
 | Date | Change | Evidence |
 |---|---|---|
 | 2026-09-07 | v1 drafted after the steward's UX transcript was read against the app (268 requirements, 14 covered); written in the family format. | `ai_working/app-gap-2026-09-07.md`; `docs/FORMAT.md`. |
+| 2026-09-07 | Ratified. | Steward's word ("consider ratified"). |

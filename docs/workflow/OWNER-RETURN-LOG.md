@@ -117,3 +117,5 @@
 **Stuck.** Nothing is stuck; service and queue are on a two-line trim each (a contract three to five lines over, a sign missing its number), relaunched.
 **Needs you.** Sixteen words on the sheet — the fifteen from before and one new form question: does a contract split out of ratified content inherit the word?
 **Anything quietly broken.** The method's kit caught my own port first — four family contracts over the new bound and one sign without a numeral — repaired in place before anything else was read; the law working on its author.
+
+## 2026-09-07 22:03 - they ratified everything on the sheet: "love it, lock it in, do it all, consider ratified, move them into place"

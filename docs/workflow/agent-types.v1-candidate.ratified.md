@@ -1,3 +1,5 @@
+> **RATIFIED 2026-09-07** — the steward's word: "consider ratified". Applied exactly the same day; the target carries the change.
+
 # Agent Types Contract — v1 candidate (proposal)
 
 **Target.** `contracts/agent-types.v1.md`, Promise 5. Rebased 2026-09-07 onto the reshaped text; the change is the same.

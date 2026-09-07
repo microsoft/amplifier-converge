@@ -55,3 +55,8 @@ Ratified as written: `docs/VISION.md`, `contracts/family.v1.md`, `contracts/serv
 > "port it, MUCH better!"
 
 The shape in `proposed-format/FORMAT.md` is the family's document format from today. The family manager ports the family's six documents in place (ratified, not locked: a changelog row each); every part's manager ports its own; the method part applies the documents contract change first so its kit reads the new section names. The open inconsistency (the documents contract at 101 lines against its own 80-line bar) is the method manager's to resolve — a short spec split by topic with one contract naming the promises, or a stated exception.
+
+## 2026-09-07 — the whole sheet
+> "love it, lock it in, do it all, consider ratified, move them into place in the actual repos as I have some work to do as a result of them."
+
+All sixteen items on `SHEET-2026-09-07.md` are **ratified**, and the recommendations carried on the sheet are taken as the word where an item asked for a ruling: M-10 → *the clause stands* (ratified documents are edited in place; the guard reads only LOCKED as locked); S-15 → refusal (b) reads as a sentence, (a) does not and is the service's to fix; S-14 → *prove it* (an isolated host, the family manager's item); #16 → *a split-out contract inherits the word when no promise changed*. "Lock it in" is read as commit to it; the state word given is RATIFIED. Locking (the third state) follows the method's four conditions when each document meets them.
