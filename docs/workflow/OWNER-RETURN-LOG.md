@@ -98,3 +98,8 @@
 **Anything quietly broken.** Nothing broken; the agents and queue parts each found their vision over the ratified length bar on their first wake and drafted the trim as a proposal rather than editing a ratified document — the method's rule working as written.
 
 ## 2026-09-07 20:59 - they do not like how the contracts read; asked for a new format inspired by cortex-contracts and amplifier-smart-tools, drafted in alt dirs for review
+**Time away.** Half an hour; a reading and a drafting pass, no lanes.
+**Finished.** A checkpoint of every repository is committed and pushed so anything can be diffed or reverted; the comparable contracts and visions were read whole and the ideas that make them approachable written down in one page; and a separate tree, `proposed-format/`, holds the family's six documents and the method's documents contract rewritten in the proposed shape with every promise preserved — for you to read beside the current ones before anything is ported.
+**Stuck.** Nothing is stuck; the two part managers that were working (agents, queue) are unaffected and still running.
+**Needs you.** One word on the shape — after reading FORMAT.md and one contract — before any porting begins; the porting itself is each part's manager's work once agreed.
+**Anything quietly broken.** One honest inconsistency in the drafts themselves: the reshaped documents contract runs to 101 lines against the 80-line bar it proposes — the law about documents may need to be the one document that is a short spec split by topic rather than a single contract.
