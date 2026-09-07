@@ -68,7 +68,6 @@ what   = "the control plane: run and check first, one door, one file"
 - The picker, read live, lists every manager session the instance knows and, through them,
   every row here and every project of the steward's; a part or project with no session
   appears once, as one to start.
-
 ## Open questions
 
 - How a part's manager learns the family exists — a wake-prompt line, or a file the method ships.
