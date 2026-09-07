@@ -124,3 +124,5 @@
 **Stuck.** Nothing is stuck.
 **Needs you.** Nothing — every word is given; the next sheet arrives when a part proposes something new.
 **Anything quietly broken.** The write guard the sessions inherit still reads a RATIFIED heading as locked, against the ruling you just gave; until the family's item F7 lands, a part editing a ratified document writes the candidate and applies it in the same commit, which costs a file per edit and nothing else.
+
+## 2026-09-07 22:18 - "I meant ratify. Do it all, monitor whatever is running, let me know when it is all done, merged, pushed" — another session will consume the result
