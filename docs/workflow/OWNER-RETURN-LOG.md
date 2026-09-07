@@ -75,3 +75,10 @@
 **Stuck.** Nothing is stuck; two part managers are working.
 **Needs you.** Five words: the method part's next two contracts, `ledger.v1` and `operation.v1` (DRAFT, in its repository, drafted in its first wave), and app · agents · queue.
 **Anything quietly broken.** My first attempt to apply the method's proposals archived the candidates before the changes landed — a parser missed a blank line — caught within the minute by the "present and absent" re-check and repaired in the next commit; and the ratified length bars now read the family's own vision as over (148 against 120), filed as F6 for my next wave rather than edited in haste.
+
+## 2026-09-07 - Phase 1's bar is met; ten words wait on one sheet
+**Time away.** An hour since your three words; two part managers ran a wave each in it.
+**Finished.** The service part built Phase 1 and parked with its bar met — the store, the two records, the API, per-run credentials, the merge gate that refuses, liveness derived from observations, the endpoint document from the router, a check that is a command — and I re-ran its check and all three break-tests myself against its main: eight promises Kept, two honestly Can't check, all three break-tests green; the method part brought its own documents back inside the sizes it ratified, merged its kit and templates, and its kit reads itself ten Kept and three Can't check.
+**Stuck.** Nothing is stuck; both managers stopped because everything left waits on a word.
+**Needs you.** Ten words on one sheet (docs/workflow/SHEET-2026-09-07.md): two method contracts, one method vision candidate, one ruling on ratified-versus-locked, the service's trimmed vision, a human check of two refusal sentences, a priority on proving the bare-machine promise, and the first words for app, agents and queue.
+**Anything quietly broken.** One of the service's four refusal sentences is not a sentence — a template seam shows through — which its own kit could not see and I could; and the guard these sessions inherit reads every ratified heading as locked, which the method part caught as M-10 and which costs each part a proposal for edits its own contract allows.
