@@ -14,3 +14,5 @@ until a part it depends on has its own word.
 
 Each part derives its own items the day its documents are ratified.
 | F6 | method documents.v1 clause 3 (ratified 2026-09-06) | the family vision is 148 lines before its changelog against a bar of 120 | trimmed to 120 or fewer with no principle lost, one changelog line | nothing — the family manager's own next wave |
+| F7 | method documents.v1 (M-10 ruled: the clause stands) | the write guard the sessions inherit reads a RATIFIED heading as locked; ratified documents are edited in place under the ruling | the guard's marker reads only LOCKED (and the earlier practice's word) for this workspace; a ratified document takes an in-place edit without a candidate | nothing — the family manager's next wave |
+| F8 | service.v1 / control-plane (S-14 ruled: prove it) | the bare-machine promise reads Can't check on this host | an isolated host with nothing on it, the service answering its first request there, the row moved off Can't check with the run named and dated | the service's Phase 2 landing first |

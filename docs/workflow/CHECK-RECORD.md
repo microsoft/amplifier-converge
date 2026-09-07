@@ -15,3 +15,9 @@ On the steward's word ("port it, MUCH better!"): the family's six documents port
     uv run <method>/kit/check.py <each repo>   -> family 0 Broken · method 0 · app 0 · agents 0 · service 2 (control-plane 83 lines; a sign without a person/number) · queue 2 (items-and-custody 85; a sign without a number) — the two are relaunched for the trim
     per repo: origin/main clean, every contract carries the seven sections in order and a fenced block in "What it is", zero forbidden names
 Born in the port, each stamped RATIFIED by its part as a split of ratified content: method settling.v1 (66), service store.v1 (76), agents hosts-and-limits.v1 (80), queue footprint.v1 (73). Whether a split inherits the word is on the sheet.
+
+## 2026-09-07 22:07 - the whole sheet ratified; the family's part applied and re-checked
+Applied exactly and re-verified present/absent: family.v1 (3 pairs — picker on manager sessions, state per session, one session many repositories), agent-types.v1 (1 pair — the console write for a manager run); desk.v1 → RATIFIED; the service candidate archived as absorbed; family.toml carries desk.v1 on app and service. Re-run by me at 2cee976:
+    python3 conformance/family/run.py .           -> PASS (5 rules; picker and state directories Can't check until an app and an instance exist)
+    uv run <method>/kit/check.py <family>         -> 0 Broken (family.v1 trimmed back to 80 after the amendment)
+Five part managers launched with the word and each part's specific instructions; the guard change for M-10 filed as F7.

@@ -119,3 +119,8 @@
 **Anything quietly broken.** The method's kit caught my own port first — four family contracts over the new bound and one sign without a numeral — repaired in place before anything else was read; the law working on its author.
 
 ## 2026-09-07 22:03 - they ratified everything on the sheet: "love it, lock it in, do it all, consider ratified, move them into place"
+**Time away.** Half an hour; the ratification wave ran in it.
+**Finished.** Every item on the sheet is applied where it was the family's to apply — the picker is anchored on manager sessions and one session may steer several repositories, a person may converse with a manager run from the console, the desk seam is ratified with its records in the ledger, the candidates are archived with your word, and both kits read the family clean again after I trimmed the one contract the amendment pushed over eighty lines; the five part managers are running with the word and each part's specific work: method stamping its two contracts and applying its vision candidate, app seeding its ledger and deriving the experience, agents matching its own contract to the amended seam, service fixing the refusal that was not a sentence and beginning Phase 2 on the desk's records, queue continuing.
+**Stuck.** Nothing is stuck.
+**Needs you.** Nothing — every word is given; the next sheet arrives when a part proposes something new.
+**Anything quietly broken.** The write guard the sessions inherit still reads a RATIFIED heading as locked, against the ruling you just gave; until the family's item F7 lands, a part editing a ratified document writes the candidate and applies it in the same commit, which costs a file per edit and nothing else.
