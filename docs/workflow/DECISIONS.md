@@ -44,3 +44,9 @@ Ratified as written: `docs/VISION.md`, `contracts/family.v1.md`, `contracts/serv
 
 - `method/contracts/documents.v2-candidate.md` and `method/docs/VISION.v2-candidate.md` — **ratified**; applied exactly, candidates archived. Consequence of documents clause 2: every heading in the family and its parts carries ONE state word — `(DRAFT)` · `(RATIFIED <date>)` · `(LOCKED <date>)` — re-stamped as a correction of form, no content changed.
 - The `service` part's vision and `contracts/control-plane.v1.md` — **ratified**.
+
+## 2026-09-07 — agents and queue ratified; the app definition to be re-derived
+> "Please re-read the chatgpt transcript in ai-context, we're definitely missing the boat on a lot of stuff in the app definition. Make sure the rest of the repos properly support the things you add from there too. you can ratify agents and queue, but I think app definitely misses a lot."
+
+- `agents` (vision + `contracts/agent-types.v1.md`) — **ratified**. `queue` (vision + `contracts/items-and-custody.v1.md`) — **ratified**.
+- `app` — **not yet**: its vision and `experience.v1` are to be re-derived against the steward's UX transcript (`ai-context/ChatGPT-Analyze UX Vision Protocol Contracts-20260903-0546.md`, outside the repositories); whatever the app then needs of service, agents, queue and method is filed as seam notes or proposals against those parts.

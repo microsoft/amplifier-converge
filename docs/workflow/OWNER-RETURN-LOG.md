@@ -82,3 +82,5 @@
 **Stuck.** Nothing is stuck; both managers stopped because everything left waits on a word.
 **Needs you.** Ten words on one sheet (docs/workflow/SHEET-2026-09-07.md): two method contracts, one method vision candidate, one ruling on ratified-versus-locked, the service's trimmed vision, a human check of two refusal sentences, a priority on proving the bare-machine promise, and the first words for app, agents and queue.
 **Anything quietly broken.** One of the service's four refusal sentences is not a sentence — a template seam shows through — which its own kit could not see and I could; and the guard these sessions inherit reads every ratified heading as locked, which the method part caught as M-10 and which costs each part a proposal for edits its own contract allows.
+
+## 2026-09-07 02:50 - they ratified agents and queue; the app definition misses a lot — re-read the ChatGPT UX transcript
