@@ -89,3 +89,10 @@
 **Stuck.** Nothing is stuck; three part managers are working, two are parked on words.
 **Needs you.** Eleven words on the one sheet — the seven from before plus the desk seam and three seam proposals — and the app's redraft comes on the next sheet when it parks.
 **Anything quietly broken.** The app's first drafts conflated the four calls the system asks with the four writes a person may make, and forbade the reading of documents the transcript is built on — both mine to have caught before the sheet; the cost is one redraft wave.
+
+## 2026-09-07 - the app is re-derived; fifteen words on one sheet
+**Time away.** Two and a half hours since your last words; the app's redraft and the first operating waves of agents and queue ran in it.
+**Finished.** The app's manager redrafted its vision (120 lines before the changelog) and split its law into three contracts (294 of 300 lines) so that every one of the transcript's nineteen sections landed in a clause, a vision line, a recorded deferral or a seam note — verified by me by git facts, the coverage table and a search for forbidden names; the agents part has two lanes live on the launch half of Phase 1 with 28 ledger rows, and the queue part three lanes on its embedded library with 24.
+**Stuck.** Nothing is stuck; two managers are working, three are parked on words.
+**Needs you.** Fifteen words on `docs/workflow/SHEET-2026-09-07.md`: the seven from before, the desk seam and three seam proposals, and the app's vision and three contracts — one line answers them all.
+**Anything quietly broken.** Nothing broken; the agents and queue parts each found their vision over the ratified length bar on their first wake and drafted the trim as a proposal rather than editing a ratified document — the method's rule working as written.
