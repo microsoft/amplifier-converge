@@ -110,3 +110,10 @@
 **Stuck.** Nothing is stuck; all five part managers are porting their own documents, the method part first so its documents contract becomes the law for the shape and its kit reads the new section names.
 **Needs you.** Nothing on the format; the sheet's other words stand as they were.
 **Anything quietly broken.** Nothing broken; one thing to expect — until the method's kit lands, a part's own kit may read a renamed section as missing for a few minutes, which each part was told to expect.
+
+## 2026-09-07 - the port landed
+**Time away.** Forty minutes; the port wave ran in it.
+**Finished.** Every document in the family and its five parts is in the new shape — the family's six by my hand, each part's by its own manager — with every promise kept and a changelog row on each; the method part made the shape law (its documents contract at 71 lines, a shape spec beside it, new templates, a kit that reads the new section names) and that kit reads the family, method, app and agents clean, which I re-ran myself.
+**Stuck.** Nothing is stuck; service and queue are on a two-line trim each (a contract three to five lines over, a sign missing its number), relaunched.
+**Needs you.** Sixteen words on the sheet — the fifteen from before and one new form question: does a contract split out of ratified content inherit the word?
+**Anything quietly broken.** The method's kit caught my own port first — four family contracts over the new bound and one sign without a numeral — repaired in place before anything else was read; the law working on its author.

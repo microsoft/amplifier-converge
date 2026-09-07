@@ -9,3 +9,9 @@ The method part (main 3d4fbb8, clean): its kit reads itself Kept 10 / Can't chec
 
 ## 2026-09-07 03:31 - the app's re-derivation, verified by the family manager
 Against `bkrabach/amplifier-converge-app` main 55cce17 (clean tree, no worktree standing): vision 156 lines with 120 before its changelog (the ratified bar); three contracts at 99 · 99 · 96 = 294 of a 300-line ceiling; four headings, one state word each (DRAFT); every one of the gap file's nineteen sections (A–S) mapped to a landing place in the first-wake record's coverage table; 150 lines of seam notes addressed to method, service and agents; a search for any forbidden name (including the earlier world's file names the transcript itself quotes): 0. Nothing launched in the part; parked on the steward's word.
+
+## 2026-09-07 21:51 - the port to the family format, verified by the family manager
+On the steward's word ("port it, MUCH better!"): the family's six documents ported in place; five part managers ported their own. Re-run by me:
+    uv run <method>/kit/check.py <each repo>   -> family 0 Broken · method 0 · app 0 · agents 0 · service 2 (control-plane 83 lines; a sign without a person/number) · queue 2 (items-and-custody 85; a sign without a number) — the two are relaunched for the trim
+    per repo: origin/main clean, every contract carries the seven sections in order and a fenced block in "What it is", zero forbidden names
+Born in the port, each stamped RATIFIED by its part as a split of ratified content: method settling.v1 (66), service store.v1 (76), agents hosts-and-limits.v1 (80), queue footprint.v1 (73). Whether a split inherits the word is on the sheet.
