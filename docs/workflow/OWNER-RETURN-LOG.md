@@ -96,3 +96,5 @@
 **Stuck.** Nothing is stuck; two managers are working, three are parked on words.
 **Needs you.** Fifteen words on `docs/workflow/SHEET-2026-09-07.md`: the seven from before, the desk seam and three seam proposals, and the app's vision and three contracts — one line answers them all.
 **Anything quietly broken.** Nothing broken; the agents and queue parts each found their vision over the ratified length bar on their first wake and drafted the trim as a proposal rather than editing a ratified document — the method's rule working as written.
+
+## 2026-09-07 20:59 - they do not like how the contracts read; asked for a new format inspired by cortex-contracts and amplifier-smart-tools, drafted in alt dirs for review
