@@ -31,3 +31,13 @@ The steward ratified the reviewers' changes (family PR #1 merged by them at 74f4
     queue   de78fad  1 Broken (pre-existing: items-and-custody carries 9 promises against the 3–8 band) · 220 pass · 0 · not behind
 Merged with merge commits, branches deleted: method d99c2a5 · service 7212f72 · app 817ad5a · agents acc070b · queue 2ce819e. Post-merge: method-kit 0 Broken on family/method/service/app/agents, 1 on queue (same pre-existing row); family kit PASS.
 Cleanup: 8 stale worktrees (agents) removed; 31 merged lane branches deleted locally and on origin (method 8, agents 9, queue 15 — agents' one "unmerged" ref, lane/A-14-console-done, held only a DONE.json marker; its work landed on main through A-16). Zero worktrees, zero lane branches, zero open PRs on all six.
+
+## 2026-09-08 15:26 - the reviewers' two recommendations and the six words, verified by the family manager
+Re-run by me against every main:
+    reader split-out   app b2f76a8 / reader cde662f — experience.v1 4, experience.v1 5, authorship.v1 1 moved verbatim into reader.v1 (RATIFIED, 67 lines; the phrase "four views" appears 2× in reader.v1 and 0× in experience.v1); reader.py stays in the app until the reader's manager moves it
+    sessions split-out agents 855fbab / sessions 57f6aa5 — hosts-and-limits.v1 promises 7 and 8 moved whole to sessions.v1 (RATIFIED, 66 lines); hosts-and-limits.v2 applied (count code: 1,118 lines against 1,200 → the ceiling row reads Kept); the console write now delegated to the family seam only; 282 tests pass
+    queue              2bf9b0e — items-and-custody.v2 applied (the priority word has a home on an item; 8 promises, 80 lines); 226 tests pass
+    uv run <method>/kit/check.py <each of eight repos> -> 0 Broken on all eight
+    python3 conformance/family/run.py .                  -> PASS (picker and state directories Can't check until an app body and an instance exist)
+    forbidden-name search, all eight                     -> 0
+Service is still running its Phase 2 loop (S-15 closed, the app's seam gaps filed); not blocking. M-17: stop, final — no history rewritten anywhere.

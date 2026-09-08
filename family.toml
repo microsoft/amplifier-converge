@@ -40,7 +40,7 @@ status = "seeded"
 what = "the experience: two places and a picker, create · attach · onboard from the screen, the four calls, plain words"
 first_contract = "contracts/experience.v1.md"
 contracts = ["contracts/experience.v1.md", "contracts/writes.v1.md", "contracts/operation-brief.v1.md"]
-seeded_at = "55cce17"
+seeded_at = "b2f76a8"
 
 [[part]]
 id = "agents"
@@ -50,7 +50,7 @@ seams = ["family.v1", "service.v1", "agent-types.v1"]
 status = "seeded"
 what = "agent types and session management: three functions, the wake, liveness as observation, attach-and-survive"
 first_contract = "contracts/agent-types.v1.md"
-seeded_at = "bdac816"
+seeded_at = "855fbab"
 
 [[part]]
 id = "queue"
@@ -60,7 +60,7 @@ seams = ["family.v1", "service.v1", "queue.v1"]
 status = "seeded"
 what = "the work queue with custody: items name their clause, looking and taking are one call, one custody clock, embedded"
 first_contract = "contracts/items-and-custody.v1.md"
-seeded_at = "49c51b7"
+seeded_at = "2bf9b0e"
 
 [[part]]
 id = "reader"
@@ -70,7 +70,7 @@ seams = ["family.v1", "desk.v1"]
 status = "seeded"
 what = "the document reader: one document, four views, live, edits where legal — split out of the app 2026-09-08"
 first_contract = "contracts/reader.v1.md"
-seeded_at = "pending"
+seeded_at = "cde662f"
 
 [[part]]
 id = "sessions"
@@ -80,4 +80,4 @@ seams = ["family.v1", "agent-types.v1", "service.v1"]
 status = "seeded"
 what = "session persistence: a run's session outlives the instance and the person — split out of agents 2026-09-08"
 first_contract = "contracts/sessions.v1.md"
-seeded_at = "pending"
+seeded_at = "57f6aa5"

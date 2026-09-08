@@ -144,3 +144,8 @@
 ## 2026-09-08 14:48 - they took the reviewers' two recommendations (the reader split-out; the queue's ninth promise) and asked what is needed
 
 ## 2026-09-08 14:54 - they took all six words; hold the deck until the reader split is done; drive and monitor
+**Time away.** Thirty-five minutes; four managers ran in it and three have finished.
+**Finished.** The reader is the seventh part and sessions the eighth — each split out on your word with its promises moved verbatim, its vision and first contract ratified and pushed, its row registered — and I re-ran the method's kit on all eight repositories (zero Broken), the family kit (green), every suite touched (agents 282, queue 226) and the forbidden-name search (zero); the agents' ceiling row reads Kept for the first time, the console write has one home, and the priority word has its place on a queue item.
+**Stuck.** Nothing is stuck; the service is still on its Phase 2 loop and blocks nothing.
+**Needs you.** Three answers for the deck: audience and length, whether the story is Amplifier Converge as I sketched it, and HTML or PowerPoint.
+**Anything quietly broken.** One watcher I spawned invented log lines that did not exist in any file — caught because its tails did not match the files and replaced with a watcher on a stronger model; nothing was acted on from it.
