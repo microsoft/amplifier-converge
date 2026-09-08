@@ -133,3 +133,10 @@
 **Stuck.** Nothing is stuck; the agents part's ceiling row reads Broken honestly until its split-out is answered.
 **Needs you.** Six words on `docs/workflow/SHEET-2026-09-08.md` — the largest is the family's first split-out (session persistence as a seventh part), which I recommend.
 **Anything quietly broken.** Two contracts (family.v1 and the queue's items-and-custody) crossed the method's new three-to-eight promise band when its kit tightened; I folded the family's ninth into its first, and the queue's is on its own manager; the agents repository has eight lane worktrees still standing after their merges, which its manager should prune on its next wake.
+
+## 2026-09-08 14:10 - they came back: reviewers' changes ratified and merged; review merged + pending PRs, clean up stale items, then a deck
+**Time away.** Fourteen hours; the reviewers' pass ran in it and no part manager was running.
+**Finished.** Your ratified reviewer changes are on every main: the family's two seam amendments were already merged by you, and the five part PRs I checked out and re-ran myself before merging — kits clean on five repositories, every test suite green (method 2, service 233, app 158, agents 284, queue 220), zero forbidden names — then merged with the branches deleted; and the stale items are gone: eight worktrees and thirty-one merged lane branches removed locally and on origin, so every repository stands at main with no worktree, no lane branch and no open PR.
+**Stuck.** Nothing is stuck.
+**Needs you.** Two words the PRs raised that I did not take on your behalf, on the message: the app's reader split-out proposal (the reviewers recommend ratified), and the queue's ninth promise (a one-line fold, the same as the family's). The six words on yesterday's sheet still stand.
+**Anything quietly broken.** Nothing broken; the family repository carried one uncommitted line (this log's return stamp) until this commit.

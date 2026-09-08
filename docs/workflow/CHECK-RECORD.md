@@ -21,3 +21,13 @@ Applied exactly and re-verified present/absent: family.v1 (3 pairs — picker on
     python3 conformance/family/run.py .           -> PASS (5 rules; picker and state directories Can't check until an app and an instance exist)
     uv run <method>/kit/check.py <family>         -> 0 Broken (family.v1 trimmed back to 80 after the amendment)
 Five part managers launched with the word and each part's specific instructions; the guard change for M-10 filed as F7.
+
+## 2026-09-08 14:16 - the reviewers' five PRs, verified and merged by the family manager
+The steward ratified the reviewers' changes (family PR #1 merged by them at 74f4873: agent-types.v1 names its three capabilities as the Python surface has them; service.v1 promise 3 requires the qualifying check's exit_code 0). Each part's PR #1 (branch review/safety-and-contract-cleanup) checked out at its head in a throwaway worktree and re-run by me before merging:
+    method  43f2d9f  method-kit 0 Broken · 2 tests pass    · 0 forbidden names · not behind main
+    service a46d9ae  0 Broken · 233 pass                    · 0 · not behind
+    app     5d533bf  0 Broken · 158 pass                    · 0 · not behind
+    agents  0c041d3  0 Broken · 284 pass                    · 0 · not behind
+    queue   de78fad  1 Broken (pre-existing: items-and-custody carries 9 promises against the 3–8 band) · 220 pass · 0 · not behind
+Merged with merge commits, branches deleted: method d99c2a5 · service 7212f72 · app 817ad5a · agents acc070b · queue 2ce819e. Post-merge: method-kit 0 Broken on family/method/service/app/agents, 1 on queue (same pre-existing row); family kit PASS.
+Cleanup: 8 stale worktrees (agents) removed; 31 merged lane branches deleted locally and on origin (method 8, agents 9, queue 15 — agents' one "unmerged" ref, lane/A-14-console-done, held only a DONE.json marker; its work landed on main through A-16). Zero worktrees, zero lane branches, zero open PRs on all six.
