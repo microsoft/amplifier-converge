@@ -36,9 +36,10 @@ verification, pointing at the commit it judged.
 
 3. **Merge is a request the service may refuse.** A run ends `done`, `stuck` (with a
    cause) or `waiting` (on a call). Asking to mark it `merged` succeeds only when a
-   `check` exists whose `by` is the run's manager and whose `commit` is on the run's
-   branch. Otherwise the answer is a refusal, in a sentence. What this does not prove:
-   that the check was meaningful — that stays the manager's obligation under the method.
+   `check` exists whose `by` is the run's manager, whose `commit` is on the run's branch,
+   and whose `exit_code` is `0`. Otherwise the answer is a refusal, in a sentence. An
+   `exit_code` of `0` reports that manager's command succeeded; it does not independently
+   prove the check was meaningful, which stays the manager's obligation under the method.
 
 4. **Identity arrives with the run.** A run gets its id, project, role, the API URL and a
    short-lived token in its environment. Nothing else grants write access; a token never
@@ -63,7 +64,8 @@ verification, pointing at the commit it judged.
 ## How the kit checks it
 
 - The route table and the skill's endpoint list name the same paths.
-- `merged` requested with no qualifying `check` → refused, with a sentence.
+- `merged` requested without a `check` whose `by` is the run's manager, whose `commit` is
+  on the run's branch, and whose `exit_code` is `0` → refused, with a sentence.
 - A write with an absent or configured token → refused. A worker token writing `check` → refused.
 - Creating a run with no liveness handle → refused.
 - The store is under the data directory; nothing service-owned appears in a working copy.
@@ -77,4 +79,5 @@ verification, pointing at the commit it judged.
 
 | Date | Change | Evidence |
 |---|---|---|
+| 2026-09-08 | Owner-ratified amendment: Promise 3 and its kit require a qualifying manager check to report `exit_code` `0`; no claim of test quality or Git attestation. | Owner: "I'll ratify them, please proceed."; the original service gate at `916cab87` accepted a failed check. Decision and exact proposal: `docs/workflow/service.v1-candidate.ratified.md`. |
 | 2026-09-06 | v1 drafted from the family vision and a study of a comparable harness; council review; ratified as content. Reshaped 2026-09-07 into the family format on the steward's word (\"port it\"); no promise changed. | Steward's word, 2026-09-06. `docs/FORMAT.md`. |

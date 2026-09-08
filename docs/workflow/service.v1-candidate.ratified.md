@@ -1,3 +1,5 @@
+> Decision recorded 2026-09-08: owner said, "I'll ratify them, please proceed."
+
 target: contracts/service.v1.md
 
 # Service Contract — v1 candidate (proposal)
@@ -95,4 +97,4 @@ fix; a further artifact-binding design remains necessary.
 
 ## The steward's decision
 
-**Pending:** ____________________
+Decision recorded 2026-09-08: the owner said, "I'll ratify them, please proceed."

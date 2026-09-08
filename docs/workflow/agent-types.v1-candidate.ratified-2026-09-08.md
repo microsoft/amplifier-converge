@@ -1,3 +1,5 @@
+> Decision recorded 2026-09-08: owner said, "I'll ratify them, please proceed."
+
 target: contracts/agent-types.v1.md
 proposal: family.v1p7
 
@@ -188,4 +190,4 @@ proposal: the family contract still names `CONVERGE_*`, while the local descript
 
 ## The steward's decision
 
-**Pending:** ____________________
+Decision recorded 2026-09-08: the owner said, "I'll ratify them, please proceed."
