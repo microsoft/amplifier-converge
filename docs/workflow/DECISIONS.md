@@ -66,3 +66,8 @@ All sixteen items on `SHEET-2026-09-07.md` are **ratified**, and the recommendat
 
 - The app's **reader split-out** (`docs/workflow/SPLIT-OUT-THE-READER.md`) — **ratified**: the document reader becomes a seventh family part; the three promises it carries move; no promise's words change.
 - The queue's **ninth promise** folded to bring `items-and-custody.v1` inside the three-to-eight band — a correction of form, in place.
+
+## 2026-09-08 — the six words of SHEET-2026-09-08
+> "take all six - hold on deck until the other is _done_, please drive that work and monitor until complete."
+
+The family manager's recommendations are the word: **limits** → ratify `hosts-and-limits.v2` (count code, not prose) AND split session persistence out as an eighth part, `sessions`; **console-home** → one home, the family seam; the agents part undoes its copy; **priority** → `items-and-custody.v2` ratified; **refusals** → passable (S-15 closed); **M-17** → stop, no history rewritten; **seam-gaps** → go, the app's desk-record gaps are filed into the service's queue.

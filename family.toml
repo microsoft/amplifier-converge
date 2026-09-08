@@ -71,3 +71,13 @@ status = "seeded"
 what = "the document reader: one document, four views, live, edits where legal — split out of the app 2026-09-08"
 first_contract = "contracts/reader.v1.md"
 seeded_at = "pending"
+
+[[part]]
+id = "sessions"
+url = "https://github.com/bkrabach/amplifier-converge-sessions"
+branch = "main"
+seams = ["family.v1", "agent-types.v1", "service.v1"]
+status = "seeded"
+what = "session persistence: a run's session outlives the instance and the person — split out of agents 2026-09-08"
+first_contract = "contracts/sessions.v1.md"
+seeded_at = "pending"

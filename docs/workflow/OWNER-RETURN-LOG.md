@@ -142,3 +142,5 @@
 **Anything quietly broken.** Nothing broken; the family repository carried one uncommitted line (this log's return stamp) until this commit.
 
 ## 2026-09-08 14:48 - they took the reviewers' two recommendations (the reader split-out; the queue's ninth promise) and asked what is needed
+
+## 2026-09-08 14:54 - they took all six words; hold the deck until the reader split is done; drive and monitor
