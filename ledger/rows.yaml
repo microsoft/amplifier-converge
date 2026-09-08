@@ -39,7 +39,7 @@
   ran: "2026-09-06 rule 8 → PASS: every part's first contract names a ceiling and a second-domain test"
 - id: FAM-009
   contract: family.v1
-  clause: "Promise 9 — the family is small and named (six parts)"
+  clause: "Promise 1 — six parts, named (was Promise 9, folded 2026-09-08)"
   verdict: Kept
   ran: "2026-09-06 family.toml carries exactly the six named parts"
 - id: FAM-PICKER

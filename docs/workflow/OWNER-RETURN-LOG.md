@@ -126,3 +126,10 @@
 **Anything quietly broken.** The write guard the sessions inherit still reads a RATIFIED heading as locked, against the ruling you just gave; until the family's item F7 lands, a part editing a ratified document writes the candidate and applies it in the same commit, which costs a file per edit and nothing else.
 
 ## 2026-09-07 22:18 - "I meant ratify. Do it all, monitor whatever is running, let me know when it is all done, merged, pushed" — another session will consume the result
+
+## 2026-09-08 00:19 - they checked in: "let me know how things are going"
+**Time away.** Two hours since "do it all"; every part ran one to three waves in it and all five have stopped — everything left waits on a word.
+**Finished.** Every document in all six repositories reads RATIFIED (twenty-one contracts, six visions, all in the new shape); the method's kit reads all six repositories clean and the family kit is green; bodies exist and their suites pass under my own run — service 218 tests (the store, run and check, the API, the merge gate that refuses, documents now served from the working copy), agents 283 (the amplifier type launches sessions, attach-and-survive proven on this host, the console steer built at both ends), queue 217 (the embedded library, one custody clock, all three break-tests green), app 149 (a sessions home reading real runs from the service, a reader, a brief, the command's usual suspects); everything is merged and pushed on every main.
+**Stuck.** Nothing is stuck; the agents part's ceiling row reads Broken honestly until its split-out is answered.
+**Needs you.** Six words on `docs/workflow/SHEET-2026-09-08.md` — the largest is the family's first split-out (session persistence as a seventh part), which I recommend.
+**Anything quietly broken.** Two contracts (family.v1 and the queue's items-and-custody) crossed the method's new three-to-eight promise band when its kit tightened; I folded the family's ninth into its first, and the queue's is on its own manager; the agents repository has eight lane worktrees still standing after their merges, which its manager should prune on its next wake.

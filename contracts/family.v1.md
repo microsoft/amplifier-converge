@@ -24,8 +24,9 @@ what   = "the control plane: run and check first, one door, one file"
 
 ## The promises
 1. **The top level holds seams, never internals.** This repository carries the family
-   vision, the seam contracts, `family.toml`, the seam ledger, and the one installable —
-   a package that composes the parts and adds no code of its own.
+   vision, the seam contracts, `family.toml` (six parts: method, service, app, agents,
+   queue, this), the seam ledger, and the one installable — a package that composes the
+   parts and adds no code of its own. A seventh part arrives by a split-out or a proposal.
 2. **A part is a full Converge project.** Its own repository, vision, contracts, ledger,
    queue and manager session. The top level files work into its own queue and names the
    seam; it never files into a part's.
@@ -50,8 +51,6 @@ what   = "the control plane: run and check first, one door, one file"
    and a test for a second domain (own vocabulary, own kit, own steward questions).
    Crossing either means a split-out proposal here within one wave; over the ceiling with
    none open reads *Broken* in the ledger.
-9. **Six parts, named.** Method, service, app, agents, queue, and this top level. A seventh
-   arrives by a split-out or a proposal, never by a directory.
 
 ## Not in v1
 - **Where parts are hosted** (today: private, one account) — until two parts disagree how to reach a third.
@@ -78,3 +77,4 @@ what   = "the control plane: run and check first, one door, one file"
 |---|---|---|
 | 2026-09-06 | v1 drafted; corrected after the steward's reading (one instance, no dependency on any other product); ratified. Reshaped 2026-09-07 into the family format ("port it"); no promise changed. | Steward's words; `docs/FORMAT.md`. |
 | 2026-09-07 | Promise 3 and 6 amended (the picker is anchored on manager sessions; state per session id; one session may steer several repositories) — proposal ratified. | `docs/workflow/family.v1-candidate.ratified.md`; steward's word. |
+| 2026-09-08 | Promise 9 folded into promise 1 (the method's kit now reads three to eight promises per contract); no promise lost. | method `documents.v1`. |
