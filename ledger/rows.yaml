@@ -54,9 +54,9 @@
   why: "no service exists; the first run record has not flowed"
 - id: SVC-003
   contract: service.v1
-  clause: "Promise 3 — two records frozen: run and check"
+  clause: "Promise 3 — merge only after a qualifying manager check"
   verdict: Not yet
-  why: "no store exists"
+  why: "no service exists; a manager check and merge refusal cannot be read"
 - id: SVC-004
   contract: service.v1
   clause: "Promise 4 — a run ends one of three ways and merge is a request the service may refuse"
@@ -79,7 +79,7 @@
   why: "no instance, no store"
 - id: AGT-001
   contract: agent-types.v1
-  clause: "Promise 1 — a type is three functions"
+  clause: "Promise 1 — a type is three capabilities"
   verdict: Not yet
   why: "no type has been implemented"
 - id: AGT-005
