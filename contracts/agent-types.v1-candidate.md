@@ -127,7 +127,7 @@ Replacement:
 - For each terminal type: attach, restart the instance, still attached — recorded with date and host.
 ```
 
-### 6. Changelog — future row after the steward's word
+### 6. Changelog — proposed 2026-09-08 future row
 
 Current text:
 
@@ -139,32 +139,38 @@ Replacement:
 
 ```
 | 2026-09-07 | Promise 5 amended (a person may converse with a manager run from the desk's console — a write recorded as a *steer*) — proposal ratified. | `docs/workflow/agent-types.v1-candidate.ratified.md`; steward's word. |
-| YYYY-MM-DD | Corrected the public seam description to the existing Python `AgentType` and `Callbacks` names and shapes; no runtime API or implementation changed. | Review evidence: `amplifier-converge-agents/src/amplifier_converge_agents/agent_type.py:118-145`; `amplifier-converge-agents/src/amplifier_converge_agents/reporting.py:231-279`. |
+| 2026-09-08 | Corrected the public seam description to the existing Python `AgentType` and `Callbacks` names and shapes; no runtime API or implementation changed. | Original source baseline: `amplifier-converge-agents@e285685b7d85cd63cc8df659cfc3762da451ebdf:src/amplifier_converge_agents/agent_type.py:118-145`; `amplifier-converge-agents@e285685b7d85cd63cc8df659cfc3762da451ebdf:src/amplifier_converge_agents/reporting.py:231-279`. Preparatory public-signature tests: `amplifier-converge-agents@39198340b04336291c40eba24d11d2d8f3ceb8cf:tests/test_agent_type.py:84-114`. |
 ```
 
 ## The evidence
 
-The reviewed public Python source already defines `AgentType.name` as a property,
+At the original ratified-main baseline
+`amplifier-converge-agents@e285685b7d85cd63cc8df659cfc3762da451ebdf`, the public Python
+source already defines `AgentType.name` as a property,
 `AgentType.execute(wake, callbacks)`, and `AgentType.test_environment()` in
-`amplifier-converge-agents/src/amplifier_converge_agents/agent_type.py:118-145`.
+`src/amplifier_converge_agents/agent_type.py:118-145`.
 The existing `Callbacks` API is `log_line(text)`, `event(name, detail='')`,
 `seen_alive(at=None)`, and `ended(word, detail='')` in
-`amplifier-converge-agents/src/amplifier_converge_agents/reporting.py:231-279`.
+`src/amplifier_converge_agents/reporting.py:231-279`.
 `ended` rejects a word outside `done`, `stuck`, and `waiting`, and requires detail
 for `stuck` and `waiting`, in that same file at `reporting.py:155-188`.
 
 These source citations are evidence for this family-seam description correction, not new implementation
 coupling or a dependency on a neighbour's internals. This family proposal and the
 corresponding `amplifier-converge-agents/contracts/agent-types.v1-candidate.md` are
-coordinated review proposals describing the same existing public API; neither proposes
-a runtime dependent diff.
+coordinated review proposals describing the same existing public API. The public-protocol
+signature tests were already prepared in
+`amplifier-converge-agents@39198340b04336291c40eba24d11d2d8f3ceb8cf`; they demonstrate
+the existing API for review and do not adopt this candidate.
 
 ## What does NOT change
 
-- The source contract, `contracts/agent-types.v1.md`, remains unchanged unless the
-  steward ratifies this `family.v1p7` proposal.
-- No adapter, compatibility alias, callback transport, runtime API, implementation,
-  or test change is proposed.
+- A direct edit to the source contract, `contracts/agent-types.v1.md`, remains blocked
+  unless the family approves this `family.v1p7` proposal and the target merges.
+- The original ratified family target on main remains unchanged.
+- No adapter, compatibility alias, callback transport, runtime API rename, or
+  implementation change is proposed. The already-prepared public-protocol tests are
+  evidence, not adoption.
 - The optional manager-only steer remains a recorded manager interaction; this proposal
   does not name or add a new agent-type capability for it.
 - The five existing `CONVERGE_*` environment-token promises remain exactly as written.

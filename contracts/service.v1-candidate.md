@@ -42,7 +42,7 @@ Replacement:
   on the run's branch, and whose `exit_code` is `0` → refused, with a sentence.
 ```
 
-### 3. Changelog — proposed future row
+### 3. Changelog — proposed 2026-09-08 future row
 
 Current text:
 
@@ -54,19 +54,20 @@ Replacement:
 
 ```
 | 2026-09-06 | v1 drafted from the family vision and a study of a comparable harness; council review; ratified as content. Reshaped 2026-09-07 into the family format on the steward's word ("port it"); no promise changed. | Steward's word, 2026-09-06. `docs/FORMAT.md`. |
-| YYYY-MM-DD | Promise 3 and its merge-refusal kit require a manager check to report `exit_code` `0`, in addition to the existing manager, run, and branch obligations. | `amplifier-converge-service/src/amplifier_converge_service/gate.py:15-28`; `amplifier-converge-service/tests/test_gate.py:156-160`. |
+| 2026-09-08 | Promise 3 and its merge-refusal kit require a manager check to report `exit_code` `0`, in addition to the existing manager, run, and branch obligations. | Original baseline: `amplifier-converge-service@916cab87edf31b1780197f76b2f5eff16c44c5a2:src/amplifier_converge_service/gate.py:15-28`; `amplifier-converge-service@916cab87edf31b1780197f76b2f5eff16c44c5a2:tests/test_gate.py:156-160`. |
 ```
 
 ## The evidence
 
-The family seam currently makes a manager-authored check and its commit being on the run's
-branch necessary for merge, but it does not require the check to report a successful
-command. The current service implementation explicitly says it never considers the number
-a check finished with in `amplifier-converge-service/src/amplifier_converge_service/gate.py:15-28`.
-Its reproduction test constructs a manager check with `exit_code=1` and asserts that
-`refuse_merge(run(), [failed]) is None` in
-`amplifier-converge-service/tests/test_gate.py:156-160`. A failed command can therefore
-meet the present merge gate.
+The original ratified-main baseline is
+`amplifier-converge-service@916cab87edf31b1780197f76b2f5eff16c44c5a2`.
+At that baseline, the service implementation explicitly says it never considers the number
+a check finished with in
+`src/amplifier_converge_service/gate.py:15-28`. Its reproduction test constructs a manager
+check with `exit_code=1` and asserts that `refuse_merge(run(), [failed]) is None` in
+`tests/test_gate.py:156-160`. A failed command could therefore meet the original merge gate.
+These before-change facts remain pinned to that baseline, not to a subsequently changed
+preparatory test.
 
 The proposed `exit_code` requirement is narrow: `0` reports the manager's command
 succeeded. It is not independent proof that the command was a meaningful test, and the
@@ -80,9 +81,11 @@ service still makes no test-quality judgment.
   reduced to a permissive comparison of reported strings.
 - No authentication, record schema, or wire fields are added: `exit_code` is already part
   of the frozen `check` record.
-- This proposal makes no source-contract edit, service implementation change, test change,
-  merge, or ratification. Dependent service work waits until this proposal is ratified and
-  merged.
+- A contingent implementation and tests are prepared on the service review branch for
+  reviewers. They are not adopted law and do not amend this target.
+- The original ratified `contracts/service.v1.md` on main remains unchanged. Dependent
+  publishing stays gated until the family approves this proposal and the target change merges.
+- This proposal itself makes no source-contract edit, merge, or ratification.
 
 ## Residual
 
