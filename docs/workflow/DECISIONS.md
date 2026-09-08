@@ -60,3 +60,9 @@ The shape in `proposed-format/FORMAT.md` is the family's document format from to
 > "love it, lock it in, do it all, consider ratified, move them into place in the actual repos as I have some work to do as a result of them."
 
 All sixteen items on `SHEET-2026-09-07.md` are **ratified**, and the recommendations carried on the sheet are taken as the word where an item asked for a ruling: M-10 → *the clause stands* (ratified documents are edited in place; the guard reads only LOCKED as locked); S-15 → refusal (b) reads as a sentence, (a) does not and is the service's to fix; S-14 → *prove it* (an isolated host, the family manager's item); #16 → *a split-out contract inherits the word when no promise changed*. "Lock it in" is read as commit to it; the state word given is RATIFIED. Locking (the third state) follows the method's four conditions when each document meets them.
+
+## 2026-09-08 — the reviewers' recommendations
+> "Yes, let's take those changes they recommended, let me know what you need there and _then_ we'll get to the deck when this is all sorted."
+
+- The app's **reader split-out** (`docs/workflow/SPLIT-OUT-THE-READER.md`) — **ratified**: the document reader becomes a seventh family part; the three promises it carries move; no promise's words change.
+- The queue's **ninth promise** folded to bring `items-and-custody.v1` inside the three-to-eight band — a correction of form, in place.

@@ -140,3 +140,5 @@
 **Stuck.** Nothing is stuck.
 **Needs you.** Two words the PRs raised that I did not take on your behalf, on the message: the app's reader split-out proposal (the reviewers recommend ratified), and the queue's ninth promise (a one-line fold, the same as the family's). The six words on yesterday's sheet still stand.
 **Anything quietly broken.** Nothing broken; the family repository carried one uncommitted line (this log's return stamp) until this commit.
+
+## 2026-09-08 14:48 - they took the reviewers' two recommendations (the reader split-out; the queue's ninth promise) and asked what is needed

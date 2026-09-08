@@ -61,3 +61,13 @@ status = "seeded"
 what = "the work queue with custody: items name their clause, looking and taking are one call, one custody clock, embedded"
 first_contract = "contracts/items-and-custody.v1.md"
 seeded_at = "49c51b7"
+
+[[part]]
+id = "reader"
+url = "https://github.com/bkrabach/amplifier-converge-reader"
+branch = "main"
+seams = ["family.v1", "desk.v1"]
+status = "seeded"
+what = "the document reader: one document, four views, live, edits where legal — split out of the app 2026-09-08"
+first_contract = "contracts/reader.v1.md"
+seeded_at = "pending"
