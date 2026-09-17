@@ -65,5 +65,14 @@ silently reviving stale membership claims. It does not itself register new parts
 
 ## Steward's word
 
-Answer: 
+Answer: ratified
+
+ratified by owner — "ratified, let's go!" on 2026-09-16; exact packet and pre-decision hash below.
+
+The steward answered "ratified, let's go!" on 2026-09-16, first observed
+at 8:30:47 PM PDT, for packet SHA-256
+`8e2de16a8de4fe7f3b41893bc2d3e77d26bf24398fcff9b86a1580a96219c270`.
+This candidate's pre-decision SHA-256 was
+`3a23420f1e47b7467dcb547acb81cb19f4cca9ccc87ccb43a9ec1abab0579d42`.
+Only the exact changes above were accepted; this is not implementation evidence.
 

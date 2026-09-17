@@ -86,5 +86,14 @@ registered now and does not edit `family.toml`.
 
 ## Steward's word
 
-Pending human answer:
+Answer: ratified
+
+ratified by owner — "ratified, let's go!" on 2026-09-16; exact packet and pre-decision hash below.
+
+The steward answered "ratified, let's go!" on 2026-09-16, first observed
+at 8:30:47 PM PDT, for packet SHA-256
+`8e2de16a8de4fe7f3b41893bc2d3e77d26bf24398fcff9b86a1580a96219c270`.
+This candidate's pre-decision SHA-256 was
+`5df43917540e1f143d1bd7657d3c4bd965fcd7a768a90715e617e778fc921b58`.
+Only the exact changes above were accepted; this is not implementation evidence.
 

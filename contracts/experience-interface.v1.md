@@ -1,4 +1,4 @@
-# Experience Interface Contract — v1 (DRAFT)
+# Experience Interface Contract — v1 (RATIFIED 2026-09-16)
 
 The shared exchange between the shell, experience implementations and their
 service and agent adapters; the SDK implements this promise, it does not own it.
@@ -84,3 +84,4 @@ An owning contract conflict must be proposed before dependent implementation.
 | Date | Change | Evidence |
 |---|---|---|
 | 2026-09-16 | First draft, not ratified. | Mixed project views, incorrect feedback-span capture and a fixed replacement interface require a shared scope/action boundary; reviewed source and the split packet preserve the observations. |
+| 2026-09-16 | Content ratified, not FROZEN; implementation and independent conformance remain to be checked. | Steward: "ratified, let's go!" for exact packet SHA-256 `8e2de16a8de4fe7f3b41893bc2d3e77d26bf24398fcff9b86a1580a96219c270`; no semantic changes to the accepted draft. |
