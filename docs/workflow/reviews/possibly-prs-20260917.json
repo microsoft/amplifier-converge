@@ -1,0 +1,254 @@
+{
+  "historical": true,
+  "current_merge_guidance": false,
+  "publication_note": "Findings apply only to the listed September 17 revisions, not to later fixes, decisions, or integration checkpoints.",
+  "reviewed_at_pdt": "2026-09-17",
+  "scope": {
+    "source": "immutable PR base/head revisions listed in this review",
+    "captured_at_pdt": "2026-09-17T13:41:27.864513-07:00",
+    "mode": "read-only exact-revision review",
+    "live_runtime_accepted": false
+  },
+  "recommendation": {
+    "verdict": "FAIL",
+    "summary": "Do not merge the linked set until the required binding handoff and Service transaction scope are fixed, and the six action modes have a steward decision."
+  },
+  "prs": [
+    {
+      "id": "app-2",
+      "repo": "bkrabach/amplifier-converge-app",
+      "number": 2,
+      "base": "7f59c4de75c53c746ec137af7e9deeff21ad58ad",
+      "head": "ff3d7c334b0f8132d010bcf52ec85b7b4c366343",
+      "verdict": "FAIL",
+      "finding_ids": [
+        "F-001",
+        "F-003"
+      ],
+      "coverage": {
+        "changed_files": 17,
+        "focused_files": [
+          "src/amplifier_converge_app/possibly_relay.py",
+          "src/amplifier_converge_app/server.py",
+          "web/src/main.tsx",
+          "web/src/native-conversation-host.tsx",
+          "web/src/receiving-possibly-host.tsx",
+          "web/tests/receiving-composition.test.mjs",
+          "tests/test_possibly_relay.py"
+        ],
+        "checks": [
+          "Python relay: 4 passed",
+          "Web build and node tests: 121 passed"
+        ]
+      }
+    },
+    {
+      "id": "service-2",
+      "repo": "bkrabach/amplifier-converge-service",
+      "number": 2,
+      "base": "d44fb2d4e7fdecf729247489a3ef7993af6cf2cf",
+      "head": "ccceea555fe4b8d819f9280a77b3440f8bb1a3ab",
+      "verdict": "FAIL",
+      "finding_ids": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ],
+      "coverage": {
+        "changed_files": 8,
+        "focused_files": [
+          "src/amplifier_converge_service/api/experience.py",
+          "src/amplifier_converge_service/store.py",
+          "src/amplifier_converge_service/endpoints.py",
+          "tests/test_possibly_api.py"
+        ],
+        "checks": [
+          "Normal pytest suite: 489 passed, 5 skipped",
+          "Unbound surface reproduction: 409 possibly-stale-scope",
+          "Concurrent surface reproduction: second response 0.782 seconds"
+        ]
+      }
+    },
+    {
+      "id": "possibly-1",
+      "repo": "bkrabach/amplifier-converge-possibly",
+      "number": 1,
+      "base": "5af0dddfa6521dae3e14c225b51266721000f7fd",
+      "head": "c1cf4aba64eb214c807cba6c243558f8adfb10ee",
+      "verdict": "PASS",
+      "finding_ids": [],
+      "coverage": {
+        "changed_files": 7,
+        "focused_files": [
+          "src/LibraryReviewAdapter.tsx",
+          "src/libraryReview.ts",
+          "tests/library-review.test.mjs",
+          "docs/library-review.md"
+        ],
+        "checks": [
+          "npm test: 22 passed, 6 skipped"
+        ],
+        "condition": "Requires a host-supplied, Service-authorized binding; the adapter is explicitly not its owner."
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-001",
+      "severity": "high",
+      "kind": "implementation_defect",
+      "title": "No component establishes the required review binding",
+      "owners": [
+        "App",
+        "Service",
+        "retained-exploration producer"
+      ],
+      "evidence": [
+        "app/web/src/receiving-possibly-host.tsx:52-65",
+        "app/src/amplifier_converge_app/server.py:118-128",
+        "service/src/amplifier_converge_service/api/experience.py:570-582",
+        "possibly/docs/library-review.md:7-9",
+        "service/tests/test_possibly_api.py:55-78"
+      ],
+      "reproduction": {
+        "method": "isolated Service TestClient with a signed recorded person, fake library, and no bind request",
+        "result": "POST possibly/surface returned 409 with code possibly-stale-scope; fake library was not invoked"
+      },
+      "recommendation": "Establish one explicit producer-to-Service binding handoff before App mounts the receiver, or add an authorized App binding input if App is the owner. Do not infer an exploration."
+    },
+    {
+      "id": "F-002",
+      "severity": "high",
+      "kind": "efficiency_and_concurrency_defect",
+      "title": "Routine review reads hold the SQLite writer lock during library work",
+      "owners": [
+        "Service"
+      ],
+      "evidence": [
+        "service/src/amplifier_converge_service/api/experience.py:539-550",
+        "service/src/amplifier_converge_service/api/experience.py:584-598",
+        "service/src/amplifier_converge_service/api/experience.py:669-692"
+      ],
+      "reproduction": {
+        "method": "isolated Service TestClient with a bound fake library whose review_surface sleeps 0.350 seconds; issue two simultaneous authenticated surface requests",
+        "result": "both returned 200; second response elapsed 0.782 seconds"
+      },
+      "recommendation": "Use no immediate transaction for read-only operations. Keep action intent and activation fencing in short transactions around state changes, using a binding revision or compare-and-set if needed."
+    },
+    {
+      "id": "F-003",
+      "severity": "merge_blocker",
+      "kind": "unratified_product_decision",
+      "title": "Six Service-mutating action modes are advertised before their authority is settled",
+      "owners": [
+        "intent steward",
+        "Experience Interface contract owners"
+      ],
+      "evidence": [
+        "app/web/src/receiving-possibly-host.tsx:13-20,68-77",
+        "service/src/amplifier_converge_service/api/experience.py:635-646",
+        "service/docs/POSSIBLY-REVIEW.md:31-37",
+        "contracts/experience-interface.v1.md:30-35",
+        "GOAL.md:45-49"
+      ],
+      "reproduction": null,
+      "recommendation": "Ratify the operation/authority surface or narrow App and Service to the explicitly authorized subset. This review does not choose that subset."
+    }
+  ],
+  "dependency_matrix": {
+    "app-2": {
+      "requires": [
+        "Possibly #1 artifact at c1cf4aba64eb214c807cba6c243558f8adfb10ee",
+        "workspace renderer artifact",
+        "Service optional review routes",
+        "a scope-matching persisted binding"
+      ],
+      "blocked_by": [
+        "F-001",
+        "F-003"
+      ]
+    },
+    "service-2": {
+      "requires": [
+        "optional possibly Python package at 28d82b9e00bf39cb9c3384b53cbaac0b1d441f2b",
+        "existing exploration",
+        "signed person/project/conversation"
+      ],
+      "blocked_by": [
+        "F-002",
+        "F-003"
+      ]
+    },
+    "possibly-1": {
+      "requires": [
+        "Experience SDK artifact",
+        "stable host callbacks",
+        "host-supplied authorized binding"
+      ],
+      "blocked_by": []
+    }
+  },
+  "merge_order": [
+    "Obtain F-003 decision.",
+    "Fix and test F-002 in Service.",
+    "Implement and test F-001 binding handoff.",
+    "Publish Possibly adapter, rebuild and checksum-verify App artifact, then merge App and Service together."
+  ],
+  "parallelism": {
+    "safe_in_parallel": [
+      "Possibly adapter isolated fixes",
+      "Service transaction-scope fix after action authority is decided"
+    ],
+    "coupled": [
+      "binding handoff",
+      "App receiving mount",
+      "Service bind route"
+    ],
+    "collision_note": "No same-file collision was established against App presentation commit 4d239275370b31f163e86e440dc701557157bae3, which touched presentation-state.ts and its test. App #2 changes the integration hub and requires a three-way comparison against any newer or uncommitted presentation work."
+  },
+  "checks_run": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -p test_possibly_relay.py -v",
+      "target": "App relay",
+      "result": "4 passed"
+    },
+    {
+      "command": "isolated copy: npm ci --ignore-scripts && npm run build && node --test tests/*.test.mjs",
+      "target": "App web",
+      "result": "build passed; 121 passed"
+    },
+    {
+      "command": "isolated copy: npm ci --ignore-scripts && npm test",
+      "target": "Possibly",
+      "result": "22 passed; 6 skipped"
+    },
+    {
+      "command": "isolated copy: PYTHONDONTWRITEBYTECODE=1 AMPLIFIER_CONVERGE_HOME=<temporary> PYTHONPATH=src python3 -m pytest -q -p no:cacheprovider",
+      "target": "Service",
+      "result": "489 passed; 5 skipped"
+    }
+  ],
+  "checks_not_run": [
+    {
+      "target": "Service optional Possibly integration tests",
+      "reason": "The optional Python package was absent locally; normal suite skipped those cases."
+    },
+    {
+      "target": "live App + Service + browser integration",
+      "reason": "Prohibited for this review lane; static and unit checks cannot establish live acceptance."
+    },
+    {
+      "target": "full accessibility browser matrix",
+      "reason": "Six Possibly offline evidence fixtures are absent; no evidence was fabricated."
+    }
+  ],
+  "residuals": [
+    "App npm ci reported 10 audit advisories; no package-level attribution was performed.",
+    "Vite warned of a 561.00 kB minified entry chunk; base comparison was blocked by a pre-existing local-package integrity mismatch."
+  ],
+  "writes": {
+    "product_source_changed": false,
+    "remote_state_changed": false,
+    "review_artifacts_only": true
+  }
+}

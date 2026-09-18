@@ -19,10 +19,10 @@ sentences and answers four kinds of question, and is otherwise never the bottlen
 ## Principles
 
 ### 1. One experience, many projects
-Amplifier Converge is a family of small Converge projects — method, service, app,
-agents, queue — each with its own repository, vision, contracts, ledger, queue and
-manager session, held together by contracts at their seams. The top level holds the
-seams and names the parts; it holds no part's internals.
+Amplifier Converge is a family of registered Converge parts, each with its own
+repository, vision, contracts, ledger, queue and manager session, held together by
+contracts at their public seams. The family registry names the parts and their seams;
+it holds no part's internals.
 
 ### 2. The API is the truth
 Anything worth knowing about a run, a claim, a call or a check is a record the service
@@ -82,10 +82,10 @@ shape of growth; a part that keeps growing is the defect.
 
 - A steward attaches a repository that has never seen Converge and reaches a ratified
   vision and a seeded ledger in **under 60 minutes without opening a terminal**.
-- A steward opening the picker sees every part (six today) and their own projects, and
-  reaches any one's direction and runs in **one click**.
-- Five manager sessions run five parts at once with **zero** shared files, queue items
-  or calls between them — read by the family kit, not asserted.
+- A steward opening the picker sees every current registered part and their own
+  projects, and reaches any one's direction and runs in **one click**.
+- Independently managed parts run concurrently with **zero** shared mutable files,
+  queue items or calls between them — read by the family kit, not asserted.
 - A steward reading a wave finds **zero** runs marked merged without the manager's check
   on record; the service refused the rest.
 - A stalled lane is visible to the steward within **fifteen minutes**, because an
@@ -100,3 +100,4 @@ shape of growth; a part that keeps growing is the defect.
 | 2026-09-06 | v1 drafted from the steward's sentences; corrected the same day (installs on its own; one instance owns state; Amplifier optional); ratified as content. | Steward's words, 2026-09-06. |
 | 2026-09-06 | Principle 9 (split out, not grown) added on the steward's design-safety rule; headings carry one state word. | Steward's words; method `documents.v1` clause 2. |
 | 2026-09-07 | Reshaped into the family format on the steward's word ("port it"): one-paragraph "what it is", principles as titled subsections, resists list, changelog table. No principle changed. | `docs/FORMAT.md`. |
+| 2026-09-16 | Applied the exact dynamic-family wording and concurrent-isolation metrics. | Steward: "ratified, let's go!"; `docs/VISION.v1-candidate.md`, packet SHA-256 `8e2de16a8de4fe7f3b41893bc2d3e77d26bf24398fcff9b86a1580a96219c270`. |

@@ -8,7 +8,7 @@ method, service, app, agents, queue — is a Converge project that builds only a
 
 ## What it is
 
-Six repositories, one registry. A part is in the family when it has a row:
+One registry. A part is in the family when it has a row:
 
 ```toml
 [[part]]
@@ -24,9 +24,9 @@ what   = "the control plane: run and check first, one door, one file"
 
 ## The promises
 1. **The top level holds seams, never internals.** This repository carries the family
-   vision, the seam contracts, `family.toml` (eight parts: method, service, app, agents,
-   queue, reader, sessions, this), the seam ledger, and the one installable — a package that composes the
-   parts and adds no code of its own. A seventh part arrives by a split-out or a proposal.
+   vision, the seam contracts, `family.toml`, the seam ledger, and the one installable —
+   a package that composes registered parts and adds no code of its own. The registry
+   defines the parts; additions arrive through promise 8 or a proposal.
 2. **A part is a full Converge project.** Its own repository, vision, contracts, ledger,
    queue and manager session. The top level files work into its own queue and names the
    seam; it never files into a part's.
@@ -78,3 +78,4 @@ what   = "the control plane: run and check first, one door, one file"
 | 2026-09-06 | v1 drafted; corrected after the steward's reading (one instance, no dependency on any other product); ratified. Reshaped 2026-09-07 into the family format ("port it"); no promise changed. | Steward's words; `docs/FORMAT.md`. |
 | 2026-09-07 | Promise 3 and 6 amended (the picker is anchored on manager sessions; state per session id; one session may steer several repositories) — proposal ratified. | `docs/workflow/family.v1-candidate.ratified.md`; steward's word. |
 | 2026-09-08 | Promise 9 folded into promise 1 (three-to-eight promises per contract); seventh part `reader` (from the app) and eighth `sessions` (from agents) split out under promise 8 on the steward's word, registered seeded. | method `documents.v1`; app `docs/workflow/SPLIT-OUT-THE-READER.md`. |
+| 2026-09-16 | Applied the exact registry-wording amendment; no prospective part is registered by this edit. | Steward: "ratified, let's go!"; `contracts/family.v1-candidate.md`, packet SHA-256 `8e2de16a8de4fe7f3b41893bc2d3e77d26bf24398fcff9b86a1580a96219c270`. |

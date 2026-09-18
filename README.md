@@ -10,6 +10,9 @@ their seams; bring your own agent.
 
 ## Install
 
+Repository and checkpoint links in this document require access to the private
+Converge repositories; they are intended for authorized collaborators.
+
 Amplifier Converge needs `uv` and `git` on the machine, and nothing else.
 
 ```sh
@@ -29,8 +32,9 @@ The command carries the usual suspects for setup and check-in — `doctor`, `set
 onboarding them happen on the screen, never here. The instance keeps everything
 under `~/.amplifier-converge/`.
 
-*(None of this runs yet — the family is at its first word. The section is here so the
-door is described before it is built.)*
+*The install flow above describes the intended product entry point, not a verified
+end-to-end release. Development checkpoints and their limits are recorded in
+[the September 18 publication brief](docs/workflow/PUBLICATION-20260918.md).*
 
 ## What is here
 
@@ -38,11 +42,13 @@ This repository is the top level. It holds the family's vision, the seam contrac
 the registry of parts (`family.toml`) and, once seeded, the ledger that reads the
 seams. It holds no part's internals.
 
-- `docs/VISION.md` — where this is going (DRAFT)
-- `contracts/family.v1.md` — how the parts compose (DRAFT)
-- `contracts/service.v1.md` — one API is the truth (DRAFT)
-- `contracts/agent-types.v1.md` — what a type owes the family, and attach-and-survive (DRAFT)
-- `contracts/queue.v1.md` — items, claim, one custody owner, plain words (DRAFT)
+- `docs/VISION.md` — where this is going (RATIFIED)
+- `contracts/family.v1.md` — how the parts compose (RATIFIED)
+- `contracts/service.v1.md` — one API is the truth (RATIFIED)
+- `contracts/agent-types.v1.md` — what a type owes the family, and attach-and-survive (RATIFIED)
+- `contracts/queue.v1.md` — items, claim, one custody owner, plain words (RATIFIED)
+- `contracts/experience-interface.v1.md` — the shared shell/experience exchange (RATIFIED)
+- `contracts/service.v2-candidate.md` — proposed initial creation/authoring authority (DRAFT; not ratified)
 - `family.toml` — the parts and their status (`seeded` · `body` · `retired`)
 - `docs/FORMAT.md` — how our visions and contracts are shaped, and why
 - `docs/PLAN-vNext-2026-09-06.md` — the plan under discussion
