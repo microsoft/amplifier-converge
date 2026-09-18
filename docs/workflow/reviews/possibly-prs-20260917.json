@@ -1,7 +1,10 @@
 {
+  "historical": true,
+  "current_merge_guidance": false,
+  "publication_note": "Findings apply only to the listed September 17 revisions, not to later fixes, decisions, or integration checkpoints.",
   "reviewed_at_pdt": "2026-09-17",
   "scope": {
-    "source": "immutable pr-review-inputs-1339",
+    "source": "immutable PR base/head revisions listed in this review",
     "captured_at_pdt": "2026-09-17T13:41:27.864513-07:00",
     "mode": "read-only exact-revision review",
     "live_runtime_accepted": false

@@ -1,5 +1,9 @@
 # Possibly PR set review — 2026-09-17
 
+> **Historical review — not current merge guidance.** Findings below apply only
+> to the exact September 17 base/head revisions listed here. Later fixes,
+> decisions and integration work must be evaluated at their own revisions.
+
 ## Recommendation
 
 **Do not merge the set yet.** The receiving App has no path to create or receive
