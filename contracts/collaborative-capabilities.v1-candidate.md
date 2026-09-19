@@ -8,7 +8,8 @@ It does not amend or replace the settled service, agent-types or experience seam
 On-ramp owns projectless ideas and their promotion. Direction owns document
 revisions and wording proposals. Operation owns the presentation of work.
 Service owns record storage and command receipts. Agents owns native execution.
-The experience SDK owns presentation transport. Method owns instruction text.
+The experience SDK owns presentation transport. Method owns the document law;
+the operating bundle owns the delivered supervisor and manager instructions.
 
 ## What it is
 
@@ -26,8 +27,8 @@ It does not silently redefine that door, run states, identity or merge authority
    to Agents; it never becomes a scheduler or a second run authority.
 2. **Ownership stays visible.** Shared record mechanisms live in Service, native
    runtime mechanisms in Agents, transport in the experience SDK and method text
-   in Method. A consumer imports a documented public API, never private tables
-   or a neighbour's source path. No consumer carries a divergent copied core.
+   in the operating bundle. Method stays document-only. Consumers use public APIs,
+   never private tables or a neighbour's source path. No consumer carries a divergent copied core.
 3. **Changes have receipts.** Mutations carry a stable request identifier and
    exact arguments. An exact retry returns its receipt; changed arguments under
    the same identifier are refused. Revisions and project boundaries are checked.
