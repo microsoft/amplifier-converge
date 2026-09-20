@@ -7,7 +7,8 @@ It does not amend or replace the settled service, agent-types or experience seam
 
 On-ramp owns projectless ideas and their promotion. Direction owns document
 revisions and wording proposals. Operation owns the presentation of work.
-Service owns record storage and command receipts. Agents owns native execution.
+Service owns record storage and command receipts. Queue owns bounded work items
+and custody. Agents owns manager execution and the running of waves and lanes.
 The experience SDK owns presentation transport. Method owns the document law;
 the operating bundle owns the delivered supervisor and manager instructions.
 
@@ -20,15 +21,28 @@ This first adapter is an embedded public Service library used by several local
 processes; it is not the single-process HTTP door promised by service.v1.
 It does not silently redefine that door, run states, identity or merge authority.
 
+The runtime 0.2.0 proposal composes these public responsibilities:
+
+```
+Queue       bounded work items and custody
+Agents      waves, isolated working copies, native sessions, checks, integration
+Service     retained execution records and command receipts
+Operation   shared work view and commands to the owning parts
+```
+
+A delegated helper is not an isolated lane. A lane has its own working copy,
+branch and native session; worker returns remain separate from manager checks.
+Source validation of this composition does not establish successful live adoption.
+
 ## The promises
 
 1. **One domain implementation per capability.** Presentation and command-line
    adapters call the same public actions. Operation delegates lifecycle commands
    to Agents; it never becomes a scheduler or a second run authority.
-2. **Ownership stays visible.** Shared record mechanisms live in Service, native
-   runtime mechanisms in Agents, transport in the experience SDK and method text
-   in the operating bundle. Method stays document-only. Consumers use public APIs,
-   never private tables or a neighbour's source path. No consumer carries a divergent copied core.
+2. **Ownership stays visible.** Records live in Service; work and custody in Queue;
+   native execution and waves in Agents; transport in the experience SDK.
+   Instructions live in the operating bundle; Method stays document-only.
+   Consumers use public APIs, never private tables, source paths or divergent copies.
 3. **Changes have receipts.** Mutations carry a stable request identifier and
    exact arguments. An exact retry returns its receipt; changed arguments under
    the same identifier are refused. Revisions and project boundaries are checked.
@@ -58,6 +72,8 @@ claiming the settled single-process service invariant has already been met.
 - Install each package from immutable repository references in a clean environment.
 - Call the same action through library, command line and actual tool transport.
 - Retain exact retry, stale revision, project-scope and lost-owner refusal tests.
+- Prove separate lane branches, working copies and native sessions, bounded attempts,
+  actual manager checks before and after integration, and fresh evidence for closure.
 - Observe packaged collaborative resources without a development source path.
 - Compare saved projects, documents, receipts and native history across adoption.
 - Reconnect without adding a run or a user turn; observe original native IDs.
@@ -77,3 +93,4 @@ new repository nor an unreviewed migration of the established service store.
 | Date | Change | Evidence |
 | --- | --- | --- |
 | 2026-09-19 | Proposed the ownership and adoption seam for independently installed collaborative parts. | Owner requested repository-backed adoption of the working capabilities. |
+| 2026-09-19 | Clarified Queue work and custody ownership and Agents wave and lane execution for runtime 0.2.0. | A helper using the manager working copy did not meet the isolated-lane boundary; the adoption now has separate working copies and manager check mechanisms. Live validation remains a separate observation. |
