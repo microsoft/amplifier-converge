@@ -5,7 +5,7 @@
 
 [[part]]
 id = "amplifier-converge"
-url = "https://github.com/bkrabach/amplifier-converge"
+url = "https://github.com/microsoft/amplifier-converge"
 branch = "main"
 seams = ["family.v1", "service.v1", "agent-types.v1", "queue.v1"]
 status = "seeded"
@@ -13,7 +13,7 @@ what = "the family: vision, seams, this registry, the ledger that reads the seam
 
 [[part]]
 id = "method"
-url = "https://github.com/bkrabach/amplifier-converge-method"
+url = "https://github.com/microsoft/amplifier-converge-method"
 branch = "main"
 seams = ["family.v1", "service.v1"]
 status = "seeded"
@@ -23,7 +23,7 @@ seeded_at = "12b97c3"
 
 [[part]]
 id = "service"
-url = "https://github.com/bkrabach/amplifier-converge-service"
+url = "https://github.com/microsoft/amplifier-converge-service"
 branch = "main"
 seams = ["family.v1", "service.v1", "agent-types.v1", "queue.v1", "desk.v1"]
 status = "seeded"
@@ -44,7 +44,7 @@ seeded_at = "b2f76a8"
 
 [[part]]
 id = "agents"
-url = "https://github.com/bkrabach/amplifier-converge-agents"
+url = "https://github.com/microsoft/amplifier-converge-agents"
 branch = "main"
 seams = ["family.v1", "service.v1", "agent-types.v1"]
 status = "seeded"
@@ -54,7 +54,7 @@ seeded_at = "855fbab"
 
 [[part]]
 id = "queue"
-url = "https://github.com/bkrabach/amplifier-converge-queue"
+url = "https://github.com/microsoft/amplifier-converge-queue"
 branch = "main"
 seams = ["family.v1", "service.v1", "queue.v1"]
 status = "seeded"
