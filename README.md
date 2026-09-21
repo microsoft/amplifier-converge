@@ -21,7 +21,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh          # macOS, Linux
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex" # Windows
 
 # Amplifier Converge
-uv tool install git+https://github.com/bkrabach/amplifier-converge
+uv tool install git+https://github.com/microsoft/amplifier-converge
 amplifier-converge            # starts the instance and opens the browser
 amplifier-converge doctor     # says, in plain words, what is ready and what is not
 ```
