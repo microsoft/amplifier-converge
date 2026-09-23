@@ -70,6 +70,21 @@ explicitly distinguishes this from the settled single-process Service door.
 That reconciliation and the eventual Sessions boundary remain open design work;
 successful local trials do not ratify either change.
 
+## Published follow-up status
+
+The [post-trial repair record](RETROSPECTIVE-20260923.md#follow-up-repairs-merged-after-the-trial)
+links the merged portable instructions 0.4.25, native runtime 0.2.28, Operations
+0.2.30 and optional bundle 0.2.18/module 0.1.13. They clarify current evidence and
+expiry, complete portable delivery guidance, and expose native publication
+schemas. Each remains with its existing owner; none changes Unified core.
+
+These are published source and package qualifications, not live adoption or a
+passing repeat of the customer journey. Updating foreground guidance does not
+update a separately installed native manager. Resolve and record each role's
+actual instructions and runtime before claiming the repaired composition is in
+use. The historical trial and its later native progress keep their original
+versions and acceptance boundaries.
+
 ## Delivery and readiness
 
 There are separate proofs for worker output, manager checks, integration, selected

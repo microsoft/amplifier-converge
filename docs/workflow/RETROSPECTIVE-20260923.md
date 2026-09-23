@@ -45,9 +45,10 @@ on the same date. They do not revise the cutoff scores above.
 
 The manager reached publication after six refused publication attempts: the
 action discovery helper did not supply that action's schema. This is a remaining
-native discoverability gap despite the earlier work-item recovery. A follow-up
-source repair was being prepared when this record was written; it is not counted
-as merged, installed or live-proven here.
+native discoverability gap in the trial despite the earlier work-item recovery.
+[Agents #31](https://github.com/microsoft/amplifier-converge-agents/pull/31)
+subsequently merged the discovery repair. Its source qualification is recorded
+below; it was not installed in this trial or used for the later publication above.
 
 The expired watch did not deliver these later results. A successful system-browser
 open command is not customer-visible browser acceptance or a demonstrated
@@ -105,6 +106,27 @@ prepared. Later package releases must not be backdated into the trial.
 Portable instructions remained 0.4.24 in this pass. No Unified core change was
 made. The [generic background-observation proposal](UNIFIED-CHECKPOINT-20260923.md#unapproved-host-proposal)
 is unapproved design work, not a shipped interface.
+
+## Follow-up repairs merged after the trial
+
+The following approvals were merged after the scored window and the later native
+progress above. They address the observed gaps in their owning Converge
+repositories. None was adopted into the live trial; their receiving checks do not
+establish model compliance, customer browser acceptance or automatic handback.
+
+| Owner and change | Published version and merge | Separate qualification and limits |
+| --- | --- | --- |
+| [Portable bundle #99](https://github.com/microsoft/amplifier-bundle-converge/pull/99): distinguish current owner evidence from admission history, separate watch expiry from work outcome, and finish exact review publication/selection | Instructions 0.4.25; `41679679fd449ecc16b6af58d0ce8ec2cb2d29ad` | 214 source and 27 installed-wheel checks; resource/composition, lint and frozen-contract guard passed. Manual current-state/expiry/handback scenario **not run**. No host-specific dependency or authority/attempt-limit change. |
+| [Agents #31](https://github.com/microsoft/amplifier-converge-agents/pull/31): expose review publication/withdrawal schemas and reject malformed shapes before dispatch | Runtime 0.2.28; `cf2a35b269f6a90314a8a8bd653456c897d7abd1` | 85 focused source checks plus 5 subtests; 50 installed-wheel checks, including a disposable native-tool lifecycle. Existing ownership, selection, check and idempotency guards remain. No live model/product/browser proof. |
+| [Operation #31](https://github.com/microsoft/amplifier-converge-operation/pull/31): receive the runtime discovery repair | Operations 0.2.30; `b6c2f71efc798d1523bb83a1f59247af832200ce` | 22 installed CLI/MCP/composition checks with controlled private wheel targets; UI and facade behavior unchanged. Unoverridden fresh dependency resolution and live acceptance **not run**. |
+| [Optional bundle #32](https://github.com/microsoft/amplifier-bundle-unified-converge/pull/32): supply scoped hook lifecycle facts and distinguish pending work, expiry, confirmed outcome and failed observation | Bundle 0.2.18/module 0.1.13; `b4b6163bff14d36c787106d62f3dd9eef793ca09` | 157 source and 23 installed-wheel checks, actual source-resolved Core load/mount and disposable host scheduler/task/hook receiving. Retry classification, correction, report ownership and pause guards retained. No model/customer trial or live deployment. |
+
+These are separate source/package qualifications, not proof of a newly installed
+combined environment. The [next acceptance plan](ACCEPTANCE-PLAN-20260923.md)
+requires recording what actually resolves for each role before repeating the
+customer flow. Scheduled machine messages and provider turns still occur under
+the current host contract. No Unified host change or new observation interface is
+included in these merged repairs.
 
 ## Lessons to carry forward
 

@@ -6,6 +6,13 @@ build as the workflow test. No new generic host interface is assumed or authoriz
 
 ## Preparation and evaluator boundary
 
+Use the [merged follow-up record](RETROSPECTIVE-20260923.md#follow-up-repairs-merged-after-the-trial)
+as the candidate starting point: portable instructions 0.4.25, runtime 0.2.28,
+Operations 0.2.30 and optional bundle 0.2.18/module 0.1.13. Qualify the intended
+combined installation and each role's actual resolved resources before the
+trial; separate wheel checks and a merged PR do not prove adoption. Record any
+later source revision explicitly rather than silently substituting it.
+
 Use a fresh disposable workspace, domain store and Unified conversation. First
 confirm the prior trial is quiet before changing shared capability bindings;
 preserve prior histories, source returns, attempts and services. Do not equate
