@@ -10,6 +10,16 @@ their seams; bring your own agent.
 
 ## Install
 
+**Current integration checkpoint — September 23, 2026:** the active experiment
+composes Converge as optional capabilities inside Amplifier Unified, with a
+portable method and operating bundle that also serve CLI/TUI sessions. See the
+[architecture and ownership map](docs/workflow/UNIFIED-CHECKPOINT-20260923.md),
+[dated retrospective](docs/workflow/RETROSPECTIVE-20260923.md), and
+[next narrow acceptance plan](docs/workflow/ACCEPTANCE-PLAN-20260923.md).
+This is a development checkpoint, not a completed product or a ratification of
+new seams. The standalone entry point below remains an earlier intended product
+form; the ratified vision and contracts have not been silently rewritten.
+
 Repository and checkpoint links in this document require access to the private
 Converge repositories; they are intended for authorized collaborators.
 
