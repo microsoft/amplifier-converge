@@ -1,4 +1,4 @@
-# Contract 5 Feedback and learning
+# Feedback and learning
 
 For people giving feedback, agents acting on it, and future participants. The promise: observations become traceable decisions and improvements, with their reasoning intact.
 
@@ -8,7 +8,7 @@ For people giving feedback, agents acting on it, and future participants. The pr
 
 1. **Accept feedback naturally.** A conversation, note, image, or demonstration can carry useful evidence. Preserve its meaning and source; do not make the person diagnose or classify it before investigating.
 
-2. **Understand before assigning.** Check the relevant version and current behavior. Connect related reports, separate different causes, and reuse existing work where appropriate. A broken promise calls for a fix; a proposed change of direction calls for the agreement process in [Contract 1](01-shared-direction.md).
+2. **Understand before assigning.** Check the relevant version and current behavior. Connect related reports, separate different causes, and reuse existing work where appropriate. A broken promise calls for a fix; a proposed change of direction calls for the agreement process in [Shared direction](shared-direction.md).
 
 3. **Close the feedback loop.** Record what the observation led to: a correction, a decision, further investigation, or a reason for no change. “Still broken” reopens verification rather than producing another reassuring answer. Return the result to the contributor.
 

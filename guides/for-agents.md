@@ -37,7 +37,7 @@ If ownership changes, confirm the receiving owner has the context and authority.
 
 ## Execute without routine approval stops
 
-Use [Contract 2](../contracts/02-ownership-and-collaboration.md) to decide:
+Use [Ownership and collaboration](../contracts/ownership-and-collaboration.md) to decide:
 
 - Reversible and within authority: choose, try, inspect, and adjust.
 - Consequential and delegated: meet the agreed conditions with proportionate evidence and review.
@@ -49,7 +49,7 @@ Track progress against the assignment's limits. If attempts stop producing usefu
 
 ## Verify the actual result
 
-Use [Contract 4](../contracts/04-verification-and-delivery.md). Choose checks capable of detecting plausible failures, including behavior across parts and relevant failure paths.
+Use [Verification and delivery](../contracts/verification-and-delivery.md). Choose checks capable of detecting plausible failures, including behavior across parts and relevant failure paths.
 
 For a request handoff, exercise submission, acceptance, refusal, and what the requester sees after each. Check that someone remains responsible throughout. A storage test alone cannot prove the experience.
 

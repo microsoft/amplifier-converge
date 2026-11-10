@@ -2,11 +2,11 @@
 
 Aim for a narrative one-page vision and focused contracts of one or two pages each. These are review aids, not quotas. Use as many contracts as meaningful responsibilities require.
 
-Split when responsibilities, audiences, or decisions need separate attention. Focused repositories can give those parts a clearer home and allow more independent work; ownership may span many of them. Keep one promise understandable in one place and link supporting detail without hiding obligations. Prune and reshape as described in [Contract 6](../contracts/06-system-design-and-decomposition.md). Use familiar examples where they save explanation.
+Split when responsibilities, audiences, or decisions need separate attention. Focused repositories can give those parts a clearer home and allow more independent work; ownership may span many of them. Keep one promise understandable in one place and link supporting detail without hiding obligations. Prune and reshape as described in [System design and decomposition](../contracts/system-design-and-decomposition.md). Use familiar examples where they save explanation.
 
 ## Detail where it matters
 
-The right altitude is the level at which people need to agree. A contract may name a protocol, an architecture, an exact setting, or a visual design when others rely on that choice. Keep the commitment and its reason easy to inspect; link deeper explanation. [Contract 1](../contracts/01-shared-direction.md) governs deliberate choices and bets.
+The right altitude is the level at which people need to agree. A contract may name a protocol, an architecture, an exact setting, or a visual design when others rely on that choice. Keep the commitment and its reason easy to inspect; link deeper explanation. [Shared direction](../contracts/shared-direction.md) governs deliberate choices and bets.
 
 These examples illustrate possible project commitments, not requirements of the methodology:
 

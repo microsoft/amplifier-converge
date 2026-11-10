@@ -17,12 +17,12 @@ The guides help you choose and check suitable tools in your environment.
 
 Read the vision and six contracts for the complete set of promises. Guides explain their application; they do not add hidden requirements.
 
-1. [Shared direction](contracts/01-shared-direction.md) — identify the agreement and change it deliberately.
-2. [Ownership and collaboration](contracts/02-ownership-and-collaboration.md) — delegate outcomes and authority; coordinate where responsibilities meet.
-3. [Execution and recovery](contracts/03-execution-and-recovery.md) — choose useful work, carry it through, and recover without losing or duplicating it.
-4. [Verification and delivery](contracts/04-verification-and-delivery.md) — demonstrate the usable result, including real user journeys.
-5. [Feedback and learning](contracts/05-feedback-and-learning.md) — turn observations into improvements that last.
-6. [System design and decomposition](contracts/06-system-design-and-decomposition.md) — build focused parts with dependable connections.
+- [Shared direction](contracts/shared-direction.md) — identify the agreement and change it deliberately.
+- [Ownership and collaboration](contracts/ownership-and-collaboration.md) — delegate outcomes and authority; coordinate where responsibilities meet.
+- [Execution and recovery](contracts/execution-and-recovery.md) — choose useful work, carry it through, and recover without losing or duplicating it.
+- [Verification and delivery](contracts/verification-and-delivery.md) — demonstrate the usable result, including real user journeys.
+- [Feedback and learning](contracts/feedback-and-learning.md) — turn observations into improvements that last.
+- [System design and decomposition](contracts/system-design-and-decomposition.md) — build focused parts with dependable connections.
 
 ## Put it to work
 
