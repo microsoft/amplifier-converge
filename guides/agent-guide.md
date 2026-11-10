@@ -33,7 +33,7 @@ Inspect available tools, their instructions, access, and limits. Choose mechanis
 | Verification | Tests, browser interaction, device access, independent review | The mechanism can exercise the promised behavior and the version being delivered. |
 | Reporting and return | A work record, direct report, or supported completion notification | Observations refer to the right work. A promised future notification has a working mechanism. |
 
-A capability's label is not proof. Use a small, reversible check where practical. If a capability is unavailable, investigate an alternative and record the affected limit. Ask for human action only when the missing authority or access actually requires it.
+A capability's label is not proof. Use a small, reversible check where practical. If a capability is unavailable, investigate an alternative and record the affected limit. Ask for human help when necessary authority, access, or judgment is missing. Prepare the focused question and resolve what you can within your authority first.
 
 ## Make work durable and bounded
 
