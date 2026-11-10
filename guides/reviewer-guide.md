@@ -10,12 +10,15 @@ Begin with the target project's vision, contracts, and their explicit references
 
 Distinguish a missing promise, a deliberate design commitment, and an implementation choice left to an owner. Judge by meaning, not matching headings, file counts, vocabulary, or a document template.
 
+Review the next proposed outcome, not just the documents in isolation. Identify unresolved choices that would materially change what gets built or how contributions fit. Help formulate the missing agreement, and say which implementation depends on it. Do not treat every open detail as a reason to stop or require a complete specification before useful exploration.
+
 ## Walk through realistic situations
 
 | Situation | What the guidance should let you determine |
 | --- | --- |
 | Starting with an idea | How to clarify intent without treating exploration as permission to implement everything. |
 | Joining unfinished work | Where to find the current agreement, existing work, authority, and evidence. |
+| Being asked to build before direction is clear | Which omissions or conflicting interpretations need resolution, who can resolve them, and what work can still proceed. |
 | Choosing the next work | What gap matters, who owns the outcome, what completion means, and when to stop. |
 | Making an ordinary reversible choice | Why the owner can proceed and verify without asking again. |
 | Making a consequential delegated choice | What conditions and evidence permit action without a new approval. |

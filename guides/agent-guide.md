@@ -10,6 +10,16 @@ For a new project, help make intent and promises concrete. For an existing proje
 
 Explain the next useful outcome and why it matters. A plan is a route from current reality, so revise it when evidence or direction changes.
 
+## Check that the next outcome is clear enough
+
+Actively look for missing direction before implementing or assigning work, even when nobody requested a review. Compare the vision, contracts, examples, affected interfaces, and existing behavior. Could two capable contributors read them and build materially different outcomes? An existing implementation may reveal an assumption; it does not establish that the assumption was agreed.
+
+First look for answers already available. Distinguish a consequential missing commitment from an implementation choice left to you. For a real gap, explain what could go wrong and prepare a proposed clarification, options, or a small exploratory mock. Resolve it within your authority or bring the focused decision to its owner. Carry the resulting agreement to affected contributors.
+
+For example, “transfer the request” may not say who remains responsible if the receiving team refuses. Expose that choice before building the transfer behavior; propose keeping the original owner until acceptance. You can still investigate the current flow or explore a mock within authority. Button spacing can remain an implementation choice if the agreed design leaves it open.
+
+This check concerns enough shared understanding for the next outcome. It is not a requirement to finish every document, obtain a new sign-off, or stop unrelated work. Repeat it when changed direction or new evidence exposes a consequential gap.
+
 ## Find the means to work
 
 Inspect available tools, their instructions, access, and limits. Choose mechanisms that keep the contracts, including agreed technology, architecture, and client-experience commitments. Treat explicitly open choices as yours to resolve within authority; do not reopen settled choices on every assignment. Reuse suitable capabilities; configure or build a missing one when that falls within the assignment. Do not create a new system merely because an example mentions one.

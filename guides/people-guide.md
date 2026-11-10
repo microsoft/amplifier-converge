@@ -8,7 +8,7 @@ Describe who needs something and what should become better. Explain the purpose,
 
 For example: “People asking for help should always know which team is responsible.” That gives a direction without deciding the database or screen layout.
 
-Make uncertainty visible. A sketch, example, or working mock can settle a misunderstanding faster than more prose. Identify what it demonstrates and what remains exploratory. A useful experiment need not become a commitment.
+Make uncertainty visible. A sketch, example, or working mock can settle a misunderstanding faster than more prose. Identify what it demonstrates and what remains exploratory. A useful experiment need not become a commitment. Expect agents to notice what is missing, challenge incompatible interpretations, and help express what matters before building. You do not need to arrive with a complete specification.
 
 ## Agree where contributions meet
 
@@ -16,7 +16,7 @@ Write a short vision and contracts for the promises people will rely on. In the 
 
 Name the current agreement, who can change it, and who owns the combined result. Give each promise one home. For an uncertain design bet, agree how you will learn whether it helps and what would prompt reconsideration. Owners may carry several parts or repositories; peers collaborate on the behavior that crosses their boundaries.
 
-Review for meaning: could someone explain the promise, challenge it, and recognize a violation? Use [the reviewer guide](reviewer-guide.md) when an independent reading would help.
+Review for meaning: could someone explain the promise, challenge it, and recognize a violation? For the next outcome, ask the agent what remains unclear enough to change what gets built, and to bring a proposed resolution. A focused question or mock can prevent expensive rework; an ordinary choice within delegated authority should not come back for approval. Use [the reviewer guide](reviewer-guide.md) when an independent reading would help.
 
 ## Delegate an outcome and room to act
 

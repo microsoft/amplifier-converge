@@ -6,7 +6,7 @@ For whoever coordinates work and those carrying it out. The promise: authorized 
 
 ## Commitments
 
-1. **Start from reality.** Inspect the current agreement, product, participants, existing work, and unresolved decisions. For a new project, help establish the intended outcome and decision owners. For an existing one, preserve useful work and identify assumptions needing agreement. Investigate and prepare drafts within existing authority; an unresolved choice blocks only work that depends on it.
+1. **Start from reality.** Inspect the current agreement, product, participants, existing work, and unresolved decisions. For a new project, help establish the intended outcome and decision owners. For an existing one, preserve useful work and identify assumptions needing agreement. Apply [Shared direction](shared-direction-contract.md)’s clarity check to the next bounded outcome before implementing or delegating it; a request to build does not settle missing product decisions. Investigate and prepare drafts within existing authority; an unresolved choice blocks only work that depends on it.
 
 2. **Derive and bound the work.** Each assignment names the gap or authorized request, intended result, scope, owner, context, completion evidence, and relevant time, cost, or retry limits. Choose the next useful work by expected value, risk, dependencies, and available resources. Make that reasoning visible. Stop at the agreed outcome or limit unless continuing to another outcome is already authorized.
 
