@@ -26,11 +26,11 @@ For whoever coordinates work and those carrying it out. The promise: authorized 
 
 2. **Choose:** compare reality with intent and select a useful, bounded outcome.
 
-3. **Act:** execute and coordinate within the decision boundaries in [Ownership and collaboration](ownership-and-collaboration.md).
+3. **Act:** execute and coordinate within the decision boundaries in [Ownership and collaboration](ownership-and-collaboration-contract.md).
 
-4. **Verify:** check the combined result against [Verification and delivery](verification-and-delivery.md); repair failures within the work’s limits.
+4. **Verify:** check the combined result against [Verification and delivery](verification-and-delivery-contract.md); repair failures within the work’s limits.
 
-5. **Learn and continue:** apply [Feedback and learning](feedback-and-learning.md), update the working record, and choose again only within continuing authority.
+5. **Learn and continue:** apply [Feedback and learning](feedback-and-learning-contract.md), update the working record, and choose again only within continuing authority.
 
 Repeat the comparison after completed work, failed checks, relevant feedback, changed agreements, or changed conditions. Human absence does not stop authorized progress. When no useful authorized work remains, preserve the state and report what is needed; do not invent activity or wait without a supported checkpoint.
 

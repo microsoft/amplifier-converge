@@ -12,7 +12,7 @@ For everyone writing, agreeing to, or relying on project guidance. The promise: 
 
 3. **Keep one current agreement.** Record the accepted wording or artifact version, who agreed, and the scope of that agreement. Give each promise one home; related contributions reference it. A draft, saved edit, or discussion is not automatically acceptance.
 
-4. **Change direction explicitly.** Show what changes, why, the supporting evidence or judgment, and who is affected. The authorized owners settle consequential changes before dependent implementation follows them. Confirm affected work receives the new agreement. Implementation choices that preserve the agreement use the standing authority in [Ownership and collaboration](ownership-and-collaboration.md).
+4. **Change direction explicitly.** Show what changes, why, the supporting evidence or judgment, and who is affected. The authorized owners settle consequential changes before dependent implementation follows them. Confirm affected work receives the new agreement. Implementation choices that preserve the agreement use the standing authority in [Ownership and collaboration](ownership-and-collaboration-contract.md).
 
 5. **Make review accessible.** Use everyday words and the clearest form: text, pictures, charts, or working mocks. Keep essential meaning inspectable by people and agents. Make the current wording, proposed changes, and relevant decision history easy to compare without requiring developer tools. An approved mock establishes only the design and behavior identified as agreed, not its temporary implementation.
 
