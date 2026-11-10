@@ -1,68 +1,39 @@
 # Amplifier Converge
 
-The app a person opens to get work done the Converge way — vision first, contracts as
-the law, work derived from the gap between the two — with a team of agents doing the
-work. One instance on a person's machine, installed on its own and depending on
-nothing else, that creates workspaces, clones repositories, launches and supervises
-manager sessions, and puts every call a person must make on one screen. One
-experience made of several small Converge projects, held together by contracts at
-their seams; bring your own agent.
+A way for people and agents to turn shared intent into useful, verified outcomes.
 
-## Install
+People bring purpose, judgment, and taste. Capable owners carry complete outcomes within agreed authority. Vision and contracts keep contributions aligned; the next work comes from the gap between what we want and what is true now.
 
-**Current integration checkpoint — September 23, 2026:** the active experiment
-composes Converge as optional capabilities inside Amplifier Unified, with a
-portable method and operating bundle that also serve CLI/TUI sessions. See the
-[architecture and ownership map](docs/workflow/UNIFIED-CHECKPOINT-20260923.md),
-[dated retrospective](docs/workflow/RETROSPECTIVE-20260923.md), and
-[next narrow acceptance plan](docs/workflow/ACCEPTANCE-PLAN-20260923.md).
-This is a development checkpoint, not a completed product or a ratification of
-new seams. The standalone entry point below remains an earlier intended product
-form; the ratified vision and contracts have not been silently rewritten.
+## Two layers, one method
 
-Repository and checkpoint links in this document require access to the private
-Converge repositories; they are intended for authorized collaborators.
+| Layer | What it gives you |
+| --- | --- |
+| [Vision](docs/VISION.md) and [contracts](#the-contracts) | Shared direction, dependable promises, and deliberate design commitments for human–human, human–agent, and agent–agent collaboration. |
+| [Practical guides](#put-it-to-work) | Ways to fulfill those promises using the capabilities available in your environment. |
 
-Amplifier Converge needs `uv` and `git` on the machine, and nothing else.
+The guides help you choose and check suitable tools in your environment.
 
-```sh
-# uv — one line, from https://docs.astral.sh/uv/getting-started/installation/
-curl -LsSf https://astral.sh/uv/install.sh | sh          # macOS, Linux
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex" # Windows
+## The contracts
 
-# Amplifier Converge
-uv tool install git+https://github.com/microsoft/amplifier-converge
-amplifier-converge            # starts the instance and opens the browser
-amplifier-converge doctor     # says, in plain words, what is ready and what is not
-```
+Read the vision and six contracts for the complete set of promises. Guides explain their application; they do not add hidden requirements.
 
-The command carries the usual suspects for setup and check-in — `doctor`, `setup`,
-`start` / `stop` / `restart` / `status`, `logs`, `open`, `update`, `uninstall`,
-`agents list` / `agents test <type>`. Creating projects, attaching repositories and
-onboarding them happen on the screen, never here. The instance keeps everything
-under `~/.amplifier-converge/`.
+- [Shared direction](contracts/shared-direction-contract.md) — identify the agreement and change it deliberately.
+- [Ownership and collaboration](contracts/ownership-and-collaboration-contract.md) — delegate outcomes and authority; coordinate where responsibilities meet.
+- [Execution and recovery](contracts/execution-and-recovery-contract.md) — choose useful work, carry it through, and recover without losing or duplicating it.
+- [Verification and delivery](contracts/verification-and-delivery-contract.md) — demonstrate the usable result, including real user journeys.
+- [Feedback and learning](contracts/feedback-and-learning-contract.md) — turn observations into improvements that last.
+- [System design and decomposition](contracts/system-design-and-decomposition-contract.md) — build focused parts with dependable connections.
 
-*The install flow above describes the intended product entry point, not a verified
-end-to-end release. Development checkpoints and their limits are recorded in
-[the September 18 publication brief](docs/workflow/PUBLICATION-20260918.md).*
+## Put it to work
 
-## What is here
+- [For people](guides/people-guide.md): shape direction, delegate, collaborate, and judge results.
+- [For agents](guides/agent-guide.md): establish the means to work, execute, verify, and recover.
+- [For reviewers](guides/reviewer-guide.md): challenge unclear promises, gaps, and unnecessary approval gates.
 
-This repository is the top level. It holds the family's vision, the seam contracts,
-the registry of parts (`family.toml`) and, once seeded, the ledger that reads the
-seams. It holds no part's internals.
+Start with an actual outcome. “Apply Converge” does not itself authorize a new objective, spending, publication, or changes to other owners’ commitments. Equally, an agreed assignment is not a reason to ask again at every ordinary step.
 
-- `docs/VISION.md` — where this is going (RATIFIED)
-- `contracts/family.v1.md` — how the parts compose (RATIFIED)
-- `contracts/service.v1.md` — one API is the truth (RATIFIED)
-- `contracts/agent-types.v1.md` — what a type owes the family, and attach-and-survive (RATIFIED)
-- `contracts/queue.v1.md` — items, claim, one custody owner, plain words (RATIFIED)
-- `contracts/experience-interface.v1.md` — the shared shell/experience exchange (RATIFIED)
-- `contracts/service.v2-candidate.md` — proposed initial creation/authoring authority (DRAFT; not ratified)
-- `family.toml` — the parts and their status (`seeded` · `body` · `retired`)
-- `docs/FORMAT.md` — how our visions and contracts are shaped, and why
-- `docs/PLAN-vNext-2026-09-06.md` — the plan under discussion
-- `docs/workflow/` — the manager session's records for this project
+[Writing reviewable guidance](docs/writing-guide.md) · [Background reading](docs/SOURCES.md)
+
 ## Contributing
 
 > [!NOTE]

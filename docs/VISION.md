@@ -1,103 +1,27 @@
-# Amplifier Converge — Vision (RATIFIED 2026-09-06)
+# Vision
 
-The end state this family converges toward, written as though already true. This page
-is never edited to record what shipped; that lives in the ledger and the queue. It
-changes by amendment first — a dated line in the changelog with the evidence — and the
-work is derived from the gap afterwards, never the other way round.
+Amplifier Converge helps people and agents build useful things together, with shared direction and room to work independently. Our capacity to produce work can outgrow our capacity to judge it. Human attention is scarce and precious; the method puts it where judgment, expertise, and taste change the outcome.
 
-## What Amplifier Converge is
+People shape purpose, priorities, and constraints. They judge what’s worth doing, which tradeoffs to accept, whether evidence deserves confidence, and when to change direction or stop. Agents help people identify gaps, surface unspoken assumptions, and clarify decisions before building. They own authorized execution through a usable result—including coordination, integration, verification, and repair. Standing agreements make independent decisions the default within delegated authority, whether or not a person is available. People can draw on colleagues’ expertise without asking everyone to stay immersed in every project.
 
-The app a person opens to get work done the Converge way: vision first, contracts as the
-law, work derived from the gap between the two, a team of agents doing the work. It runs
-as one instance on that person's machine, installed by itself with nothing else required.
-The person — the **intent steward** — creates a project or attaches a repository, picks
-which kind of agent will manage it, and presses go. A **manager session** reads the
-project's direction (or drafts it, on a repository that has none), derives the work, and
-runs it in **lanes**. Every lane is a **run** the app shows live. The steward reads plain
-sentences and answers four kinds of question, and is otherwise never the bottleneck.
+A vision describes the outcome and experience we want. Contracts make the essential promises explicit, including deliberate design choices and the experience people should receive. We design systems as focused parts with dependable connections, so owners can collaborate where their responsibilities meet. The same agreements connect human peers and guide their agents, across different tools and systems. Success means useful results that work together, with less repeated explanation and supervision.
 
 ## Principles
 
-### 1. One experience, many projects
-Amplifier Converge is a family of registered Converge parts, each with its own
-repository, vision, contracts, ledger, queue and manager session, held together by
-contracts at their public seams. The family registry names the parts and their seams;
-it holds no part's internals.
+1. **Spend attention where it changes the outcome.** Prepare consequential decisions well. Protect time for deep thought, not just quick approvals.
 
-### 2. The API is the truth
-Anything worth knowing about a run, a claim, a call or a check is a record the service
-holds. A file, a terminal or a log is evidence of it, never the source. When two
-disagree, the record wins and the disagreement is a defect.
+2. **Align on intent and promises.** Expose consequential disagreements early, while leaving room to discover how to build.
 
-### 3. Bring your own agent; the method stays the law
-Any agent type can run a manager or a worker. What it must do — claim, resolve, file,
-call, report liveness, and for a manager re-run the check — is in the wake contract and
-the service's refusals, not in the agent. Amplifier is one type among several, ready to
-configure and never required.
+3. **Delegate complete outcomes and real authority.** Capable owners make choices within agreed limits. Easily reversible choices invite trying, checking, and adjusting; harder-to-reverse choices deserve more preparation. Human attention goes to decisions that genuinely need it.
 
-### 4. A run is a record, not a process
-A run begins, ends in exactly one of three ways — done with proof, stuck with a cause,
-waiting on the steward — and merges. Where its process lives is the agent type's
-business. When it was last seen alive is a timestamp, never a state somebody maintains.
+4. **Make expertise available without constant involvement.** A designer can reshape a confusing experience without joining every project meeting.
 
-### 5. Trim, for one job
-Each part does what this experience needs and nothing another product would want of it.
-A queue is a queue with custody; a service is a few records and one API; an agent type
-is three functions.
+5. **Derive work from the current gap.** Think navigation: recalculate from where you are toward today’s destination. The same approach works at the start, halfway through, or after changing direction. Past work informs the route; it doesn’t dictate it.
 
-### 6. The steward answers four things and reads sentences
-Ratify a change of direction; allow an irreversible act; perform a check only a person
-can; set a priority or stop. Everything else keeps moving, and what reaches them is
-written for a person who has never opened a code editor.
+6. **Make uncertainty concrete while change is cheap.** A clickable mock or simple complete experience can reveal misunderstandings that descriptions hide.
 
-### 7. One install, one instance, nothing else required
-`uv tool install` of this repository installs the whole. The instance owns one data
-directory and every project's state under it. It creates workspaces, clones
-repositories and launches managers from the screen; a person opens a terminal only to
-attach to a live session, by choice.
+7. **Earn confidence through evidence that can be challenged.** A polished demo or passing test can miss a broken experience. Examine the result and the checks.
 
-### 8. Endpoints come from the router, never from prose
-What an agent is told it may call is generated from what the service actually serves. A
-check fails the moment they drift.
+8. **Make each intervention improve future work.** Carry decisions and their reasoning forward so the same correction doesn’t need repeating.
 
-### 9. A part that grows a second domain is split out, not grown
-Every part names a ceiling and a test for a second domain inside it. Crossing either
-means a split-out proposed at the family level within one wave. Splitting is the normal
-shape of growth; a part that keeps growing is the defect.
-
-## What this deliberately resists
-
-- **A monorepo.** The parts are repositories with their own lives.
-- **An org chart, a company, budgets first.** One steward per project; roles are modes,
-  not hires; budgets arrive as a gate when a part earns one.
-- **A scheduler that re-spawns agents on a tick.** The service observes; the type decides
-  how a run lives.
-- **Cloud first.** A run happens on the person's machine, or an isolated twin of it.
-- **Being an add-on to another tool.** Nothing has to be installed first; no agent type
-  is required.
-- **A general tracker, terminal dashboard or memory store.** Each part is bespoke to this
-  experience and owes nothing to another product's users.
-
-## How you can tell it is working
-
-- A steward attaches a repository that has never seen Converge and reaches a ratified
-  vision and a seeded ledger in **under 60 minutes without opening a terminal**.
-- A steward opening the picker sees every current registered part and their own
-  projects, and reaches any one's direction and runs in **one click**.
-- Independently managed parts run concurrently with **zero** shared mutable files,
-  queue items or calls between them — read by the family kit, not asserted.
-- A steward reading a wave finds **zero** runs marked merged without the manager's check
-  on record; the service refused the rest.
-- A stalled lane is visible to the steward within **fifteen minutes**, because an
-  observation was written and shown, not inferred.
-- A person with `uv` reaches a running instance with the browser open in **under five
-  minutes**, one command, no other product required.
-
-## Changelog
-
-| Date | Change | Evidence |
-|---|---|---|
-| 2026-09-06 | v1 drafted from the steward's sentences; corrected the same day (installs on its own; one instance owns state; Amplifier optional); ratified as content. | Steward's words, 2026-09-06. |
-| 2026-09-06 | Principle 9 (split out, not grown) added on the steward's design-safety rule; headings carry one state word. | Steward's words; method `documents.v1` clause 2. |
-| 2026-09-07 | Reshaped into the family format on the steward's word ("port it"): one-paragraph "what it is", principles as titled subsections, resists list, changelog table. No principle changed. | `docs/FORMAT.md`. |
-| 2026-09-16 | Applied the exact dynamic-family wording and concurrent-isolation metrics. | Steward: "ratified, let's go!"; `docs/VISION.v1-candidate.md`, packet SHA-256 `8e2de16a8de4fe7f3b41893bc2d3e77d26bf24398fcff9b86a1580a96219c270`. |
+9. **Design systems as focused parts.** Like LEGO assemblies, small pieces with dependable connections can be understood, reused, and built in parallel. Owners may direct many pieces while collaborating with peers on the promises between them.
