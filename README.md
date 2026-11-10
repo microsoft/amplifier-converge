@@ -26,10 +26,10 @@ Read the vision and six contracts for the complete set of promises. Guides expla
 
 ## Put it to work
 
-- [For people](guides/for-people.md): shape direction, delegate, collaborate, and judge results.
-- [For agents](guides/for-agents.md): establish the means to work, execute, verify, and recover.
-- [For reviewers](guides/reviewing-guidance.md): challenge unclear promises, gaps, and unnecessary approval gates.
+- [For people](guides/people-guide.md): shape direction, delegate, collaborate, and judge results.
+- [For agents](guides/agent-guide.md): establish the means to work, execute, verify, and recover.
+- [For reviewers](guides/reviewer-guide.md): challenge unclear promises, gaps, and unnecessary approval gates.
 
 Start with an actual outcome. “Apply Converge” does not itself authorize a new objective, spending, publication, or changes to other owners’ commitments. Equally, an agreed assignment is not a reason to ask again at every ordinary step.
 
-[Writing reviewable guidance](docs/WRITING-GUIDANCE.md) · [Background reading](docs/SOURCES.md)
+[Writing reviewable guidance](docs/writing-guide.md) · [Background reading](docs/SOURCES.md)

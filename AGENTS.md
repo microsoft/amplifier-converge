@@ -1,6 +1,6 @@
 # Working in this repository
 
-This repository develops the Amplifier Converge methodology. Start with README.md, docs/VISION.md, and the applicable contracts. For work applying the method elsewhere, use guides/for-agents.md; for a guidance review, use guides/reviewing-guidance.md.
+This repository develops the Amplifier Converge methodology. Start with README.md, docs/VISION.md, and the applicable contracts. For work applying the method elsewhere, use guides/agent-guide.md; for a guidance review, use guides/reviewer-guide.md.
 
 Keep the shared promises portable across people and agent systems. Put practical application in the guides, with links to the governing contracts. Keep the methodology independent of a particular runtime, database, application, or agent framework. Project contracts may deliberately commit to technologies, architecture, interfaces, and detailed experience behavior.
 
