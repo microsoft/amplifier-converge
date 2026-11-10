@@ -1,89 +1,37 @@
 # Amplifier Converge
 
-The app a person opens to get work done the Converge way — vision first, contracts as
-the law, work derived from the gap between the two — with a team of agents doing the
-work. One instance on a person's machine, installed on its own and depending on
-nothing else, that creates workspaces, clones repositories, launches and supervises
-manager sessions, and puts every call a person must make on one screen. One
-experience made of several small Converge projects, held together by contracts at
-their seams; bring your own agent.
+A way for people and agents to turn shared intent into useful, verified outcomes.
 
-## Install
+People bring purpose, judgment, and taste. Capable owners carry complete outcomes within agreed authority. Vision and contracts keep contributions aligned; the next work comes from the gap between what we want and what is true now.
 
-**Current integration checkpoint — September 23, 2026:** the active experiment
-composes Converge as optional capabilities inside Amplifier Unified, with a
-portable method and operating bundle that also serve CLI/TUI sessions. See the
-[architecture and ownership map](docs/workflow/UNIFIED-CHECKPOINT-20260923.md),
-[dated retrospective](docs/workflow/RETROSPECTIVE-20260923.md), and
-[next narrow acceptance plan](docs/workflow/ACCEPTANCE-PLAN-20260923.md).
-This is a development checkpoint, not a completed product or a ratification of
-new seams. The standalone entry point below remains an earlier intended product
-form; the ratified vision and contracts have not been silently rewritten.
+**Review edition.** This is the proposed methodology revision. It does not silently replace agreements in projects already using earlier versions.
 
-Repository and checkpoint links in this document require access to the private
-Converge repositories; they are intended for authorized collaborators.
+## Two layers, one method
 
-Amplifier Converge needs `uv` and `git` on the machine, and nothing else.
+| Layer | What it gives you |
+| --- | --- |
+| [Vision](docs/VISION.md) and [contracts](#the-contracts) | Shared direction and dependable promises for human–human, human–agent, and agent–agent collaboration. |
+| [Practical guides](#put-it-to-work) | Ways to fulfill those promises using the capabilities available in your environment. |
 
-```sh
-# uv — one line, from https://docs.astral.sh/uv/getting-started/installation/
-curl -LsSf https://astral.sh/uv/install.sh | sh          # macOS, Linux
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex" # Windows
+The method works without a Converge application or a particular agent runtime. The guides help you choose and check suitable tools; they do not require our previous implementations.
 
-# Amplifier Converge
-uv tool install git+https://github.com/microsoft/amplifier-converge
-amplifier-converge            # starts the instance and opens the browser
-amplifier-converge doctor     # says, in plain words, what is ready and what is not
-```
+## The contracts
 
-The command carries the usual suspects for setup and check-in — `doctor`, `setup`,
-`start` / `stop` / `restart` / `status`, `logs`, `open`, `update`, `uninstall`,
-`agents list` / `agents test <type>`. Creating projects, attaching repositories and
-onboarding them happen on the screen, never here. The instance keeps everything
-under `~/.amplifier-converge/`.
+Read the vision and six contracts for the complete set of promises. Guides explain their application; they do not add hidden requirements.
 
-*The install flow above describes the intended product entry point, not a verified
-end-to-end release. Development checkpoints and their limits are recorded in
-[the September 18 publication brief](docs/workflow/PUBLICATION-20260918.md).*
+1. [Shared direction](contracts/01-shared-direction.md) — identify the agreement and change it deliberately.
+2. [Ownership and collaboration](contracts/02-ownership-and-collaboration.md) — delegate outcomes and authority; coordinate where responsibilities meet.
+3. [Execution and recovery](contracts/03-execution-and-recovery.md) — choose useful work, carry it through, and recover without losing or duplicating it.
+4. [Verification and delivery](contracts/04-verification-and-delivery.md) — demonstrate the usable result, including real user journeys.
+5. [Feedback and learning](contracts/05-feedback-and-learning.md) — turn observations into improvements that last.
+6. [System design and decomposition](contracts/06-system-design-and-decomposition.md) — build focused parts with dependable connections.
 
-## What is here
+## Put it to work
 
-This repository is the top level. It holds the family's vision, the seam contracts,
-the registry of parts (`family.toml`) and, once seeded, the ledger that reads the
-seams. It holds no part's internals.
+- [For people](guides/for-people.md): shape direction, delegate, collaborate, and judge results.
+- [For agents](guides/for-agents.md): establish the means to work, execute, verify, and recover.
+- [For reviewers](guides/reviewing-guidance.md): challenge unclear promises, gaps, and unnecessary approval gates.
 
-- `docs/VISION.md` — where this is going (RATIFIED)
-- `contracts/family.v1.md` — how the parts compose (RATIFIED)
-- `contracts/service.v1.md` — one API is the truth (RATIFIED)
-- `contracts/agent-types.v1.md` — what a type owes the family, and attach-and-survive (RATIFIED)
-- `contracts/queue.v1.md` — items, claim, one custody owner, plain words (RATIFIED)
-- `contracts/experience-interface.v1.md` — the shared shell/experience exchange (RATIFIED)
-- `contracts/service.v2-candidate.md` — proposed initial creation/authoring authority (DRAFT; not ratified)
-- `family.toml` — the parts and their status (`seeded` · `body` · `retired`)
-- `docs/FORMAT.md` — how our visions and contracts are shaped, and why
-- `docs/PLAN-vNext-2026-09-06.md` — the plan under discussion
-- `docs/workflow/` — the manager session's records for this project
-## Contributing
+Start with an actual outcome. “Apply Converge” does not itself authorize a new objective, spending, publication, or changes to other owners’ commitments. Equally, an agreed assignment is not a reason to ask again at every ordinary step.
 
-> [!NOTE]
-> This project is not currently accepting external contributions, but we're actively working toward opening this up. We value community input and look forward to collaborating in the future. For now, feel free to fork and experiment!
-
-Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit [Contributor License Agreements](https://cla.opensource.microsoft.com).
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
-trademarks or logos is subject to and must follow
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+[Writing reviewable guidance](docs/WRITING-GUIDANCE.md) · [Background reading](docs/SOURCES.md) · [Repository transition notes](MAINTAINER-NOTES.md)
