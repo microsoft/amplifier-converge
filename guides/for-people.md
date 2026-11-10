@@ -12,9 +12,9 @@ Make uncertainty visible. A sketch, example, or working mock can settle a misund
 
 ## Agree where contributions meet
 
-Write a short vision and contracts for the promises people will rely on. In the example, “Support remains responsible until Billing accepts the request” is a useful promise. “Use this particular button implementation” probably is not.
+Write a short vision and contracts for the promises people will rely on. In the example, “Support remains responsible until Billing accepts the request” is a useful promise. A technology choice, a common interface, or exact settings across clients can also belong when the team needs to rely on them. Explain the purpose and what is fixed versus flexible; [these examples](../docs/WRITING-GUIDANCE.md#detail-where-it-matters) show the distinction. Leave ordinary internal choices with their owners.
 
-Name the current agreement, who can change it, and who owns the combined result. Give each promise one home. Owners may carry several parts or repositories; peers collaborate on the behavior that crosses their boundaries.
+Name the current agreement, who can change it, and who owns the combined result. Give each promise one home. For an uncertain design bet, agree how you will learn whether it helps and what would prompt reconsideration. Owners may carry several parts or repositories; peers collaborate on the behavior that crosses their boundaries.
 
 Review for meaning: could someone explain the promise, challenge it, and recognize a violation? Use [the reviewer guide](reviewing-guidance.md) when an independent reading would help.
 

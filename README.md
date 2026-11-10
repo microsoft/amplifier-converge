@@ -8,7 +8,7 @@ People bring purpose, judgment, and taste. Capable owners carry complete outcome
 
 | Layer | What it gives you |
 | --- | --- |
-| [Vision](docs/VISION.md) and [contracts](#the-contracts) | Shared direction and dependable promises for human–human, human–agent, and agent–agent collaboration. |
+| [Vision](docs/VISION.md) and [contracts](#the-contracts) | Shared direction, dependable promises, and deliberate design commitments for human–human, human–agent, and agent–agent collaboration. |
 | [Practical guides](#put-it-to-work) | Ways to fulfill those promises using the capabilities available in your environment. |
 
 The guides help you choose and check suitable tools in your environment.

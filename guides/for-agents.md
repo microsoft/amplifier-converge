@@ -12,7 +12,7 @@ Explain the next useful outcome and why it matters. A plan is a route from curre
 
 ## Find the means to work
 
-Inspect available tools, their instructions, access, and limits. Choose mechanisms that keep the contracts. Reuse suitable capabilities; configure or build a missing one when that falls within the assignment. Do not create a new system merely because an example mentions one.
+Inspect available tools, their instructions, access, and limits. Choose mechanisms that keep the contracts, including agreed technology, architecture, and client-experience commitments. Treat explicitly open choices as yours to resolve within authority; do not reopen settled choices on every assignment. Reuse suitable capabilities; configure or build a missing one when that falls within the assignment. Do not create a new system merely because an example mentions one.
 
 | Need | Practical choices | Check before relying on it |
 | --- | --- | --- |
@@ -54,6 +54,8 @@ Use [Contract 4](../contracts/04-verification-and-delivery.md). Choose checks ca
 For a request handoff, exercise submission, acceptance, refusal, and what the requester sees after each. Check that someone remains responsible throughout. A storage test alone cannot prove the experience.
 
 Inspect or rerun meaningful checks independently of the worker's account, then check the integrated and delivered version. Repair and recheck within authority. Missing or conflicting evidence calls for investigation; keep an unresolved claim unverified rather than turning uncertainty into an automatic approval request.
+
+For a chosen interface, test the required interactions between the actual participants. For shared clients, check the specified settings and behavior on each supported platform; one platform’s success does not prove the others. Measure an uncertain design bet against its stated purpose, separately from checking that the chosen design was used.
 
 Record the promise, version, conditions, checker, observation, and limits. Completion evidence does not expand release authority.
 

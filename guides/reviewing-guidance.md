@@ -8,7 +8,7 @@ A review offers evidence and judgment. It does not silently become an approval g
 
 Begin with the target project's vision, contracts, and their explicit references. Try to explain the intended outcome, who it serves, the essential promises, and what remains open. Do not fill gaps with conversation history the next participant will not have.
 
-Distinguish a missing promise from an implementation choice deliberately left to an owner. Judge by meaning, not matching headings, file counts, vocabulary, or a document template.
+Distinguish a missing promise, a deliberate design commitment, and an implementation choice left to an owner. Judge by meaning, not matching headings, file counts, vocabulary, or a document template.
 
 ## Walk through realistic situations
 
@@ -19,6 +19,8 @@ Distinguish a missing promise from an implementation choice deliberately left to
 | Choosing the next work | What gap matters, who owns the outcome, what completion means, and when to stop. |
 | Making an ordinary reversible choice | Why the owner can proceed and verify without asking again. |
 | Making a consequential delegated choice | What conditions and evidence permit action without a new approval. |
+| Making a technology or architecture bet | What is chosen, why, where it applies, what remains uncertain, and what evidence would prompt reconsideration. |
+| Defining a shared client experience | Which interactions, settings, defaults, and visual details must match across platforms, and which may adapt. |
 | Reaching a shared boundary | What others rely on, when their agreement is needed, and who checks the combined result. |
 | Losing a tool, worker, or confirmation | How to investigate, retain progress, and avoid duplicate effects. |
 | Hearing “done” | Which user journeys and combined behavior were checked, against which delivered version. |
@@ -26,11 +28,11 @@ Distinguish a missing promise from an implementation choice deliberately left to
 
 Repeat the decision cases with a person available and unavailable. Availability should change communication timing, not delegated authority. Follow one assignment through interruption and handoff.
 
-For a portable methodology, also check whether equivalent capabilities can fulfill it in different agent environments. A required product name needs a project-specific reason; the general method should describe the promise that capability must keep.
+For a portable methodology, also check whether equivalent capabilities can fulfill it in different agent environments. A project may intentionally choose a technology or protocol for a stated reason; check its scope and supporting evidence rather than rejecting specificity. The general methodology stays portable across those choices.
 
 ## Challenge what will cause trouble
 
-Look for a promise nobody can check, an unnamed owner, conflicting copies of an agreement, implementation detail presented as law, or a guide containing an essential obligation absent from the contracts.
+Look for a promise nobody can check, an unnamed owner, conflicting copies of an agreement, an unexplained design mandate or an example mistaken for a requirement, or a guide containing an essential obligation absent from the contracts.
 
 Flag wording that asks people to approve every dependency touch, ordinary edit, missing test result, or already-delegated decision. Conversely, a reversible choice is not automatically authorized if it changes another owner's promise or exceeds the assignment.
 

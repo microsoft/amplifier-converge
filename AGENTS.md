@@ -2,9 +2,9 @@
 
 This repository develops the Amplifier Converge methodology. Start with README.md, docs/VISION.md, and the applicable contracts. For work applying the method elsewhere, use guides/for-agents.md; for a guidance review, use guides/reviewing-guidance.md.
 
-Keep the shared promises portable across people and agent systems. Put practical application in the guides, with links to the governing contracts. Do not introduce a required runtime, database, application, or agent framework.
+Keep the shared promises portable across people and agent systems. Put practical application in the guides, with links to the governing contracts. Keep the methodology independent of a particular runtime, database, application, or agent framework. Project contracts may deliberately commit to technologies, architecture, interfaces, and detailed experience behavior.
 
-Use plain language, concrete examples, and just enough detail to act or judge. Preserve one authoritative home for each promise. Independent decisions within delegated authority are the normal mode; do not add approval gates for routine implementation or ordinary editorial work.
+Use plain language, concrete examples, and just enough detail to act or judge. Keep technical and experience details when they define something others must rely on; brevity must not make a commitment ambiguous. Preserve one authoritative home for each promise. Independent decisions within delegated authority are the normal mode; do not add approval gates for routine implementation or ordinary editorial work.
 
 When editing a commitment, consider the behavior and audience it affects. Keep implementation detail and review evidence out of the vision. Describe the methodology directly; do not add migration notes, references to previous implementations, or a changelog.
 

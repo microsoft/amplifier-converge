@@ -10,7 +10,7 @@ For people and agents shaping the system, owning its parts, or relying on their 
 
 2. **Carry direction at each useful level.** The overall vision explains the shared outcome. Each part states its contribution and promises, with links to the wider direction and dependencies it needs. Larger assemblies describe how their parts work together. Keep shared commitments in one authoritative place; do not copy the whole system’s guidance into every repository.
 
-3. **Specify the connections.** Agree what each part provides, requires, and guarantees, including relevant failures and how compatibility is checked. Others can build against those promises without depending on private implementation details. A proposed connection change identifies affected consumers and follows [Contract 1](01-shared-direction.md).
+3. **Specify the connections.** Agree what each part provides, requires, and guarantees, including relevant failures and how compatibility is checked. Include selected protocols, relevant versions, and required capabilities where they define the connection. Others can build against those promises without depending on private implementation details. A proposed connection change identifies affected consumers and follows [Contract 1](01-shared-direction.md).
 
 4. **Separate ownership from repository count.** One person or agent may own one part, many repositories, or a larger assembly with several levels beneath it. Record both responsibility and dependencies: some parts are shared across assemblies, so the relationships need not form a tree. Owners communicate with peers at the level where their responsibilities meet, going deeper when the decision requires it.
 
@@ -20,4 +20,4 @@ For people and agents shaping the system, owning its parts, or relying on their 
 
 **Check:** Can a contributor understand one part, its purpose, and its connections without loading the entire system? Can two contributors change separate parts concurrently, then demonstrate that the combined outcome still works? Can a reusable part serve another consumer through its stated promises? Follow a shared dependency to every affected owner when its contract changes.
 
-**Left open:** Repository count, number of ownership levels, module size, and programming techniques. Choose boundaries for comprehension, reuse, independent progress, and dependable composition.
+**Left open:** Repository count, number of ownership levels, module size, and programming techniques, except where a project deliberately commits to a choice under [Contract 1](01-shared-direction.md). Choose boundaries for comprehension, reuse, independent progress, and dependable composition.

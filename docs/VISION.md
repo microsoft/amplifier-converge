@@ -4,7 +4,7 @@ Amplifier Converge helps people and agents build useful things together, with sh
 
 People shape purpose, priorities, and constraints. They judge what’s worth doing, which tradeoffs to accept, whether evidence deserves confidence, and when to change direction or stop. Agents own authorized execution through a usable result—including coordination, integration, verification, and repair. Standing agreements make independent decisions the default within delegated authority, whether or not a person is available. People can draw on colleagues’ expertise without asking everyone to stay immersed in every project.
 
-A vision describes the outcome and experience we want. Contracts make the essential promises explicit. We design systems as focused parts with dependable connections, so owners can collaborate where their responsibilities meet. The same agreements connect human peers and guide their agents, across different tools and systems. Success means useful results that work together, with less repeated explanation and supervision.
+A vision describes the outcome and experience we want. Contracts make the essential promises explicit, including deliberate design choices and the experience people should receive. We design systems as focused parts with dependable connections, so owners can collaborate where their responsibilities meet. The same agreements connect human peers and guide their agents, across different tools and systems. Success means useful results that work together, with less repeated explanation and supervision.
 
 ## Principles
 

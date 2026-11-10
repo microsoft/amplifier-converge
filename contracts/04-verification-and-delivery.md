@@ -6,7 +6,7 @@ For agents doing and checking work, the owner of the combined result, and people
 
 ## Commitments
 
-1. **Check against the promise.** Identify meaningful success and failure cases before claiming completion. Cover the intended experience and relevant quality constraints. If a check cannot detect a plausible violation, improve it or state its limit.
+1. **Check against the promise.** Identify meaningful success and failure cases before claiming completion. Cover the intended experience, agreed design choices, and relevant quality constraints. Check shared client promises on each supported platform, including specified settings, defaults, and persistence. Following a technology choice and demonstrating its expected benefit are separate checks. If a check cannot detect a plausible violation, improve it or state its limit.
 
 2. **Exercise the delivered result.** Agents use representative user journeys, including relevant failure cases, and inspect the outcomes. Check the version people will receive. Repair failures and recheck; people are not the routine test workforce.
 

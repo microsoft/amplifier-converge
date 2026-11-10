@@ -12,7 +12,7 @@ For people giving feedback, agents acting on it, and future participants. The pr
 
 3. **Close the feedback loop.** Record what the observation led to: a correction, a decision, further investigation, or a reason for no change. “Still broken” reopens verification rather than producing another reassuring answer. Return the result to the contributor.
 
-4. **Preserve reasoning and test its effect.** Keep what was noticed, why it mattered, what changed, and what happened afterward. Update the relevant agreement, guidance, tool, or check. Earlier decisions inform new work; current agreements govern it.
+4. **Preserve reasoning and test its effect.** Keep what was noticed, why it mattered, what changed, and what happened afterward. Update the relevant agreement, guidance, tool, or check. Earlier decisions inform new work; current agreements govern it. When evidence challenges a design bet or reaches an agreed reconsideration point, revisit its rationale through the agreement process rather than silently replacing it.
 
 5. **Learn about the workflow too.** Look for repeated corrections, missed dependencies, costly interruptions, and checks that gave false confidence. Change the process where it helps. Reassess whether further work is worth its attention, cost, and support burden; stop or redirect when warranted.
 
