@@ -6,7 +6,7 @@ For people and agents shaping the system, owning its parts, or relying on their 
 
 ## Commitments
 
-1. **Favor focused parts and repositories.** Actively decompose broad systems into smaller, coherent responsibilities with clear interfaces: the connection points and behavior other parts rely on. Encourage focused repositories for those parts. This makes more of each part’s code, guidance, and relevant dependencies understandable together, supports reuse, and creates useful independent work.
+1. **Favor focused parts and repositories.** Actively decompose broad systems into smaller, coherent responsibilities with clear interfaces: the connection points and behavior other parts rely on. Encourage focused repositories for those parts. The aim is to improve understanding, reuse, and independent work. Check that those benefits outweigh the added coordination, integration, and upkeep.
 
 2. **Carry direction at each useful level.** The overall vision explains the shared outcome. Each part states its contribution and promises, with links to the wider direction and dependencies it needs. Larger assemblies describe how their parts work together. Keep shared commitments in one authoritative place; do not copy the whole system’s guidance into every repository.
 

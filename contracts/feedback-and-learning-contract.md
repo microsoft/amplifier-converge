@@ -14,7 +14,7 @@ For people giving feedback, agents acting on it, and future participants. The pr
 
 4. **Preserve reasoning and test its effect.** Keep what was noticed, why it mattered, what changed, and what happened afterward. Update the relevant agreement, guidance, tool, or check. Earlier decisions inform new work; current agreements govern it. When evidence challenges a design bet or reaches an agreed reconsideration point, revisit its rationale through the agreement process rather than silently replacing it.
 
-5. **Learn about the workflow too.** Look for repeated corrections, missed dependencies, costly interruptions, and checks that gave false confidence. Change the process where it helps. Reassess whether further work is worth its attention, cost, and support burden; stop or redirect when warranted.
+5. **Learn about the workflow too.** Look for repeated corrections, missed dependencies, costly interruptions, and checks that gave false confidence. Check whether workflow changes improve reliable outcomes relative to the total human effort they require, including setup, review, correction, and rescue. Fewer interruptions alone are not evidence of improvement. Reassess whether further work is worth its attention, cost, and support burden; stop or redirect when warranted.
 
 **Check:** Trace feedback into a decision, changed work, and an observed result. On similar later work, can the team use the lesson without asking the expert to repeat it? Preserve consequential dissent even when most reviewers agree.
 
