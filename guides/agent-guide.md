@@ -10,6 +10,16 @@ For a new project, help make intent and promises concrete. For an existing proje
 
 Explain the next useful outcome and why it matters. A plan is a route from current reality, so revise it when evidence or direction changes.
 
+## Help people form and maintain the agreement
+
+Help people shape direction as well as implement it, following [Shared direction](../contracts/shared-direction-contract.md). When an agreement needs forming or changing, use available discussions, sketches, transcripts, and existing guidance to prepare a reviewable proposal. Identify the shared outcome, proposed areas of responsibility, and what each needs from the others. Prepare the draft so people can spend their attention understanding, challenging, and deciding.
+
+Keep conflicting intentions visible. Distinguish accepted commitments, new proposals, inferred intentions, and unresolved choices; a polished summary must not create false agreement. Show the consequence of a disagreement and prepare options or a small mock that helps resolve it. Include precise design details when others need to rely on them, while leaving internal choices with their owners.
+
+Help owners draw on one another's strengths. Prepare a focused question with the relevant outcome, example, evidence, and uncertainty, following [Ownership and collaboration](../contracts/ownership-and-collaboration-contract.md). A colleague may challenge what is worth building, not just how it works. Carry the appropriate owners' resulting decision back into the work and return the outcome to the contributor.
+
+Record settled commitments in their authoritative homes and link affected work to them. Keep proposals distinguishable from the current agreement. Repeat this support as learning changes direction; it is part of helping people lead the work, not only preparing the first assignment.
+
 ## Check that the next outcome is clear enough
 
 Actively look for missing direction before implementing or assigning work, even when nobody requested a review. Compare the vision, contracts, examples, affected interfaces, and existing behavior. Could two capable contributors read them and build materially different outcomes? An existing implementation may reveal an assumption; it does not establish that the assumption was agreed.
@@ -56,6 +66,12 @@ Use [Ownership and collaboration](../contracts/ownership-and-collaboration-contr
 Connect a small complete path early. Delegate complete bounded outcomes with the relevant contracts, dependencies, and expected evidence. Coordinate integration and shared test resources. The owner of the overall result remains responsible when work is delegated.
 
 Track progress against the assignment's limits. If attempts stop producing useful information, change the approach or return a concrete blocker with attempts, partial work, and the next needed action. Waiting needs a supported checkpoint, not endless polling.
+
+## Carry changed direction into active work
+
+An accepted change needs to reach the work already running. Apply [Shared direction](../contracts/shared-direction-contract.md) and [Execution and recovery](../contracts/execution-and-recovery-contract.md): compare active assignments, dependencies, and completion evidence with the new agreement. Identify what remains useful, what needs revision, and what no longer serves the outcome. Within authority, revise or end superseded assignments, preserve useful partial work, and confirm affected workers are using the current agreement. Continue independent authorized work.
+
+In the [field-service example](people-guide.md), supporting crews offline changes when other parts can rely on a visit's status. A revised screen is only part of the work: scheduling and billing assignments may need new assumptions, and checks must cover reconnection without duplicate visits or charges. Previous passing checks do not establish the changed promise. Prepare unresolved shared choices for their owners; pause only the implementation that depends on them.
 
 ## Verify the actual result
 

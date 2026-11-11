@@ -1,8 +1,10 @@
 # Amplifier Converge
 
-A way for people and agents to turn shared intent into useful, verified outcomes.
+A methodology for people leading larger bodies of work together, with agents helping carry that work through.
 
-People bring purpose, judgment, and taste. Capable owners carry complete outcomes within agreed authority. Vision and contracts keep contributions aligned; the next work comes from the gap between what we want and what is true now.
+As agents expand what each person can accomplish, even three peers can struggle to keep up with one another's work. More scope and faster change leave less time for misunderstandings to surface naturally. Everyone following everyone else's details becomes a costly way to stay aligned.
+
+Converge helps peers agree on the outcome, divide substantial responsibilities, and negotiate the promises connecting their work. Clear visions and contracts make those agreements understandable and usable by people and agents. Each person keeps leading their area, brings in others' expertise where it matters, and coordinates changes to shared promises. Agents help clarify direction, carry authorized work through, and check that the contributions work together.
 
 [Watch the short videos](https://microsoft.github.io/amplifier-converge/) — the shared challenge, working together, and carrying your part through. Each stands alone, with captions and a practical starting prompt.
 
@@ -28,7 +30,7 @@ Read the vision and six contracts for the complete set of promises. Guides expla
 
 ## Put it to work
 
-- [For people](guides/people-guide.md): shape direction, delegate, collaborate, and judge results.
+- [For people](guides/people-guide.md): lead substantial areas together, use one another's strengths, and adapt as the work changes.
 - [For agents](guides/agent-guide.md): establish the means to work, execute, verify, and recover.
 - [For reviewers](guides/reviewer-guide.md): challenge unclear promises, gaps, and unnecessary approval gates.
 
