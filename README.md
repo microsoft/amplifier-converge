@@ -4,6 +4,8 @@ A way for people and agents to turn shared intent into useful, verified outcomes
 
 People bring purpose, judgment, and taste. Capable owners carry complete outcomes within agreed authority. Vision and contracts keep contributions aligned; the next work comes from the gap between what we want and what is true now.
 
+[Watch the short videos](https://microsoft.github.io/amplifier-converge/) — the shared challenge, working together, and carrying your part through. Each stands alone, with captions and a practical starting prompt.
+
 ## Two layers, one method
 
 | Layer | What it gives you |

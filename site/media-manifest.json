@@ -1,0 +1,51 @@
+{
+  "repository": "microsoft/amplifier-converge",
+  "release": "methodology-videos-2026-11-10",
+  "assets": [
+    {
+      "name": "carrying-through.png",
+      "bytes": 2323097,
+      "sha256": "f48fe46c3cafac89cf60e48a81d8a70e88e663411db14b4f17eb91ae014d00c5"
+    },
+    {
+      "name": "converge-film-01.mp4",
+      "bytes": 6203375,
+      "sha256": "5afe534388d86d7e7180ec51bc1d734723b00b6bcf11348bd405c2066b2cbf33"
+    },
+    {
+      "name": "converge-film-01.webm",
+      "bytes": 10271535,
+      "sha256": "791143f1e7c0412c261aecbb18c50738d007d44a469b3cccf91ccab88cef2993"
+    },
+    {
+      "name": "converge-film-02.mp4",
+      "bytes": 9525342,
+      "sha256": "06efd541b2d6d4ee530e698301a5b36cff1fb05437ff242f82b6f354b12057d4"
+    },
+    {
+      "name": "converge-film-02.webm",
+      "bytes": 16245070,
+      "sha256": "a58cbf4f3dc39c7d0118769b59fb8974d132d6f9aaa33edf9364f673d11f53f4"
+    },
+    {
+      "name": "converge-film-03.mp4",
+      "bytes": 8008825,
+      "sha256": "12047d760945c396c78d4394eeda456ac39ffd9c9c1e6e55145da3fd4c718441"
+    },
+    {
+      "name": "converge-film-03.webm",
+      "bytes": 13721571,
+      "sha256": "d8306018cecdeec2f6788cb752de87612757b73cb7588aac35c31000484fd26c"
+    },
+    {
+      "name": "converge-peers.png",
+      "bytes": 2493283,
+      "sha256": "4c3dba1fd30b6b8403042310a47e220c8043cf86598035f6cfb1948246d9beb0"
+    },
+    {
+      "name": "shared-decisions.png",
+      "bytes": 2608265,
+      "sha256": "22770fd8f72f67974a60dec9d306a277850d442ebfbbdbf176d8084f89fd701d"
+    }
+  ]
+}
