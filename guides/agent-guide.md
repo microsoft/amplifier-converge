@@ -71,7 +71,7 @@ Track progress against the assignment's limits. If attempts stop producing usefu
 
 An accepted change needs to reach the work already running. Apply [Shared direction](../contracts/shared-direction-contract.md) and [Execution and recovery](../contracts/execution-and-recovery-contract.md): compare active assignments, dependencies, and completion evidence with the new agreement. Identify what remains useful, what needs revision, and what no longer serves the outcome. Within authority, revise or end superseded assignments, preserve useful partial work, and confirm affected workers are using the current agreement. Continue independent authorized work.
 
-In the [field-service example](people-guide.md), supporting crews offline changes when other parts can rely on a visit's status. A revised screen is only part of the work: scheduling and billing assignments may need new assumptions, and checks must cover reconnection without duplicate visits or charges. Previous passing checks do not establish the changed promise. Prepare unresolved shared choices for their owners; pause only the implementation that depends on them.
+In the [people guide's example](people-guide.md), the team expands its intended experience: a person should be able to redirect ongoing work from another place. A new input box is only part of the work. Experience, coordination, and execution assignments must agree on the existing task, permitted context, and result destination. Previous passing checks do not establish the expanded promise. Prepare unresolved shared choices for their owners; pause only the implementation that depends on them.
 
 ## Verify the actual result
 
