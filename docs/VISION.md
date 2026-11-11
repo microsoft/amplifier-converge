@@ -1,8 +1,8 @@
 # Vision
 
-The Converge methodology helps people lead larger bodies of work together: sharing direction, owning substantial areas independently, and combining their strengths as the work changes.
+The Converge methodology helps people lead larger bodies of work together: sharing direction, owning substantial areas independently, and combining their strengths as the work changes. The aim is to let teams move together at the pace their systems can sustain, without burying people in alignment and tracking changes beyond what they need to act or judge.
 
-As agents expand what each person can accomplish, a few peers can direct work that once needed a much larger team. The volume and speed of change can outgrow their ability to follow one another's details. Conversations that once had weeks to catch a misunderstanding may now lag behind the implementation. Collaboration has to focus on the outcomes, choices, and connections that matter across responsibilities.
+As agents expand what each person can accomplish, a few peers can direct work that once needed a much larger team. The coordination challenge appears even with three people and grows with teams of ten and beyond. The volume and speed of change can outgrow their ability to follow one another's details. Conversations that once had weeks to catch a misunderstanding may now lag behind the implementation. Collaboration has to focus on the outcomes, choices, and connections that matter across responsibilities.
 
 A vision describes the outcome and experience we want. Contracts make essential promises explicit, including deliberate design choices. Together, they give people something they can understand, challenge, and negotiate. Focused parts with dependable connections let owners advance their areas while keeping the whole coherent. The right level of detail is whatever others need to rely on, including a precise interface or experience when it matters.
 
