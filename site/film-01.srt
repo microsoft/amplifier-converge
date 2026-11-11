@@ -1,0 +1,179 @@
+1
+00:00:00,500 --> 00:00:03,920
+You and two colleagues each have something impressive to show.
+
+2
+00:00:04,660 --> 00:00:07,660
+But one built for self-service, another planned a staffed
+
+3
+00:00:07,660 --> 00:00:11,540
+launch, and a third changed the connection the others depend on.
+
+4
+00:00:12,520 --> 00:00:14,360
+AI helped everyone move faster.
+
+5
+00:00:15,160 --> 00:00:18,020
+Now the team has a week of untangling to do.
+
+6
+00:00:18,800 --> 00:00:20,820
+Nobody meant to create that work.
+
+7
+00:00:21,480 --> 00:00:23,900
+Each person can now lead a much larger
+
+8
+00:00:23,900 --> 00:00:26,400
+contribution, with agents helping build it.
+
+9
+00:00:27,080 --> 00:00:29,980
+But the decisions reach across other people's plans.
+
+10
+00:00:30,840 --> 00:00:33,600
+A faster team needs a better way to agree what
+
+11
+00:00:33,600 --> 00:00:36,220
+matters, and what each person can depend on.
+
+12
+00:00:36,700 --> 00:00:39,680
+We're learning to work more like leaders of connected teams.
+
+13
+00:00:40,400 --> 00:00:41,380
+What deserves investment?
+
+14
+00:00:42,040 --> 00:00:42,720
+Who owns the outcome?
+
+15
+00:00:43,560 --> 00:00:45,140
+What can we rely on from each other?
+
+16
+00:00:46,320 --> 00:00:48,580
+Greater production capacity hasn't given us more
+
+17
+00:00:48,580 --> 00:00:51,260
+attention, or instant experience making those calls.
+
+18
+00:00:52,320 --> 00:00:54,220
+We need each other's judgment more than ever.
+
+19
+00:00:55,380 --> 00:00:58,200
+The Converge methodology is a shared way of working,
+
+20
+00:00:58,660 --> 00:01:01,240
+using the agents and tools you already have.
+
+21
+00:01:01,560 --> 00:01:03,200
+Agree on a worthwhile outcome.
+
+22
+00:01:03,680 --> 00:01:06,740
+Give people complete contributions to own, with room to act.
+
+23
+00:01:07,540 --> 00:01:10,400
+Make the promises between those contributions clear.
+
+24
+00:01:11,120 --> 00:01:13,220
+Bring expertise into important decisions,
+
+25
+00:01:13,960 --> 00:01:15,560
+prepared well enough that a colleague can help.
+
+26
+00:01:16,180 --> 00:01:18,680
+A vision describes the outcome and experience we want.
+
+27
+00:01:19,940 --> 00:01:21,480
+Contracts capture the promises we depend on.
+
+28
+00:01:22,320 --> 00:01:24,380
+A working mock can make them easier to judge.
+
+29
+00:01:25,620 --> 00:01:29,140
+The same agreements align colleagues and guide their agents, so what
+
+30
+00:01:29,140 --> 00:01:32,100
+we decide together can shape the work after the conversation ends.
+
+31
+00:01:33,720 --> 00:01:37,180
+Agents help expose missing direction, investigate choices, and carry
+
+32
+00:01:37,180 --> 00:01:40,860
+authorized work through implementation, coordination, checking, and repair.
+
+33
+00:01:42,200 --> 00:01:44,180
+Their capabilities need to fit the responsibility.
+
+34
+00:01:45,000 --> 00:01:47,740
+The team still needs evidence that its contributions work together.
+
+35
+00:01:49,240 --> 00:01:51,860
+Several impressive demos don't establish a usable service.
+
+36
+00:01:52,580 --> 00:01:55,780
+We should see the benefit in practice: useful outcomes,
+
+37
+00:01:56,200 --> 00:01:58,500
+fewer repeated explanations, less rescue work.
+
+38
+00:01:59,740 --> 00:02:02,360
+If a review queue keeps growing, reconsider the commitments.
+
+39
+00:02:03,180 --> 00:02:06,440
+If the destination changes, work from where we are toward what matters now.
+
+40
+00:02:07,760 --> 00:02:09,740
+The way we collaborate should improve as we learn.
+
+41
+00:02:11,000 --> 00:02:13,000
+Try it on a project you already share.
+
+42
+00:02:13,580 --> 00:02:16,100
+Open the Converge methodology with your agent.
+
+43
+00:02:16,740 --> 00:02:21,100
+Ask it to prepare one short agreement: the next useful outcome,
+
+44
+00:02:21,480 --> 00:02:24,120
+who owns each part, and what they need from each other.
+
+45
+00:02:24,980 --> 00:02:28,280
+Resolve the important differences together, then get moving.
