@@ -2,7 +2,13 @@
 
 The [video website](https://microsoft.github.io/amplifier-converge/) presents three independent introductions to the Converge methodology. Captions, transcripts, downloads, and a starting prompt are included.
 
+All three players appear in the scrolling page. Transcript copy and Markdown download actions stay beside each film; the readable transcript and timestamp bookmarks start collapsed. Storyboards are an optional download. Starting a film pauses the others while preserving their positions.
+
+The design favors discoverability and protects attention: retain the warm visual character, give supporting detail less prominence, and make transcript sharing immediate. Keep copy feedback visibly separated from its button, including when controls wrap on mobile. Revisit this layout if people still miss a film or cannot find its transcript; browser checks establish usability mechanics, not audience preference.
+
 The page and captions live here. Larger video and image files live in the GitHub release named in [media-manifest.json](media-manifest.json). The build checks each file's size and SHA-256 before including it in the site, so playback and downloads come from the same site as the page.
+
+[films.json](films.json) is the source for film titles, narration, and timing. The build generates the visible sections and Markdown transcripts from it. Clipboard and download use the same generated Markdown. Update matching captions and the optional production script when narration changes.
 
 To build with Python 3 and an authenticated GitHub CLI:
 
