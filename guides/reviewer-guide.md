@@ -33,6 +33,20 @@ Repeat the decision cases with a person available and unavailable. Availability 
 
 For a portable methodology, also check whether equivalent capabilities can fulfill it in different agent environments. A project may intentionally choose a technology or protocol for a stated reason; check its scope and supporting evidence rather than rejecting specificity. The general methodology stays portable across those choices.
 
+## Follow a team through change
+
+Test the connected practice as well as individual decisions. Start with three peers leading substantial areas of one initiative, each working with agents. The [people guide](people-guide.md) illustrates this; choose a different change to test understanding rather than recall.
+
+For example, a service initially built for employees will also serve external contractors. Walk the same owners and their active work through these moments:
+
+1. **Different aims at the start.** Can the peers expose conflicting expectations, agree the next useful combined outcome, and divide responsibilities without all learning each other's implementation?
+2. **Expertise changes a decision.** A colleague identifies a need the owners missed. Can they prepare a focused exchange, reconsider the intended experience, and carry the resulting decision into work without transferring ownership or creating a standing approval gate?
+3. **Local and shared changes diverge.** An internal scheduling improvement preserves the promises; contractor access changes who may see information. Can the responsible owners distinguish independent action from a choice requiring affected owners' agreement?
+4. **Work is already underway.** After that agreement changes, can they identify affected assignments, preserve useful progress, revise superseded work and checks, and keep unrelated authorized work moving?
+5. **The parts work, but the experience disappoints.** Can the team examine combined evidence, judge whether it serves the need, and choose a better next outcome?
+
+Throughout, people should remain responsible for direction, priorities, and judgment while agents carry substantial authorized work. Check whether guidance helps participants use each other's strengths and spend attention on consequential choices. The walkthrough tests understanding; live use is needed to learn whether outcomes and total human effort improve.
+
 ## Challenge what will cause trouble
 
 Look for a promise nobody can check, an unnamed owner, conflicting copies of an agreement, an unexplained design mandate or an example mistaken for a requirement, or a guide containing an essential obligation absent from the contracts.
