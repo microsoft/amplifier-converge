@@ -2,9 +2,9 @@
 
 A methodology for people leading larger bodies of work together, with agents helping carry that work through.
 
-As agents expand what each person can accomplish, even three peers can struggle to keep up with one another's work. More scope and faster change leave less time for misunderstandings to surface naturally. Everyone following everyone else's details becomes a costly way to stay aligned.
+As agents expand what each person can accomplish, even three peers can struggle to keep up with one another's work. The need grows with teams of ten and beyond. More scope and faster change leave less time for misunderstandings to surface naturally. Everyone following everyone else's details becomes a costly way to stay aligned.
 
-Converge helps peers agree on the outcome, divide substantial responsibilities, and negotiate the promises connecting their work. Clear visions and contracts make those agreements understandable and usable by people and agents. Each person keeps leading their area, brings in others' expertise where it matters, and coordinates changes to shared promises. Agents help clarify direction, carry authorized work through, and check that the contributions work together.
+Converge helps peers agree on the outcome, divide substantial responsibilities, and negotiate the promises connecting their work. Clear visions and contracts make those agreements understandable and usable by people and agents. Each person keeps leading their area, brings in others' expertise where it matters, and coordinates changes to shared promises. Agents help clarify direction, carry authorized work through, and check that the contributions work together. The aim is to let teams move together at the pace their systems can sustain, making the best use of limited human attention and capacity.
 
 [Watch the short videos](https://microsoft.github.io/amplifier-converge/) — the shared challenge, working together, and carrying your part through. Each stands alone, with captions and a practical starting prompt.
 
