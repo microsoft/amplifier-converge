@@ -1,42 +1,39 @@
 # Amplifier Converge
 
-A methodology for people leading larger bodies of work together, with agents helping carry that work through.
+Converge is a way for people and agents to carry out larger bodies of work together.
+It helps a team agree on the outcome, divide responsibilities, and keep the
+connections between their work dependable as plans change.
 
-As agents expand what each person can accomplish, even two peers can struggle to keep up with one another's work. Bringing in a third person can add valuable expertise while making that coordination harder; the need grows with teams of ten and beyond. More scope and faster change leave less time for misunderstandings to surface naturally. Everyone following everyone else's details becomes a costly way to stay aligned.
+People keep leading their areas. Agents help clarify direction, execute authorized
+work, check results, and recover from interruptions. The method works across
+agent systems and tools.
 
-Converge helps peers agree on the outcome, divide substantial responsibilities, and negotiate the promises connecting their work. Clear visions and contracts make those agreements understandable and usable by people and agents. Each person keeps leading their area, brings in others' expertise where it matters, and coordinates changes to shared promises. Agents help clarify direction, carry authorized work through, and check that the contributions work together. The aim is to let teams move together at the pace their systems can sustain, making the best use of limited human attention and capacity.
+## Get started
 
-[Watch the short videos](https://microsoft.github.io/amplifier-converge/) — the shared challenge, working together, and carrying your part through. Each stands alone, with captions and a practical starting prompt.
+1. Choose a real outcome and the people responsible for delivering it.
+2. Use the [people guide](guides/people-guide.md) to agree on responsibilities and the promises connecting them.
+3. Give participating agents the [agent guide](guides/agent-guide.md), then use the [reviewer guide](guides/reviewer-guide.md) to check the combined result.
 
-## Two layers, one method
+The [short videos](https://microsoft.github.io/amplifier-converge/) introduce the
+method with captions and practical starting prompts. Read the [vision](docs/VISION.md)
+for the reasoning behind it.
 
-| Layer | What it gives you |
-| --- | --- |
-| [Vision](docs/VISION.md) and [contracts](#the-contracts) | Shared direction, dependable promises, and deliberate design commitments for human–human, human–agent, and agent–agent collaboration. |
-| [Practical guides](#put-it-to-work) | Ways to fulfill those promises using the capabilities available in your environment. |
+Applying Converge does not itself authorize new objectives, spending, publication,
+or changes to another owner's commitments. Within an agreed assignment, ordinary
+decisions do not need another approval at each step.
 
-The guides help you choose and check suitable tools in your environment.
+## The shared promises
 
-## The contracts
+The contracts define the method; the guides show how to apply it.
 
-Read the vision and six contracts for the complete set of promises. Guides explain their application; they do not add hidden requirements.
+- [Shared direction](contracts/shared-direction-contract.md): agree on the outcome and change it deliberately.
+- [Ownership and collaboration](contracts/ownership-and-collaboration-contract.md): assign outcomes and authority, then coordinate where responsibilities meet.
+- [Execution and recovery](contracts/execution-and-recovery-contract.md): carry work through without losing or duplicating it.
+- [Verification and delivery](contracts/verification-and-delivery-contract.md): demonstrate a usable result.
+- [Feedback and learning](contracts/feedback-and-learning-contract.md): turn observations into lasting improvements.
+- [System design and decomposition](contracts/system-design-and-decomposition-contract.md): build focused parts with dependable connections.
 
-- [Shared direction](contracts/shared-direction-contract.md) — identify the agreement and change it deliberately.
-- [Ownership and collaboration](contracts/ownership-and-collaboration-contract.md) — delegate outcomes and authority; coordinate where responsibilities meet.
-- [Execution and recovery](contracts/execution-and-recovery-contract.md) — choose useful work, carry it through, and recover without losing or duplicating it.
-- [Verification and delivery](contracts/verification-and-delivery-contract.md) — demonstrate the usable result, including real user journeys.
-- [Feedback and learning](contracts/feedback-and-learning-contract.md) — turn observations into improvements that last.
-- [System design and decomposition](contracts/system-design-and-decomposition-contract.md) — build focused parts with dependable connections.
-
-## Put it to work
-
-- [For people](guides/people-guide.md): lead substantial areas together, use one another's strengths, and adapt as the work changes.
-- [For agents](guides/agent-guide.md): establish the means to work, execute, verify, and recover.
-- [For reviewers](guides/reviewer-guide.md): challenge unclear promises, gaps, and unnecessary approval gates.
-
-Start with an actual outcome. “Apply Converge” does not itself authorize a new objective, spending, publication, or changes to other owners’ commitments. Equally, an agreed assignment is not a reason to ask again at every ordinary step.
-
-[Writing reviewable guidance](docs/writing-guide.md) · [Background reading](docs/SOURCES.md)
+For authors, see [writing reviewable guidance](docs/writing-guide.md).
 
 ## Contributing
 
