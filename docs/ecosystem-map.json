@@ -1,0 +1,101 @@
+{
+  "audience": "People and agents coordinating larger bodies of work",
+  "citations": [
+    {
+      "path": "README.md",
+      "ref": "689684db7c1bd348c6c4fa5f06919d331ec771ed",
+      "sha256": "60ad159b33807250f13401dfcaedad13571b2ac2ab361659c384179d402eafba",
+      "url": "https://github.com/microsoft/amplifier-converge/blob/689684db7c1bd348c6c4fa5f06919d331ec771ed/README.md"
+    },
+    {
+      "path": "contracts/system-design-and-decomposition-contract.md",
+      "ref": "689684db7c1bd348c6c4fa5f06919d331ec771ed",
+      "sha256": "54520eb4872ca5587bebb6e85b3d2ec42ce5db0886d74eb3fc7071817108ab7c",
+      "url": "https://github.com/microsoft/amplifier-converge/blob/689684db7c1bd348c6c4fa5f06919d331ec771ed/contracts/system-design-and-decomposition-contract.md"
+    }
+  ],
+  "display_name": "Amplifier Converge",
+  "edges": [
+    {
+      "from": "self",
+      "relation": "contains",
+      "to": "direction"
+    },
+    {
+      "from": "self",
+      "relation": "contains",
+      "to": "execution"
+    },
+    {
+      "from": "self",
+      "relation": "contains",
+      "to": "delivery"
+    },
+    {
+      "from": "self",
+      "relation": "contains",
+      "to": "guides"
+    },
+    {
+      "from": "self",
+      "relation": "supports",
+      "to": "teams"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "self",
+      "kind": "self",
+      "label": "Amplifier Converge",
+      "repository": "microsoft/amplifier-converge"
+    },
+    {
+      "id": "direction",
+      "kind": "internal",
+      "label": "Shared direction and ownership"
+    },
+    {
+      "id": "execution",
+      "kind": "internal",
+      "label": "Execution and recovery"
+    },
+    {
+      "id": "delivery",
+      "kind": "internal",
+      "label": "Verification and delivery"
+    },
+    {
+      "id": "guides",
+      "kind": "internal",
+      "label": "People, agent and reviewer guides"
+    },
+    {
+      "id": "teams",
+      "kind": "external",
+      "label": "Participating people and systems"
+    }
+  ],
+  "notes": [
+    "Supports all roles as a working method; does not implement any runtime primitive.",
+    "Adopting the method does not grant new work, spending, publication or cross-owner authority."
+  ],
+  "page_kind": "method and documentation",
+  "purpose": "Agree on outcomes, divide responsibility and keep connected work dependable as plans change.",
+  "ref": "689684db7c1bd348c6c4fa5f06919d331ec771ed",
+  "repository": "microsoft/amplifier-converge",
+  "roles": [],
+  "start_cta": {
+    "basis": "Existing approved README route; target release assets/availability not freshly audited in this plan.",
+    "label": "Start with the people guide",
+    "url": "https://github.com/microsoft/amplifier-converge/blob/main/guides/people-guide.md"
+  },
+  "summary": "A collaboration method for people and agents across systems, not a runtime component.",
+  "supports_roles": [
+    "Agent Instance",
+    "Conversation",
+    "Connection",
+    "Tool",
+    "Experience"
+  ],
+  "visibility": "public"
+}

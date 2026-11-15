@@ -35,6 +35,27 @@ The contracts define the method; the guides show how to apply it.
 
 For authors, see [writing reviewable guidance](docs/writing-guide.md).
 
+
+<!-- ecosystem-map:start -->
+## Where this fits
+
+A collaboration method for people and agents across systems, not a runtime component.
+
+Supports: Agent Instance, Conversation, Connection, Tool, Experience.
+
+![Ecosystem roles and component relationships](docs/ecosystem-map.svg)
+
+[Open the map](docs/ecosystem-map.svg) · [Product overview](https://microsoft.github.io/amplifier-constellation/projects/amplifier-converge/) · [Map guide](https://github.com/microsoft/amplifier-constellation/blob/main/docs/ecosystem-maps.md)
+
+<details>
+<summary>The five shared building blocks</summary>
+
+[![Experience, Conversation, Agent Instance, Connection and Tool](https://raw.githubusercontent.com/microsoft/amplifier-constellation/main/site/assets/art/building-blocks.png)](https://microsoft.github.io/amplifier-constellation/)
+
+</details>
+
+<!-- ecosystem-map:end -->
+
 ## Contributing
 
 > [!NOTE]
