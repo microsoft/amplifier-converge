@@ -80,6 +80,10 @@
     "Adopting the method does not grant new work, spending, publication or cross-owner authority."
   ],
   "page_kind": "method and documentation",
+  "product_site": {
+    "label": "Visit product website",
+    "url": "https://microsoft.github.io/amplifier-converge/"
+  },
   "purpose": "Agree on outcomes, divide responsibility and keep connected work dependable as plans change.",
   "ref": "689684db7c1bd348c6c4fa5f06919d331ec771ed",
   "repository": "microsoft/amplifier-converge",
