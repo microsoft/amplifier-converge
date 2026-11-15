@@ -45,7 +45,7 @@ Supports: Agent Instance, Conversation, Connection, Tool, Experience.
 
 ![Ecosystem roles and component relationships](docs/ecosystem-map.svg)
 
-[Open the map](docs/ecosystem-map.svg) · [Product overview](https://microsoft.github.io/amplifier-constellation/projects/amplifier-converge/) · [Map guide](https://github.com/microsoft/amplifier-constellation/blob/main/docs/ecosystem-maps.md)
+[Product website](https://microsoft.github.io/amplifier-converge/) · [Ecosystem map](https://microsoft.github.io/amplifier-constellation/projects/amplifier-converge/) · [Open the map](docs/ecosystem-map.svg) · [Map guide](https://github.com/microsoft/amplifier-constellation/blob/main/docs/ecosystem-maps.md)
 
 <details>
 <summary>The five shared building blocks</summary>
